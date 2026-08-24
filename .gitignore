@@ -1,0 +1,50 @@
+# ==============================================================================
+# Git Ignore Rules for jina-embeddings-v3-ort
+# ==============================================================================
+
+# Rust build artifacts
+target/
+**/target/
+**/*.rs.bk
+
+# Cargo.lock is kept committed in rust-impl for exact reproducibility of benchmarks
+# and verification binaries.
+
+# Python environments and bytecode
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+**/.venv/
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Heavy ONNX & ML Model Binaries (Uploaded to Hugging Face: mmahdi-sz/jina-embeddings-v3-ort)
+*.onnx
+*.onnx_data
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+models/
+**/models/
+hf-staging/
+hf-repo/
+
+# Cache directories
+.cache/
+**/.cache/
+
+# IDE and OS metadata
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

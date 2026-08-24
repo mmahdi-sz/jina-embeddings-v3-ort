@@ -1,0 +1,702 @@
+[
+  {
+    "id": "telegram_bots_01",
+    "category": "telegram_discord_bots",
+    "language": "fa",
+    "paired_id": "telegram_bots_02",
+    "text": "ربات تلگرام دانلود خودکار ویدیو و استوری از اینستاگرام، یوتیوب و پینترست با پشتیبانی از انتخاب کیفیت و ارسال بدون واترمارک."
+  },
+  {
+    "id": "telegram_bots_02",
+    "category": "telegram_discord_bots",
+    "language": "en",
+    "paired_id": "telegram_bots_01",
+    "text": "Telegram bot for downloading videos and stories from Instagram, YouTube, and Pinterest with custom quality selection and no watermarks."
+  },
+  {
+    "id": "telegram_bots_03",
+    "category": "telegram_discord_bots",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "ربات مدیریت گروه تلگرام بر پایه Aiogram 3 و Redis با قابلیت ضداسپم هوشمند، فیلتر کلمات و سیستم خوش‌آمدگویی پیشرفته."
+  },
+  {
+    "id": "telegram_bots_04",
+    "category": "telegram_discord_bots",
+    "language": "en",
+    "paired_id": null,
+    "text": "A feature-packed Discord moderation and music bot written in TypeScript with slash command support, queue management, and Spotify integration."
+  },
+  {
+    "id": "telegram_bots_05",
+    "category": "telegram_discord_bots",
+    "language": "fa",
+    "paired_id": null,
+    "text": "ربات دستیار تبدیل صوت به متن فارسی با استفاده از مدل ویسپر در تلگرام به همراه قابلیت خلاصه‌سازی متن ویس‌های طولانی."
+  },
+  {
+    "id": "telegram_bots_06",
+    "category": "telegram_discord_bots",
+    "language": "en",
+    "paired_id": null,
+    "text": "Lightweight Telegram notification gateway that forwards GitHub webhook events, CI/CD alerts, and server health warnings to private channels."
+  },
+  {
+    "id": "telegram_bots_07",
+    "category": "telegram_discord_bots",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "سورس ربات فروشگاهی تلگرام با درگاه پرداخت ZarinPal، پنل مدیریت شیشه‌ای، پیگیری وضعیت سفارش و پشتیبانی از WebApp."
+  },
+  {
+    "id": "telegram_bots_08",
+    "category": "telegram_discord_bots",
+    "language": "en",
+    "paired_id": null,
+    "text": "Discord RPG bot featuring turn-based combat, inventory systems, character leveling, and multiplayer dungeon raids using Discord.js v14."
+  },
+  {
+    "id": "telegram_bots_09",
+    "category": "telegram_discord_bots",
+    "language": "fa",
+    "paired_id": null,
+    "text": "ربات ناشناس تلگرام با قابلیت چت تصادفی، ارسال پیام ناشناس به مخاطبین و فیلتر محتوای غیراخلاقی بر اساس هوش مصنوعی."
+  },
+  {
+    "id": "telegram_bots_10",
+    "category": "telegram_discord_bots",
+    "language": "en",
+    "paired_id": null,
+    "text": "Asynchronous Telegram MTProto userbot framework with modular plugin loader, inline query handlers, and anti-flood protections."
+  },
+  {
+    "id": "frontend_web_01",
+    "category": "frontend_web_apps",
+    "language": "fa",
+    "paired_id": "frontend_web_02",
+    "text": "داشبورد مدیریت مالی مدرن ساخته شده با React 19، Tailwind CSS و Recharts با تم دارک، پشتیبانی از راست‌چین (RTL) و نمودارهای تعاملی."
+  },
+  {
+    "id": "frontend_web_02",
+    "category": "frontend_web_apps",
+    "language": "en",
+    "paired_id": "frontend_web_01",
+    "text": "Modern financial analytics dashboard built with React 19, Tailwind CSS, and Recharts featuring dark mode, RTL support, and interactive charts."
+  },
+  {
+    "id": "frontend_web_03",
+    "category": "frontend_web_apps",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "کامپوننت‌های فرم و جدول قابل استفاده مجدد در Vue 3 با پشتیبانی از TypeScript و اعتبارسنجی Zod برای طراحی پرتال‌های سازمانی."
+  },
+  {
+    "id": "frontend_web_04",
+    "category": "frontend_web_apps",
+    "language": "en",
+    "paired_id": null,
+    "text": "Accessible, unstyled component library for Next.js and Svelte with built-in keyboard navigation, WAI-ARIA compliance, and fluid animations."
+  },
+  {
+    "id": "frontend_web_05",
+    "category": "frontend_web_apps",
+    "language": "fa",
+    "paired_id": null,
+    "text": "قالب فروشگاهی تک‌صفحه‌ای با Next.js 15 و شادسن (shadcn/ui) همراه با فیلتر آنی محصولات و سبد خرید ذخیره شده در LocalStorage."
+  },
+  {
+    "id": "frontend_web_06",
+    "category": "frontend_web_apps",
+    "language": "en",
+    "paired_id": null,
+    "text": "Real-time collaborative whiteboard web app powered by WebSockets, Canvas API, and CRDTs for seamless multi-user diagramming."
+  },
+  {
+    "id": "frontend_web_07",
+    "category": "frontend_web_apps",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "پروژه وب‌اپلیکیشن تقویم و تسک منیجر با قابلیت Drag and Drop در React، طراحی واکنش‌گرا و اتصال به سرویس تقویم گوگل."
+  },
+  {
+    "id": "frontend_web_08",
+    "category": "frontend_web_apps",
+    "language": "en",
+    "paired_id": null,
+    "text": "High-performance data grid component in vanilla JavaScript supporting virtual scrolling, column pinning, and 100k+ rows rendering at 60fps."
+  },
+  {
+    "id": "frontend_web_09",
+    "category": "frontend_web_apps",
+    "language": "fa",
+    "paired_id": null,
+    "text": "ویرایشگر متن پیشرفته بر پایه Tiptap برای ویرایش مقالات فارسی با امکان درج جدول، تصویر، نشانه‌گذاری و هایلایت کد برنامه‌نویسی."
+  },
+  {
+    "id": "frontend_web_10",
+    "category": "frontend_web_apps",
+    "language": "en",
+    "paired_id": null,
+    "text": "Micro-frontend architecture starter kit using Vite Module Federation, React, and shared state management via Zustand."
+  },
+  {
+    "id": "cli_tools_01",
+    "category": "cli_dev_tools",
+    "language": "fa",
+    "paired_id": "cli_tools_02",
+    "text": "ابزار خط فرمان فوق‌العاده سریع به زبان Rust برای جستجو و جایگزینی الگوهای متنی در مخازن بزرگ گیت با خروجی رنگی."
+  },
+  {
+    "id": "cli_tools_02",
+    "category": "cli_dev_tools",
+    "language": "en",
+    "paired_id": "cli_tools_01",
+    "text": "Blazing fast Rust command-line tool for searching and replacing text patterns across large git repositories with syntax-highlighted output."
+  },
+  {
+    "id": "cli_tools_03",
+    "category": "cli_dev_tools",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "ابزار ترمینال برای مانیتورینگ مصرف حافظه و CPU پردازه‌های سیستم لینوکس با رابط TUI تعاملی و کلیدهای میانبر شبیه htop."
+  },
+  {
+    "id": "cli_tools_04",
+    "category": "cli_dev_tools",
+    "language": "en",
+    "paired_id": null,
+    "text": "Interactive Git CLI helper that formats conventional commits, handles branch switching, and previews interactive rebase trees in terminal."
+  },
+  {
+    "id": "cli_tools_05",
+    "category": "cli_dev_tools",
+    "language": "fa",
+    "paired_id": null,
+    "text": "اسکریپت خط فرمان پایتون برای تغییر نام دسته‌ای فایل‌ها، تبدیل فرمت تصاویر و استخراج متادیتای صوتی و ویدیویی."
+  },
+  {
+    "id": "cli_tools_06",
+    "category": "cli_dev_tools",
+    "language": "en",
+    "paired_id": null,
+    "text": "Cross-platform CLI password and secret manager written in Go with GPG encryption, clipboard clearing, and YubiKey hardware token support."
+  },
+  {
+    "id": "cli_tools_07",
+    "category": "cli_dev_tools",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "تولیدکننده کدهای خودکار از فایل Swagger/OpenAPI به تایپ‌های TypeScript و سرویس‌های کلاینت Axios با خط فرمان CLI."
+  },
+  {
+    "id": "cli_tools_08",
+    "category": "cli_dev_tools",
+    "language": "en",
+    "paired_id": null,
+    "text": "Modern curl alternative with intuitive syntax, automatic JSON formatting, persistent sessions, and syntax coloring for API testing."
+  },
+  {
+    "id": "cli_tools_09",
+    "category": "cli_dev_tools",
+    "language": "fa",
+    "paired_id": null,
+    "text": "ابزار ترمینال تحلیل لاگ‌های وب‌سرور Nginx و استخراج آمار درخواست‌های پرتکرار، کدهای وضعیت خطا و آدرس‌های آی‌پی مشکوک."
+  },
+  {
+    "id": "cli_tools_10",
+    "category": "cli_dev_tools",
+    "language": "en",
+    "paired_id": null,
+    "text": "Static binary packaging utility for bundling Python applications into standalone, single-file executables without external runtime dependencies."
+  },
+  {
+    "id": "ml_ai_01",
+    "category": "machine_learning_ai",
+    "language": "fa",
+    "paired_id": "ml_ai_02",
+    "text": "کتابخانه پردازش زبان طبیعی فارسی برای نرمال‌سازی متن، برچسب‌گذاری ادوار سخن و تقطیع جملات با استفاده از مدل‌های ترنسفورمر."
+  },
+  {
+    "id": "ml_ai_02",
+    "category": "machine_learning_ai",
+    "language": "en",
+    "paired_id": "ml_ai_01",
+    "text": "Persian natural language processing library for text normalization, part-of-speech tagging, and sentence tokenization using transformer models."
+  },
+  {
+    "id": "ml_ai_03",
+    "category": "machine_learning_ai",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "فریم‌ورک سبک RAG برای جستجوی معنایی و بازیابی اسناد با اتصال به پایگاه داده وکتوری Qdrant و مدل‌های زبان بزرگ محلی."
+  },
+  {
+    "id": "ml_ai_04",
+    "category": "machine_learning_ai",
+    "language": "en",
+    "paired_id": null,
+    "text": "PyTorch toolkit for fine-tuning vision foundation models with LoRA adapters, gradient checkpointing, and mixed precision training support."
+  },
+  {
+    "id": "ml_ai_05",
+    "category": "machine_learning_ai",
+    "language": "fa",
+    "paired_id": null,
+    "text": "پایپ‌لاین تشخیص اشیا و چهره در ویدیوهای بلادرنگ بر پایه مدل‌های YOLOv11 و ONNX Runtime با مصرف بهینه پردازنده گرافیکی."
+  },
+  {
+    "id": "ml_ai_06",
+    "category": "machine_learning_ai",
+    "language": "en",
+    "paired_id": null,
+    "text": "High-performance C++ inference engine for quantized GGUF language models with FlashAttention kernels and multi-GPU tensor parallelism."
+  },
+  {
+    "id": "ml_ai_07",
+    "category": "machine_learning_ai",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "کتابخانه تبدیل صوت به متن (ASR) با پشتیبانی از لهجه‌های زبان فارسی، حذف نویز محیط و استخراج کلمات کلیدی با مدل‌های صوتی عمیق."
+  },
+  {
+    "id": "ml_ai_08",
+    "category": "machine_learning_ai",
+    "language": "en",
+    "paired_id": null,
+    "text": "End-to-end active learning and dataset annotation framework with automated uncertainty sampling and human-in-the-loop validation."
+  },
+  {
+    "id": "ml_ai_09",
+    "category": "machine_learning_ai",
+    "language": "fa",
+    "paired_id": null,
+    "text": "الگوریتم‌های یادگیری تقویتی عمیق (PPO و SAC) برای شبیه‌سازی سیستم‌های کنترل رباتیک و یادگیری خودکار ناوبری در محیط‌های دوبعدی."
+  },
+  {
+    "id": "ml_ai_10",
+    "category": "machine_learning_ai",
+    "language": "en",
+    "paired_id": null,
+    "text": "Graph neural network library in JAX for molecular property prediction, drug discovery, and biological interaction analysis."
+  },
+  {
+    "id": "backend_api_01",
+    "category": "backend_microservices",
+    "language": "fa",
+    "paired_id": "backend_api_02",
+    "text": "سرویس احراز هویت و مدیریت کاربران توزیع‌شده با FastAPI و PostgreSQL همراه با صدور توکن‌های امن JWT و رفرش توکن با انقضای خودکار."
+  },
+  {
+    "id": "backend_api_02",
+    "category": "backend_microservices",
+    "language": "en",
+    "paired_id": "backend_api_01",
+    "text": "Distributed user authentication and authorization service built with FastAPI and PostgreSQL featuring secure JWT tokens and automatic refresh rotation."
+  },
+  {
+    "id": "backend_api_03",
+    "category": "backend_microservices",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "میکروسرویس درگاه پرداخت چندگانه در Node.js با معماری رویدادمحور بر بستر RabbitMQ و گزارش تراکنش‌های ناموفق با قابلیت Retry خودکار."
+  },
+  {
+    "id": "backend_api_04",
+    "category": "backend_microservices",
+    "language": "en",
+    "paired_id": null,
+    "text": "High-throughput gRPC service written in Rust for real-time telemetry ingestion, validation, and time-series aggregation."
+  },
+  {
+    "id": "backend_api_05",
+    "category": "backend_microservices",
+    "language": "fa",
+    "paired_id": null,
+    "text": "سرویس مدیریت نوتیفیکیشن و ارسال پیامک انبوه با صف پیام در Celery و ردیس به همراه داشبورد مانیتورینگ وضعیت تحویل پیام‌ها."
+  },
+  {
+    "id": "backend_api_06",
+    "category": "backend_microservices",
+    "language": "en",
+    "paired_id": null,
+    "text": "Federated GraphQL gateway orchestrating subgraphs across multi-region services with caching and rate limiting."
+  },
+  {
+    "id": "backend_api_07",
+    "category": "backend_microservices",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "وب‌سرور ردیابی مکان و ژئولوکیشن ناوگان حمل‌ونقل با Go، اتصال به وب‌سوکت برای آپدیت زنده و ذخیره‌سازی داده‌های مکانی در PostGIS."
+  },
+  {
+    "id": "backend_api_08",
+    "category": "backend_microservices",
+    "language": "en",
+    "paired_id": null,
+    "text": "E-commerce order fulfillment microservice in Kotlin with transactional outbox pattern, distributed saga coordinator, and Kafka integration."
+  },
+  {
+    "id": "backend_api_09",
+    "category": "backend_microservices",
+    "language": "fa",
+    "paired_id": null,
+    "text": "معماری میکروسرویس مدیریت محتوا و وبلاگ با جنگو و دیتابیس مونگو، سیستم نظردهی درختی و جستجوی تمام‌متن با الستیک‌سرچ."
+  },
+  {
+    "id": "backend_api_10",
+    "category": "backend_microservices",
+    "language": "en",
+    "paired_id": null,
+    "text": "Low-latency API reverse proxy with dynamic routing, circuit breaking, SSL termination, and distributed tracing via OpenTelemetry."
+  },
+  {
+    "id": "mobile_apps_01",
+    "category": "mobile_apps",
+    "language": "fa",
+    "paired_id": "mobile_apps_02",
+    "text": "اپلیکیشن موبایل پایش سلامت و ثبت روزانه رژیم غذایی و ورزش با فلاتر با قابلیت همگام‌سازی آفلاین با دیتابیس محلی Isar."
+  },
+  {
+    "id": "mobile_apps_02",
+    "category": "mobile_apps",
+    "language": "en",
+    "paired_id": "mobile_apps_01",
+    "text": "Cross-platform mobile health tracker and diet planner built in Flutter with offline-first data synchronization and local Isar database."
+  },
+  {
+    "id": "mobile_apps_03",
+    "category": "mobile_apps",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "برنامه صرافی رمزارز موبایل با React Native و Expo همراه با نمودارهای زنده TradingView، کیف پول رمزنگاری‌شده و احراز هویت بیومتریک."
+  },
+  {
+    "id": "mobile_apps_04",
+    "category": "mobile_apps",
+    "language": "en",
+    "paired_id": null,
+    "text": "Native iOS podcast player crafted in Swift and SwiftUI featuring background audio playback, CarPlay support, and chapter bookmarking."
+  },
+  {
+    "id": "mobile_apps_05",
+    "category": "mobile_apps",
+    "language": "fa",
+    "paired_id": null,
+    "text": "اپلیکیشن پیام‌رسان امن اندروید با کاتلین و جت‌پک کامپوز با رمزگذاری سرتاسری (E2EE) و اشتراک‌گذاری سریع فایل‌های رسانه‌ای."
+  },
+  {
+    "id": "mobile_apps_06",
+    "category": "mobile_apps",
+    "language": "en",
+    "paired_id": null,
+    "text": "Android expense manager adhering to Material 3 design guidelines with Jetpack Compose, Room SQLite database, and automated receipt scanner."
+  },
+  {
+    "id": "mobile_apps_07",
+    "category": "mobile_apps",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "اپلیکیشن آموزش زبان انگلیسی با فلش‌کارت‌های هوشمند بر پایه الگوریتم تکرار فاصله‌دار SM-2 در فلاتر و ضبط صدای کاربر برای تصحیح تلفظ."
+  },
+  {
+    "id": "mobile_apps_08",
+    "category": "mobile_apps",
+    "language": "en",
+    "paired_id": null,
+    "text": "Real-time navigation and GPS route planner mobile app featuring turn-by-turn spoken guidance, offline vector map tiles, and traffic alerts."
+  },
+  {
+    "id": "mobile_apps_09",
+    "category": "mobile_apps",
+    "language": "fa",
+    "paired_id": null,
+    "text": "کتابخوان الکترونیکی فارسی برای اندروید با پشتیبانی از فرمت‌های EPUB و PDF، تغییر فونت و تم شب و امکان هایلایت یادداشت‌ها."
+  },
+  {
+    "id": "mobile_apps_10",
+    "category": "mobile_apps",
+    "language": "en",
+    "paired_id": null,
+    "text": "React Native camera app with custom filters, video stabilization, high-speed burst capture, and metadata inspection."
+  },
+  {
+    "id": "game_dev_01",
+    "category": "game_development",
+    "language": "fa",
+    "paired_id": "game_dev_02",
+    "text": "موتور بازی دوبعدی سبک به زبان C++ با رندرینگ بر پایه OpenGL، سیستم فیزیک ذرات و پشتیبانی از بارگذاری نقشه‌های Tilemap."
+  },
+  {
+    "id": "game_dev_02",
+    "category": "game_development",
+    "language": "en",
+    "paired_id": "game_dev_01",
+    "text": "Lightweight 2D game engine written in C++ with OpenGL rendering pipeline, particle physics simulation, and Tiled map loader support."
+  },
+  {
+    "id": "game_dev_03",
+    "category": "game_development",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "بازی پلتفرمر دوبعدی ساخته شده در گودوت انجین ۴ (Godot 4) با سیستم مبارزه ترکیبی، هوش مصنوعی دشمنان و انیمیشن‌های روان فریم به فریم."
+  },
+  {
+    "id": "game_dev_04",
+    "category": "game_development",
+    "language": "en",
+    "paired_id": null,
+    "text": "Data-driven Entity Component System (ECS) game engine in Rust with multi-threaded schedule execution, asset pipeline, and hot reloading."
+  },
+  {
+    "id": "game_dev_05",
+    "category": "game_development",
+    "language": "fa",
+    "paired_id": null,
+    "text": "شبیه‌ساز مسابقات اتومبیل‌رانی سه‌بعدی در یونیتی با مدل فیزیک واقعی تایر، سیستم تعلیق ماشین و قابلیت شخصی‌سازی قطعات بدنه."
+  },
+  {
+    "id": "game_dev_06",
+    "category": "game_development",
+    "language": "en",
+    "paired_id": null,
+    "text": "Voxel-based procedural world generation demo with infinite terrain streaming, greedy meshing algorithm, and dynamic shadow rendering in WebGL."
+  },
+  {
+    "id": "game_dev_07",
+    "category": "game_development",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "پلاگین شیدر آب و اقیانوس برای موتور آنریل ۵ (Unreal Engine 5) با شبیه‌سازی امواج فیزیکی، بازتاب نور خورشید و شکست نور در زیر آب."
+  },
+  {
+    "id": "game_dev_08",
+    "category": "game_development",
+    "language": "en",
+    "paired_id": null,
+    "text": "Cross-platform spatial audio engine with 3D HRTF simulation, Doppler frequency shifts, and environmental reverberation effects."
+  },
+  {
+    "id": "game_dev_09",
+    "category": "game_development",
+    "language": "fa",
+    "paired_id": null,
+    "text": "بازی فکری و پازل آنلاین چندنفره با قابلیت چت صوتی بلادرنگ، جدول امتیازات هفتگی و اتاق‌های خصوصی برای رقابت با دوستان."
+  },
+  {
+    "id": "game_dev_10",
+    "category": "game_development",
+    "language": "en",
+    "paired_id": null,
+    "text": "Deterministic lockstep multiplayer networking framework for RTS and fighting games with rollback netcode and replay serialization."
+  },
+  {
+    "id": "devops_infra_01",
+    "category": "devops_infrastructure",
+    "language": "fa",
+    "paired_id": "devops_infra_02",
+    "text": "مجموعه کدهای استقرار خودکار زیرساخت ابری با ترافورم بر روی سرورهای هتزنر شامل راه‌اندازی کلاستر کوبرنتیز و کانفیگ شبکه امن WireGuard."
+  },
+  {
+    "id": "devops_infra_02",
+    "category": "devops_infrastructure",
+    "language": "en",
+    "paired_id": "devops_infra_01",
+    "text": "Automated cloud infrastructure provisioning with Terraform on Hetzner Cloud, including Kubernetes cluster bootstrap and WireGuard VPN mesh."
+  },
+  {
+    "id": "devops_infra_03",
+    "category": "devops_infrastructure",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "پایپ‌لاین CI/CD گیت‌هاب اکشنز برای بیلد ایمیج داکر چندمعماری (amd64 و arm64)، اسکن امنیتی با Trivy و انتشار در رجیستری خصوصی."
+  },
+  {
+    "id": "devops_infra_04",
+    "category": "devops_infrastructure",
+    "language": "en",
+    "paired_id": null,
+    "text": "Custom Kubernetes operator in Go that automates PostgreSQL backup creation, point-in-time recovery testing, and S3 replication."
+  },
+  {
+    "id": "devops_infra_05",
+    "category": "devops_infrastructure",
+    "language": "fa",
+    "paired_id": null,
+    "text": "کانفیگ مانیتورینگ سرور با پرومتئوس و گرافانا شامل داشبوردهای از پیش‌آماده برای وضعیت مصرف منابع، هشدار لود بالا و لاگ‌های سرور لینوکس."
+  },
+  {
+    "id": "devops_infra_06",
+    "category": "devops_infrastructure",
+    "language": "en",
+    "paired_id": null,
+    "text": "Ansible playbooks for automated zero-downtime server hardening, automated SSL certificate renewal with Let's Encrypt, and firewall rules."
+  },
+  {
+    "id": "devops_infra_07",
+    "category": "devops_infrastructure",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "راهنمای راه‌اندازی داکر کمپوز برای اجرای استک کامل لاگینگ با Vector، Elasticsearch و Kibana همراه با روتاسیون خودکار لاگ‌ها."
+  },
+  {
+    "id": "devops_infra_08",
+    "category": "devops_infrastructure",
+    "language": "en",
+    "paired_id": null,
+    "text": "Lightweight container runtime sandbox with cgroups v2 resource quotas, seccomp syscall filtering, and rootless isolation for untrusted workloads."
+  },
+  {
+    "id": "devops_infra_09",
+    "category": "devops_infrastructure",
+    "language": "fa",
+    "paired_id": null,
+    "text": "اسکریپت‌های اتوماسیون بک‌آپ‌گیری روزانه از دیتابیس‌های ردیس و پستگرس، فشرده‌سازی با Zstandard و آپلود مستقیم به فضای ذخیره‌سازی ابری."
+  },
+  {
+    "id": "devops_infra_10",
+    "category": "devops_infrastructure",
+    "language": "en",
+    "paired_id": null,
+    "text": "GitOps delivery pipeline utilizing ArgoCD and Helm charts with canary rollouts, automated metric validation, and instant rollback triggers."
+  },
+  {
+    "id": "etl_scraping_01",
+    "category": "etl_data_scraping",
+    "language": "fa",
+    "paired_id": "etl_scraping_02",
+    "text": "اسکرپر غیرهمزمان پایتون با Playwright و BeautifulSoup برای استخراج قیمت روز و مشخصات فنی کالاهای فروشگاه‌های اینترنتی با قابلیت دور زدن کلودفلر."
+  },
+  {
+    "id": "etl_scraping_02",
+    "category": "etl_data_scraping",
+    "language": "en",
+    "paired_id": "etl_scraping_01",
+    "text": "Asynchronous Python web scraper with Playwright and BeautifulSoup for extracting real-time e-commerce product pricing while bypassing Cloudflare challenges."
+  },
+  {
+    "id": "etl_scraping_03",
+    "category": "etl_data_scraping",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "پایپ‌لاین ETL پردازش دسته‌ای فایل‌های سنگین Parquet و CSV با Polars و DuckDB برای تمیزسازی و تجمیع میلیاردها رکورد تراکنش مالی."
+  },
+  {
+    "id": "etl_scraping_04",
+    "category": "etl_data_scraping",
+    "language": "en",
+    "paired_id": null,
+    "text": "Distributed stream data processing pipeline using Apache Kafka, Apache Flink, and ClickHouse for real-time clickstream event analytics."
+  },
+  {
+    "id": "etl_scraping_05",
+    "category": "etl_data_scraping",
+    "language": "fa",
+    "paired_id": null,
+    "text": "خزنده‌ی اخبار فارسی برای جمع‌آوری و آرشیو خبرگزاری‌ها با قابلیت تشخیص مقالات تکراری بر اساس شباهت متنی و استخراج موجودیت‌های نام‌دار."
+  },
+  {
+    "id": "etl_scraping_06",
+    "category": "etl_data_scraping",
+    "language": "en",
+    "paired_id": null,
+    "text": "High-performance web crawler in Rust featuring async token bucket rate limiting, robots.txt compliance, and structured JSON-LD extraction."
+  },
+  {
+    "id": "etl_scraping_07",
+    "category": "etl_data_scraping",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "اسکریپت تبدیل و همگام‌سازی داده‌ها از پایگاه داده SQL به الستیک‌سرچ برای جستجوی متنی سریع‌تر به همراه سیستم CDC با Debezium."
+  },
+  {
+    "id": "etl_scraping_08",
+    "category": "etl_data_scraping",
+    "language": "en",
+    "paired_id": null,
+    "text": "Automated PDF and scanned invoice data extractor using OCR (Tesseract) and LLM-assisted schema mapping for tabular financial data."
+  },
+  {
+    "id": "etl_scraping_09",
+    "category": "etl_data_scraping",
+    "language": "fa",
+    "paired_id": null,
+    "text": "فریم‌ورک ارزیابی کیفیت داده و اعتبارسنجی خودکار شمای جداول در پایتون با امکان تعریف قواعد اعتبارسنجی و گزارش خطاهای آماری."
+  },
+  {
+    "id": "etl_scraping_10",
+    "category": "etl_data_scraping",
+    "language": "en",
+    "paired_id": null,
+    "text": "Scalable scraping framework managing rotating residential proxies, user-agent randomization, and CAPTCHA resolution for large-scale data harvesting."
+  },
+  {
+    "id": "edu_resources_01",
+    "category": "educational_resources",
+    "language": "fa",
+    "paired_id": "edu_resources_02",
+    "text": "مخزن جامع آموزش ساختار داده‌ها و الگوریتم‌ها با پیاده‌سازی گام به گام به زبان پایتون همراه با نمودارهای تصویری و تحلیل پیچیدگی زمانی."
+  },
+  {
+    "id": "edu_resources_02",
+    "category": "educational_resources",
+    "language": "en",
+    "paired_id": "edu_resources_01",
+    "text": "Comprehensive data structures and algorithms tutorial with step-by-step Python implementations, visual diagrams, and big-O complexity analysis."
+  },
+  {
+    "id": "edu_resources_03",
+    "category": "educational_resources",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "نقشه راه یادگیری برنامه‌نویسی وب فرانت‌اند و بک‌اند در سال ۲۰۲۶ با فهرست دوره‌ها، کتاب‌های مرجع و تمرین‌های عملی هفتگی."
+  },
+  {
+    "id": "edu_resources_04",
+    "category": "educational_resources",
+    "language": "en",
+    "paired_id": null,
+    "text": "Curated collection of interactive system design interview blueprints, architectural trade-off comparisons, and distributed systems cheat sheets."
+  },
+  {
+    "id": "edu_resources_05",
+    "category": "educational_resources",
+    "language": "fa",
+    "paired_id": null,
+    "text": "راهنمای جامع آموزش مقدماتی تا پیشرفته گیت و گیت‌هاب با مثال‌های روزمره کاری، رفع کانفلیکت‌ها و دستورات پیشرفته rebase و bisect."
+  },
+  {
+    "id": "edu_resources_06",
+    "category": "educational_resources",
+    "language": "en",
+    "paired_id": null,
+    "text": "Self-paced Rust programming workshop with 100 progressive coding exercises covering ownership, lifetimes, concurrency, and unsafe code."
+  },
+  {
+    "id": "edu_resources_07",
+    "category": "educational_resources",
+    "language": "fa-en",
+    "paired_id": null,
+    "text": "مجموعه پروژه‌های نمونه برای یادگیری هوش مصنوعی و یادگیری عمیق با توضیحات خط به خط کدها و نوتبوک‌های اجرایی در Google Colab."
+  },
+  {
+    "id": "edu_resources_08",
+    "category": "educational_resources",
+    "language": "en",
+    "paired_id": null,
+    "text": "Open-source computer science degree syllabus matching top university curricula with free textbook links, video lectures, and project assignments."
+  },
+  {
+    "id": "edu_resources_09",
+    "category": "educational_resources",
+    "language": "fa",
+    "paired_id": null,
+    "text": "مرجع الگوهای طراحی شی‌گرا (Design Patterns) در جاوااسکریپت و تایپ‌اسکریپت با مثال‌های دنیای واقعی و مقایسه رویکردهای تابعی."
+  },
+  {
+    "id": "edu_resources_10",
+    "category": "educational_resources",
+    "language": "en",
+    "paired_id": null,
+    "text": "Practical cybersecurity handbook covering OWASP Top 10 vulnerabilities, secure coding checklists, penetration testing labs, and defense tactics."
+  }
+]
