@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "description": "320 authentic Persian-English paired sentences (640 texts) across 16 technical domains for cross-lingual semantic evaluation of jina-embeddings-v3",
+    "domain_count": 16,
+    "domains": [
+      "web_frontend",
+      "backend_microservices",
+      "telegram_bots",
+      "devops_cloud",
+      "databases_storage",
+      "machine_learning_ai",
+      "cybersecurity_networking",
+      "mobile_dev",
+      "fintech_crypto",
+      "ecommerce_payments",
+      "embedded_systems",
+      "search_information_retrieval",
+      "data_engineering_streaming",
+      "gaming_graphics",
+      "developer_tools_cli",
+      "real_world_queries"
+    ],
+    "pairs_per_domain": 20,
+    "total_pairs": 320,
+    "total_texts": 640
+  },
+  "overall_summary": {
+    "classification": {
+      "task_id": 3,
+      "pair_count": 320,
+      "pairwise_mean_cosine": 0.824036,
+      "pairwise_median_cosine": 0.83022153,
+      "pairwise_min_cosine": 0.60482043,
+      "pairwise_max_cosine": 0.956617,
+      "pairwise_std_dev": 0.051793262,
+      "pairwise_p25": 0.79382086,
+      "pairwise_p75": 0.8605869,
+      "negative_baseline_mean_cosine": 0.5660165,
+      "contrastive_margin": 0.2580195,
+      "inference_duration_ms": 26771,
+      "throughput_vectors_per_sec": 23.905666
+    },
+    "text-matching": {
+      "task_id": 4,
+      "pair_count": 320,
+      "pairwise_mean_cosine": 0.74119085,
+      "pairwise_median_cosine": 0.7506511,
+      "pairwise_min_cosine": 0.41796416,
+      "pairwise_max_cosine": 0.9439392,
+      "pairwise_std_dev": 0.091029316,
+      "pairwise_p25": 0.67992574,
+      "pairwise_p75": 0.8146308,
+      "negative_baseline_mean_cosine": 0.23936126,
+      "contrastive_margin": 0.5018296,
+      "inference_duration_ms": 27173,
+      "throughput_vectors_per_sec": 23.552773
+    },
+    "retrieval.passage": {
+      "task_id": 1,
+      "pair_count": 320,
+      "pairwise_mean_cosine": 0.6550536,
+      "pairwise_median_cosine": 0.6569514,
+      "pairwise_min_cosine": 0.30397817,
+      "pairwise_max_cosine": 0.89315444,
+      "pairwise_std_dev": 0.096597925,
+      "pairwise_p25": 0.5947479,
+      "pairwise_p75": 0.7319565,
+      "negative_baseline_mean_cosine": 0.14134032,
+      "contrastive_margin": 0.5137133,
+      "inference_duration_ms": 27432,
+      "throughput_vectors_per_sec": 23.329988
+    },
+    "retrieval.query": {
+      "task_id": 0,
+      "pair_count": 320,
+      "pairwise_mean_cosine": 0.66491926,
+      "pairwise_median_cosine": 0.67130125,
+      "pairwise_min_cosine": 0.36403137,
+      "pairwise_max_cosine": 0.9101434,
+      "pairwise_std_dev": 0.10015608,
+      "pairwise_p25": 0.58991253,
+      "pairwise_p75": 0.74295866,
+      "negative_baseline_mean_cosine": 0.14516556,
+      "contrastive_margin": 0.5197537,
+      "inference_duration_ms": 28738,
+      "throughput_vectors_per_sec": 22.269936
+    },
+    "separation": {
+      "task_id": 2,
+      "pair_count": 320,
+      "pairwise_mean_cosine": 0.80537367,
+      "pairwise_median_cosine": 0.80993176,
+      "pairwise_min_cosine": 0.6294311,
+      "pairwise_max_cosine": 0.9197496,
+      "pairwise_std_dev": 0.056592125,
+      "pairwise_p25": 0.77094066,
+      "pairwise_p75": 0.8499632,
+      "negative_baseline_mean_cosine": 0.55990916,
+      "contrastive_margin": 0.2454645,
+      "inference_duration_ms": 27065,
+      "throughput_vectors_per_sec": 23.646448
+    }
+  },
+  "domain_breakdown": {
+    "gaming_graphics": {
+      "classification": 0.836335,
+      "separation": 0.81381416,
+      "retrieval.query": 0.67600846,
+      "retrieval.passage": 0.66729933,
+      "text-matching": 0.7449707
+    },
+    "real_world_queries": {
+      "retrieval.passage": 0.7184392,
+      "separation": 0.8420679,
+      "retrieval.query": 0.745169,
+      "classification": 0.852939,
+      "text-matching": 0.7750947
+    },
+    "databases_storage": {
+      "retrieval.query": 0.6420847,
+      "retrieval.passage": 0.63537854,
+      "separation": 0.78768533,
+      "classification": 0.7977637,
+      "text-matching": 0.70841306
+    },
+    "embedded_systems": {
+      "separation": 0.78109,
+      "retrieval.passage": 0.61949587,
+      "retrieval.query": 0.639676,
+      "classification": 0.81239283,
+      "text-matching": 0.7163998
+    },
+    "ecommerce_payments": {
+      "retrieval.query": 0.757054,
+      "text-matching": 0.8323658,
+      "separation": 0.8671837,
+      "classification": 0.87733364,
+      "retrieval.passage": 0.73596
+    },
+    "backend_microservices": {
+      "classification": 0.79489625,
+      "retrieval.query": 0.6160865,
+      "text-matching": 0.7048083,
+      "retrieval.passage": 0.6090295,
+      "separation": 0.7708164
+    },
+    "cybersecurity_networking": {
+      "text-matching": 0.7672812,
+      "classification": 0.82877284,
+      "separation": 0.8121368,
+      "retrieval.query": 0.6881831,
+      "retrieval.passage": 0.6766144
+    },
+    "mobile_dev": {
+      "retrieval.passage": 0.62511885,
+      "separation": 0.79356754,
+      "classification": 0.81190413,
+      "retrieval.query": 0.6376282,
+      "text-matching": 0.7458792
+    },
+    "devops_cloud": {
+      "classification": 0.7857639,
+      "text-matching": 0.67505014,
+      "retrieval.passage": 0.5919745,
+      "retrieval.query": 0.5983934,
+      "separation": 0.7646297
+    },
+    "telegram_bots": {
+      "text-matching": 0.77557516,
+      "separation": 0.8310648,
+      "retrieval.passage": 0.7130128,
+      "classification": 0.84116995,
+      "retrieval.query": 0.7112878
+    },
+    "fintech_crypto": {
+      "classification": 0.843497,
+      "text-matching": 0.75676644,
+      "retrieval.query": 0.66474056,
+      "separation": 0.8074479,
+      "retrieval.passage": 0.66310567
+    },
+    "machine_learning_ai": {
+      "separation": 0.79859847,
+      "classification": 0.8260271,
+      "text-matching": 0.72489923,
+      "retrieval.query": 0.66172475,
+      "retrieval.passage": 0.64465237
+    },
+    "search_information_retrieval": {
+      "text-matching": 0.7543883,
+      "retrieval.passage": 0.6807573,
+      "classification": 0.83452976,
+      "retrieval.query": 0.6717227,
+      "separation": 0.8162244
+    },
+    "web_frontend": {
+      "retrieval.query": 0.6162265,
+      "retrieval.passage": 0.6142776,
+      "classification": 0.7997431,
+      "separation": 0.7798835,
+      "text-matching": 0.6945507
+    },
+    "developer_tools_cli": {
+      "classification": 0.8272146,
+      "separation": 0.8136877,
+      "retrieval.query": 0.6676706,
+      "retrieval.passage": 0.6541028,
+      "text-matching": 0.74447167
+    },
+    "data_engineering_streaming": {
+      "text-matching": 0.73813957,
+      "classification": 0.8142923,
+      "retrieval.query": 0.6450516,
+      "retrieval.passage": 0.6316391,
+      "separation": 0.80608034
+    }
+  }
+}

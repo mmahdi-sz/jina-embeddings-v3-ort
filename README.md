@@ -121,11 +121,21 @@ Command: `cargo run --release --bin parity_test`
 ================================================================================
 ```
 
-### Additional Multilingual Verification Highlights
+### Extended Persian <-> English Benchmark (320 Pairs / 16 Domains / 3,200 Embeddings)
 
-- **Python ONNX vs. PyTorch Parity**: Cosine similarity `0.99999976`, max difference `4.51 × 10⁻⁷`.
-- **Cross-Lingual Semantic Alignment**: Pairwise cosine similarity between Persian and English descriptions of identical repositories averaged **`0.8092`** (peak: **`0.8998`** for game development), demonstrating deep multilingual conceptual alignment.
-- **Intra-Category Cohesion**: Intra-category similarity averaged `0.4248` vs `0.2971` inter-category baseline (+43% separation margin).
+To thoroughly stress-test cross-lingual semantic alignment, an extensive dataset of **320 authentic Persian-English paired sentences** across 16 technical domains (e-commerce, telegram bots, cloud/devops, databases, cybersecurity, mobile apps, fin-tech, systems programming, AI/ML, etc.) was evaluated across all 5 LoRA adapters:
+
+Command: `cargo run --release --bin benchmark_300`
+
+| LoRA Task | True Pairwise Mean Cosine | Median Cosine | Negative Baseline (102,080 Cross-Pairs) | Contrastive Margin | Throughput (CPU) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **`classification` (3)** | **`0.8240`** | `0.8302` | `0.5660` | **`+0.2580` (+45.6%)** | 23.9 vec/s |
+| **`separation` (2)** | **`0.8054`** | `0.8099` | `0.5599` | **`+0.2455` (+43.8%)** | 23.6 vec/s |
+| **`text-matching` (4)** | **`0.7412`** | `0.7507` | `0.2394` | **`+0.5018` (+209.7%)** | 23.6 vec/s |
+| **`retrieval.query` (0)** | **`0.6649`** | `0.6713` | `0.1452` | **`+0.5198` (+358.0%)** | 22.3 vec/s |
+| **`retrieval.passage` (1)** | **`0.6551`** | `0.6570` | `0.1413` | **`+0.5137` (+363.5%)** | 23.3 vec/s |
+
+> 💡 **Key Benchmark Takeaway**: For symmetric tasks (`classification`, `separation`, `text-matching`), Persian-to-English alignment reaches high cosine similarity (**0.74 - 0.82**, peaking at **0.9566**). For asymmetric retrieval tasks (`query`/`passage`), the model suppresses false cross-pair matches down to **0.14**, creating a massive **+360% contrastive margin** for high-precision cross-lingual RAG.
 
 ---
 

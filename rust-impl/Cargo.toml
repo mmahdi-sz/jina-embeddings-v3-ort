@@ -32,6 +32,10 @@ thiserror = "2.0"
 name = "parity_test"
 path = "src/bin/parity_test.rs"
 
+[[bin]]
+name = "benchmark_300"
+path = "src/bin/benchmark_300.rs"
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]

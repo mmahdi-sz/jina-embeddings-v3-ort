@@ -1,0 +1,1949 @@
+{
+  "metadata": {
+    "total_pairs": 320,
+    "total_texts": 640,
+    "domains": [
+      "web_frontend",
+      "backend_microservices",
+      "telegram_bots",
+      "devops_cloud",
+      "databases_storage",
+      "machine_learning_ai",
+      "cybersecurity_networking",
+      "mobile_dev",
+      "fintech_crypto",
+      "ecommerce_payments",
+      "embedded_systems",
+      "search_information_retrieval",
+      "data_engineering_streaming",
+      "gaming_graphics",
+      "developer_tools_cli",
+      "real_world_queries"
+    ],
+    "domain_count": 16,
+    "pairs_per_domain": 20,
+    "description": "320 authentic Persian-English paired sentences (640 texts) across 16 technical domains for cross-lingual semantic evaluation of jina-embeddings-v3"
+  },
+  "pairs": [
+    {
+      "id": "pair_001",
+      "category": "web_frontend",
+      "persian": "داشبورد مدرن تحلیل داده با ری‌اکت ۱۹ و تیلویند سی‌اس‌اس",
+      "english": "Modern data analytics dashboard built with React 19 and Tailwind CSS"
+    },
+    {
+      "id": "pair_002",
+      "category": "web_frontend",
+      "persian": "کامپوننت جدول داده‌های تعاملی با قابلیت مرتب‌سازی و صفحه‌بندی در ویو ۳",
+      "english": "Interactive data table component with sorting and pagination in Vue 3"
+    },
+    {
+      "id": "pair_003",
+      "category": "web_frontend",
+      "persian": "میکروفرانت‌اند مبتنی بر وب‌پک ماژول فدراسیون و تایپ‌اسکریپت",
+      "english": "Micro-frontend architecture using Webpack Module Federation and TypeScript"
+    },
+    {
+      "id": "pair_004",
+      "category": "web_frontend",
+      "persian": "مدیریت وضعیت سراسری اپلیکیشن با زاستند و کشینگ سرور با تَن‌استک کوئری",
+      "english": "Global application state management with Zustand and server caching via TanStack Query"
+    },
+    {
+      "id": "pair_005",
+      "category": "web_frontend",
+      "persian": "رابط کاربری ریسپانسیو فرم ثبت‌نام و اعتبارسنجی ورودی‌ها با زاد",
+      "english": "Responsive sign-up form user interface with input validation using Zod"
+    },
+    {
+      "id": "pair_006",
+      "category": "web_frontend",
+      "persian": "رندرینگ سمت سرور صفحات پویا در نکست جی‌اس ۱۴ با سرور کامپوننت‌ها",
+      "english": "Dynamic page server-side rendering in Next.js 14 using Server Components"
+    },
+    {
+      "id": "pair_007",
+      "category": "web_frontend",
+      "persian": "سیستم دیزاین اختصاصی با پشتیبانی از تم تاریک و انیمیشن‌های فرموشن",
+      "english": "Custom design system with dark theme support and Framer Motion animations"
+    },
+    {
+      "id": "pair_008",
+      "category": "web_frontend",
+      "persian": "ماژول چارت تعاملی بلادرنگ با استفاده از دی‌تری و اس‌وی‌جی",
+      "english": "Real-time interactive chart module using D3.js and SVG"
+    },
+    {
+      "id": "pair_009",
+      "category": "web_frontend",
+      "persian": "برنامه وب پیش‌رونده برای دسترسی آفلاین به محتوا و کش‌گذاری با سرویس ورکر",
+      "english": "Progressive web application for offline content access and Service Worker caching"
+    },
+    {
+      "id": "pair_010",
+      "category": "web_frontend",
+      "persian": "کامپوننت دراپ‌دان چندانتخابی با جستجوی فازی در اسولت ۵",
+      "english": "Multi-select dropdown component with fuzzy search in Svelte 5"
+    },
+    {
+      "id": "pair_011",
+      "category": "web_frontend",
+      "persian": "ویرایشگر متن غنی مبتنی بر تیپ‌تپ با قابلیت همکاری همزمان وب‌سوکت",
+      "english": "Rich text editor based on Tiptap with real-time WebSocket collaborative editing"
+    },
+    {
+      "id": "pair_012",
+      "category": "web_frontend",
+      "persian": "گالری تصاویر ریسپانسیو با لود تنبل و بهینه‌سازی فرمت وب‌پی",
+      "english": "Responsive image gallery with lazy loading and WebP format optimization"
+    },
+    {
+      "id": "pair_013",
+      "category": "web_frontend",
+      "persian": "پلیر اختصاصی ویدیو و صوت با پشتیبانی از استریمینگ اچ‌ال‌اس در جاوااسکریپت",
+      "english": "Custom video and audio player with HLS streaming support in JavaScript"
+    },
+    {
+      "id": "pair_014",
+      "category": "web_frontend",
+      "persian": "مجموعه کامپوننت‌های دسترسی‌پذیر منطبق با استانداردهای وب",
+      "english": "Accessible UI component library conforming to WCAG web standards"
+    },
+    {
+      "id": "pair_015",
+      "category": "web_frontend",
+      "persian": "تست خودکار اند-تو-اند رابط کاربری با استفاده از پلی‌رایت",
+      "english": "End-to-end automated UI testing using Playwright and Chromium"
+    },
+    {
+      "id": "pair_016",
+      "category": "web_frontend",
+      "persian": "پلاگین ساخت تم رنگی داینامیک بر پایه متغیرهای سی‌اس‌اس مدرن",
+      "english": "Dynamic color theme generation plugin based on modern CSS variables"
+    },
+    {
+      "id": "pair_017",
+      "category": "web_frontend",
+      "persian": "مودال پنجره بازشو و منوی ناوبری متحرک برای موبایل در انگولار ۱۸",
+      "english": "Modal popup and animated mobile navigation drawer in Angular 18"
+    },
+    {
+      "id": "pair_018",
+      "category": "web_frontend",
+      "persian": "صفحه فرود سئو شده با امتیاز عملکرد بالای لایت‌هاوس در آسترو",
+      "english": "SEO-optimized landing page with high Lighthouse performance score in Astro"
+    },
+    {
+      "id": "pair_019",
+      "category": "web_frontend",
+      "persian": "موتور تولید استایل کامپایل‌تایم با زیرو ران‌تایم سی‌اس‌اس",
+      "english": "Compile-time style generation engine with zero runtime CSS overhead"
+    },
+    {
+      "id": "pair_020",
+      "category": "web_frontend",
+      "persian": "ابزار پیش‌نمایش کامپوننت‌های فرانت‌اند در محیط استوری‌بوک",
+      "english": "Frontend component preview and documentation tool in Storybook environment"
+    },
+    {
+      "id": "pair_021",
+      "category": "backend_microservices",
+      "persian": "میکروسرویس احراز هویت توزیع‌شده با توکن‌های جی‌دبلیوتی و فست‌ای‌پی‌آی",
+      "english": "Distributed authentication microservice using JWT tokens and FastAPI"
+    },
+    {
+      "id": "pair_022",
+      "category": "backend_microservices",
+      "persian": "سرویس پردازش پس‌زمینه با ورکر صف سلری و ردیس",
+      "english": "Background processing service with Celery worker queue and Redis"
+    },
+    {
+      "id": "pair_023",
+      "category": "backend_microservices",
+      "persian": "دروازه ای‌پی‌آی با مقیاس‌پذیری بالا و ریت‌لیمیت توکن باکت در گو",
+      "english": "High-scalability API gateway with token-bucket rate limiting in Go"
+    },
+    {
+      "id": "pair_024",
+      "category": "backend_microservices",
+      "persian": "وب سرور异步 غیرهمزمان با اکتیکس-وب در زبان راست برای ترافیک سنگین",
+      "english": "Asynchronous web server using Actix-web in Rust for high-throughput traffic"
+    },
+    {
+      "id": "pair_025",
+      "category": "backend_microservices",
+      "persian": "معماری میکروسرویس مبتنی بر رویداد با ارتباطات جی‌آرپی‌سی در پایتون",
+      "english": "Event-driven microservice architecture with gRPC communication in Python"
+    },
+    {
+      "id": "pair_026",
+      "category": "backend_microservices",
+      "persian": "سیستم ثبت لاگ ساختاریافته و تجمیع داده‌های تلمتری در الستیک‌سرچ",
+      "english": "Structured logging system and telemetry data aggregation in Elasticsearch"
+    },
+    {
+      "id": "pair_027",
+      "category": "backend_microservices",
+      "persian": "میدل‌ویر مدیریت خطا و بازگرداندن پاسخ‌های استاندارد جیسون",
+      "english": "Error handling middleware returning standardized JSON exception responses"
+    },
+    {
+      "id": "pair_028",
+      "category": "backend_microservices",
+      "persian": "سرویس نوتیفیکیشن بلادرنگ با وب‌سوکت و مدیریت کانکشن‌های پایدار",
+      "english": "Real-time notification service with WebSockets and persistent connection management"
+    },
+    {
+      "id": "pair_029",
+      "category": "backend_microservices",
+      "persian": "ای‌پی‌آی رست با مستندات خودکار اوپن‌ای‌پی‌آی و سواگر در نود جی‌اس",
+      "english": "RESTful API with automated OpenAPI and Swagger documentation in Node.js"
+    },
+    {
+      "id": "pair_030",
+      "category": "backend_microservices",
+      "persian": "پترن مدارشکن و مکانیزم تلاش مجدد برای فراخوانی سرویس‌های خارجی",
+      "english": "Circuit breaker pattern and retry mechanism for resilient external service calls"
+    },
+    {
+      "id": "pair_031",
+      "category": "backend_microservices",
+      "persian": "موتور ارسال خودکار وب‌هوک با امضای رمزنگاری‌شده اچ‌مک",
+      "english": "Automated webhook delivery engine with HMAC cryptographic payload signing"
+    },
+    {
+      "id": "pair_032",
+      "category": "backend_microservices",
+      "persian": "سرویس چندمستأجری ابری با جداسازی منطقی داده‌های مشتریان",
+      "english": "Multi-tenant cloud service with logical customer data isolation"
+    },
+    {
+      "id": "pair_033",
+      "category": "backend_microservices",
+      "persian": "سرویس تولید اسناد پی‌دی‌اف و گزارش‌های سازمانی در پس‌زمینه",
+      "english": "Background PDF document generation and enterprise reporting service"
+    },
+    {
+      "id": "pair_034",
+      "category": "backend_microservices",
+      "persian": "میکروسرویس مدیریت متادیتا و فایل با استوریج سازگار با اس‌تری",
+      "english": "File and metadata management microservice with S3-compatible object storage"
+    },
+    {
+      "id": "pair_035",
+      "category": "backend_microservices",
+      "persian": "سرویس زمان‌بندی جاب‌های توزیع‌شده با قفل ردیس برای جلوگیری از اجرای تکراری",
+      "english": "Distributed job scheduler with Redis locking to prevent duplicate task execution"
+    },
+    {
+      "id": "pair_036",
+      "category": "backend_microservices",
+      "persian": "سیستم سلامت‌سنجی و پروپ‌های آماده‌باش برای کوبرنتیز",
+      "english": "Liveness and readiness health-check probes for Kubernetes integration"
+    },
+    {
+      "id": "pair_037",
+      "category": "backend_microservices",
+      "persian": "ارتباط سرویس به سرویس امن با تی‌ال‌اس دوطرفه و گواهی‌های دیجیتال",
+      "english": "Secure service-to-service communication with mutual TLS and digital certificates"
+    },
+    {
+      "id": "pair_038",
+      "category": "backend_microservices",
+      "persian": "میدل‌ویر فشرده‌سازی خودکار پاسخ‌های اچ‌تی‌تی‌پی با الگوریتم زستندر",
+      "english": "Automated HTTP response compression middleware using Zstandard algorithm"
+    },
+    {
+      "id": "pair_039",
+      "category": "backend_microservices",
+      "persian": "سرویس تبدیل و پردازش جریان داده‌های ورودی با استاندارد آپاچی ارو",
+      "english": "Streaming data ingestion and transformation service with Apache Arrow standard"
+    },
+    {
+      "id": "pair_040",
+      "category": "backend_microservices",
+      "persian": "بک‌اند ماژولار با معماری پیاز و جداسازی کامل لایه‌های دامنه و دیتا",
+      "english": "Modular backend using Onion Architecture with domain and data layer separation"
+    },
+    {
+      "id": "pair_041",
+      "category": "telegram_bots",
+      "persian": "ربات تلگرام دانلود خودکار ویدیو و استوری از اینستاگرام و یوتیوب",
+      "english": "Telegram bot for automated video and story downloading from Instagram and YouTube"
+    },
+    {
+      "id": "pair_042",
+      "category": "telegram_bots",
+      "persian": "ربات ضد اسپم و مدیریت گروه تلگرام با قابلیت اخراج خودکار تبلیغات",
+      "english": "Telegram anti-spam and group management bot with automated ad-removal and ban features"
+    },
+    {
+      "id": "pair_043",
+      "category": "telegram_bots",
+      "persian": "ربات هوش مصنوعی چت‌بات تلگرام متصل به مدل‌های زبانی بزرگ",
+      "english": "Telegram AI chatbot integration powered by Large Language Models"
+    },
+    {
+      "id": "pair_044",
+      "category": "telegram_bots",
+      "persian": "ربات تلگرام پرداخت بانکی و فروش اشتراک وی‌آی‌پی با درگاه مستقیم",
+      "english": "Telegram payment and VIP subscription bot with direct payment gateway integration"
+    },
+    {
+      "id": "pair_045",
+      "category": "telegram_bots",
+      "persian": "ربات تلگرام استعلام بلادرنگ قیمت ارزهای دیجیتال و طلا با نمودار",
+      "english": "Telegram bot for real-time cryptocurrency and gold price queries with charts"
+    },
+    {
+      "id": "pair_046",
+      "category": "telegram_bots",
+      "persian": "ربات تلگرام تبدیل صوت به متن با هوش مصنوعی و مدل ویسپر",
+      "english": "Telegram voice-to-text transcription bot using Whisper AI speech recognition"
+    },
+    {
+      "id": "pair_047",
+      "category": "telegram_bots",
+      "persian": "موتور صف دانلود فایل‌های حجیم در تلگرام با قابلیت توقف و ادامه",
+      "english": "Telegram large file download queue engine with pause and resume support"
+    },
+    {
+      "id": "pair_048",
+      "category": "telegram_bots",
+      "persian": "ربات تلگرام نظرسنجی و آزمون‌ساز آنلاین با ارائه نتایج آماری",
+      "english": "Telegram online polling and quiz builder bot with real-time statistical analytics"
+    },
+    {
+      "id": "pair_049",
+      "category": "telegram_bots",
+      "persian": "ربات دریافت تیکت و پشتیبانی مشتریان در کانال‌های تلگرام",
+      "english": "Customer support and ticketing Telegram bot for business channels"
+    },
+    {
+      "id": "pair_050",
+      "category": "telegram_bots",
+      "persian": "ربات مخابره خودکار اخبار و فید آر‌اس‌اس به سوپرگروه‌ها",
+      "english": "Automated news and RSS feed broadcaster bot for Telegram supergroups"
+    },
+    {
+      "id": "pair_051",
+      "category": "telegram_bots",
+      "persian": "کلاینت ام‌تی‌پرو در زبان راست برای مدیریت خودکار حساب‌های تلگرام",
+      "english": "MTProto client in Rust for automated Telegram userbot account management"
+    },
+    {
+      "id": "pair_052",
+      "category": "telegram_bots",
+      "persian": "ربات تولید کد تخفیف یکبار مصرف و قرعه‌کشی خودکار تلگرام",
+      "english": "Telegram one-time discount code generator and automated lottery giveaway bot"
+    },
+    {
+      "id": "pair_053",
+      "category": "telegram_bots",
+      "persian": "سیستم مانیتورینگ آپ‌تایم سرور با ارسال هشدارهای فوری در تلگرام",
+      "english": "Server uptime monitoring system sending instant Telegram alert notifications"
+    },
+    {
+      "id": "pair_054",
+      "category": "telegram_bots",
+      "persian": "ربات تلگرام ترجمه هوشمند پیام‌ها میان زبان‌های مختلف در گروه‌ها",
+      "english": "Smart translation Telegram bot for multi-language group conversations"
+    },
+    {
+      "id": "pair_055",
+      "category": "telegram_bots",
+      "persian": "ربات رزرو وقت ملاقات و نوبت‌دهی آنلاین با تقویم شمسی در تلگرام",
+      "english": "Online appointment scheduling and booking Telegram bot with Persian calendar"
+    },
+    {
+      "id": "pair_056",
+      "category": "telegram_bots",
+      "persian": "ربات اشتراک‌گذاری ناشناس پیام‌ها و سوال و جواب در تلگرام",
+      "english": "Anonymous messaging and Q&A interaction bot on Telegram platform"
+    },
+    {
+      "id": "pair_057",
+      "category": "telegram_bots",
+      "persian": "موتور ارسال پیام انبوه هدفمند بدون مسدودی با الگوریتم تاخیر تصادفی",
+      "english": "Targeted bulk messaging engine with random jitter delays to prevent bans"
+    },
+    {
+      "id": "pair_058",
+      "category": "telegram_bots",
+      "persian": "ربات یادآور وظایف و تسک‌های روزانه با اعلان‌های زمان‌بندی‌شده تلگرام",
+      "english": "Task reminder and daily planner bot with scheduled Telegram notifications"
+    },
+    {
+      "id": "pair_059",
+      "category": "telegram_bots",
+      "persian": "ربات ساخت واترمارک و ویرایش لوگوی تصاویر به صورت خودکار در تلگرام",
+      "english": "Automated image watermarking and logo editing Telegram bot"
+    },
+    {
+      "id": "pair_060",
+      "category": "telegram_bots",
+      "persian": "ربات آزمون لغات زبان انگلیسی با فلش‌کارت و سیستم لایتنر در تلگرام",
+      "english": "English vocabulary quiz bot with Leitner flashcard system on Telegram"
+    },
+    {
+      "id": "pair_061",
+      "category": "devops_cloud",
+      "persian": "پایپ‌لاین یکپارچه‌سازی و استقرار پیوسته با گیت‌لب سی‌آی و داکر",
+      "english": "Continuous Integration and Continuous Deployment pipeline with GitLab CI and Docker"
+    },
+    {
+      "id": "pair_062",
+      "category": "devops_cloud",
+      "persian": "کلاسترسازی کوبرنتیز در محیط پروداکشن با انسیبل و کوب‌اسپری",
+      "english": "Production Kubernetes cluster deployment using Ansible and Kubespray"
+    },
+    {
+      "id": "pair_063",
+      "category": "devops_cloud",
+      "persian": "زیرساخت به عنوان کد با ترافورم برای راه‌اندازی سرورهای ابری",
+      "english": "Infrastructure as Code using Terraform for provisioning cloud servers"
+    },
+    {
+      "id": "pair_064",
+      "category": "devops_cloud",
+      "persian": "مانیتورینگ جامع زیرساخت با پرومتئوس و داشبوردهای گرافانا",
+      "english": "Comprehensive infrastructure monitoring with Prometheus metrics and Grafana dashboards"
+    },
+    {
+      "id": "pair_065",
+      "category": "devops_cloud",
+      "persian": "سرویس ایمیج‌سازی چندمرحله‌ای بهینه‌شده برای حداقل حجم کانتینر داکر",
+      "english": "Multi-stage optimized Docker build for minimal container image size"
+    },
+    {
+      "id": "pair_066",
+      "category": "devops_cloud",
+      "persian": "سیستم اتواسکِلینگ کانتینرها بر اساس ترافیک و مصرف سی‌پی‌یو در کوبرنتیز",
+      "english": "Kubernetes Horizontal Pod Autoscaling based on CPU utilization and incoming traffic"
+    },
+    {
+      "id": "pair_067",
+      "category": "devops_cloud",
+      "persian": "مدیریت اسرار و کلیدهای رمزنگاری در پروداکشن با استفاده از والت",
+      "english": "Production secrets and cryptographic key management using HashiCorp Vault"
+    },
+    {
+      "id": "pair_068",
+      "category": "devops_cloud",
+      "persian": "لودبالانسر معکوس انجین‌اکس با مدیریت خودکار گواهینامه‌های لیتس‌انکریپت",
+      "english": "Nginx reverse proxy load balancer with automated Let's Encrypt SSL renewal"
+    },
+    {
+      "id": "pair_069",
+      "category": "devops_cloud",
+      "persian": "سرویس بکاپ‌گیری خودکار و رمزنگاری‌شده از دیتابیس به آبجکت استوریج",
+      "english": "Automated encrypted database backup service targeting cloud object storage"
+    },
+    {
+      "id": "pair_070",
+      "category": "devops_cloud",
+      "persian": "مشاهده‌پذیری و رهگیری توزیع‌شده درخواست‌ها با اپن‌تلمتری و جیگر",
+      "english": "Distributed tracing and observability with OpenTelemetry and Jaeger"
+    },
+    {
+      "id": "pair_071",
+      "category": "devops_cloud",
+      "persian": "تعریف قوانین فایروال و محدودسازی دسترسی شبکه با ای‌پی‌تیبلز در لینوکس",
+      "english": "Firewall rules definition and network access control using iptables on Linux"
+    },
+    {
+      "id": "pair_072",
+      "category": "devops_cloud",
+      "persian": "مدیریت گیت‌آپس با آرگو سی‌دی برای استقرار خودکار تغییرات گیت در کلاستر",
+      "english": "GitOps deployment automation with ArgoCD syncing git changes to cluster"
+    },
+    {
+      "id": "pair_073",
+      "category": "devops_cloud",
+      "persian": "ارتقای بدون قطعی سرویس‌ها با استراتژی بلو-گرین در کوبرنتیز",
+      "english": "Zero-downtime rolling update deployment using Blue-Green strategy in Kubernetes"
+    },
+    {
+      "id": "pair_074",
+      "category": "devops_cloud",
+      "persian": "مدیریت متمرکز پیکربندی سرورها با رول‌های انسیبل و تمپلیت‌های جینجا",
+      "english": "Centralized server configuration management with Ansible roles and Jinja templates"
+    },
+    {
+      "id": "pair_075",
+      "category": "devops_cloud",
+      "persian": "سیستم جمع‌آوری لاگ توزیع‌شده با فلئوئنت‌بیت و ارسال به الاستیک",
+      "english": "Distributed log shipping with Fluent Bit sending logs to Elasticsearch cluster"
+    },
+    {
+      "id": "pair_076",
+      "category": "devops_cloud",
+      "persian": "پروکسی هوشمند ترافیک ورودی با ترافیک و کش‌گذاری لایه لبه",
+      "english": "Smart ingress traffic proxy with Traefik and edge-layer caching"
+    },
+    {
+      "id": "pair_077",
+      "category": "devops_cloud",
+      "persian": "مدیریت دسترسی نقش‌محور در سطح کلاستر با سیاست‌های آر‌بک کوبرنتیز",
+      "english": "Role-Based Access Control policies in Kubernetes cluster environment"
+    },
+    {
+      "id": "pair_078",
+      "category": "devops_cloud",
+      "persian": "اسکریپت پاکسازی خودکار داکر و حذف والیوم‌های بلااستفاده برای آزادسازی دیسک",
+      "english": "Automated Docker cleanup script removing dangling volumes to free disk space"
+    },
+    {
+      "id": "pair_079",
+      "category": "devops_cloud",
+      "persian": "شبکه خصوصی مجازی امن میان سرورهای ابری با استفاده از وایرگارد",
+      "english": "Secure virtual private network between cloud nodes using WireGuard mesh"
+    },
+    {
+      "id": "pair_080",
+      "category": "devops_cloud",
+      "persian": "تست تاب‌آوری و آشوب در میکروسرویس‌ها با تزریق خطای شبکه",
+      "english": "Chaos engineering and resilience testing in microservices via network fault injection"
+    },
+    {
+      "id": "pair_081",
+      "category": "databases_storage",
+      "persian": "بهینه‌سازی ایندکس‌های بی-تری و کوئری‌های پیچیده در پستگرس‌کیوال",
+      "english": "B-Tree index and complex query optimization in PostgreSQL database"
+    },
+    {
+      "id": "pair_082",
+      "category": "databases_storage",
+      "persian": "پایگاه داده وکتوری کیودرانت برای ذخیره‌سازی و جستجوی پرسرعت امبدینگ‌ها",
+      "english": "Qdrant vector database for high-speed embedding storage and similarity search"
+    },
+    {
+      "id": "pair_083",
+      "category": "databases_storage",
+      "persian": "کشینگ توزیع‌شده با ردیس کلاستر و استراتژی انقضای کلیدها",
+      "english": "Distributed caching with Redis Cluster and TTL key eviction policy"
+    },
+    {
+      "id": "pair_084",
+      "category": "databases_storage",
+      "persian": "دیتابیس ستونی کلیک‌هاوس برای آنالیز کلان‌داده‌ها و لاگ‌های حجیم",
+      "english": "ClickHouse columnar database for big data analytics and massive log processing"
+    },
+    {
+      "id": "pair_085",
+      "category": "databases_storage",
+      "persian": "مهاجرت اسکیمای دیتابیس بدون قفل‌شدگی جداول در سیستم‌های پروداکشن",
+      "english": "Zero-lock database schema migration in high-load production systems"
+    },
+    {
+      "id": "pair_086",
+      "category": "databases_storage",
+      "persian": "پایگاه داده اسناد مانگودی‌بی با شاردینگ و رپلیکاست برای داده‌های بدون ساختار",
+      "english": "MongoDB document database with sharding and replica sets for unstructured data"
+    },
+    {
+      "id": "pair_087",
+      "category": "databases_storage",
+      "persian": "پولینگ کانکشن‌های دیتابیس با ددپول در زبان راست برای کاهش مصرف منابع",
+      "english": "Database connection pooling with deadpool in Rust for minimal resource footprint"
+    },
+    {
+      "id": "pair_088",
+      "category": "databases_storage",
+      "persian": "پارتیشن‌بندی جداول بر اساس زمان در پستگرس برای افزایش سرعت کوئری‌ها",
+      "english": "Time-based table partitioning in PostgreSQL for accelerated query execution"
+    },
+    {
+      "id": "pair_089",
+      "category": "databases_storage",
+      "persian": "دیتابیس سبک و سریع امبدد با ردب برای برنامه‌های سمت کلاینت",
+      "english": "Lightweight and fast embedded database with redb for client applications"
+    },
+    {
+      "id": "pair_090",
+      "category": "databases_storage",
+      "persian": "سیستم همگام‌سازی دوطرفه داده‌ها میان دیتابیس محلی و سرور ابری",
+      "english": "Bidirectional data synchronization between local SQLite and remote cloud database"
+    },
+    {
+      "id": "pair_091",
+      "category": "databases_storage",
+      "persian": "تحلیل طرح اجرای کوئری با دستور اکسپلین آنالایز برای رفع باتل‌نک‌ها",
+      "english": "Query execution plan analysis with EXPLAIN ANALYZE to resolve performance bottlenecks"
+    },
+    {
+      "id": "pair_092",
+      "category": "databases_storage",
+      "persian": "جدول تغییرات داده‌ها برای پیاده‌سازی الگوی چنج دیتا کپچر با دیبزیوم",
+      "english": "Change Data Capture implementation using Debezium and PostgreSQL WAL"
+    },
+    {
+      "id": "pair_093",
+      "category": "databases_storage",
+      "persian": "پایگاه داده گراف با نئو فور جی برای تحلیل روابط پیچیده و شبکه‌های اجتماعی",
+      "english": "Neo4j graph database for modeling complex relationships and social networks"
+    },
+    {
+      "id": "pair_094",
+      "category": "databases_storage",
+      "persian": "ذخیره‌سازی بهینه داده‌های سری زمانی با استفاده از تایم‌اسکیل‌دی‌بی",
+      "english": "Optimized time-series data storage and aggregation using TimescaleDB"
+    },
+    {
+      "id": "pair_095",
+      "category": "databases_storage",
+      "persian": "استوریج فایل‌های بزرگ بر بستر مین‌آیو سازگار با اس‌تری آمازون",
+      "english": "MinIO object storage server compatible with Amazon S3 API for large files"
+    },
+    {
+      "id": "pair_096",
+      "category": "databases_storage",
+      "persian": "مدیریت تراکنش‌های توزیع‌شده با پروتکل کامیت دو فازی در پایگاه داده‌ها",
+      "english": "Distributed transaction management with two-phase commit protocol"
+    },
+    {
+      "id": "pair_097",
+      "category": "databases_storage",
+      "persian": "فشرده‌سازی خودکار دیتابیس در زمان بیکاری سرور برای کاهش حجم دیسک",
+      "english": "Automated database vacuuming and compaction during idle periods to reclaim disk"
+    },
+    {
+      "id": "pair_098",
+      "category": "databases_storage",
+      "persian": "جدول موقت در حافظه رم با استفاده از موتور ردیس برای صف‌های بلادرنگ",
+      "english": "In-memory temporary table with Redis engine for ultra-fast real-time queues"
+    },
+    {
+      "id": "pair_099",
+      "category": "databases_storage",
+      "persian": "رمزنگاری داده‌ها در حالت سکون با استاندارد آ‌ئی‌اس در پایگاه داده",
+      "english": "Database encryption at rest using AES-256 standard for sensitive records"
+    },
+    {
+      "id": "pair_100",
+      "category": "databases_storage",
+      "persian": "ایجاد ایندکس‌های معکوس در پستگرس برای جستجوی سریع متنی در زبان فارسی",
+      "english": "Full-text search inverted index configuration in PostgreSQL for Persian texts"
+    },
+    {
+      "id": "pair_101",
+      "category": "machine_learning_ai",
+      "persian": "مدل تعبیه متنی چندزبانه با معماری ترنسفورمر و آداپتورهای تسک لورا",
+      "english": "Multilingual text embedding model with Transformer architecture and LoRA task adapters"
+    },
+    {
+      "id": "pair_102",
+      "category": "machine_learning_ai",
+      "persian": "موتور اینفرنس اونیکس ران‌تایم برای اجرای سریع شبکه‌های عصبی در سرور",
+      "english": "ONNX Runtime inference engine for high-speed neural network execution on server"
+    },
+    {
+      "id": "pair_103",
+      "category": "machine_learning_ai",
+      "persian": "فاین‌تیونینگ مدل‌های زبانی با روش کم‌مصرف پفت و کوآنتایزیشن ۴ بیتی",
+      "english": "LLM fine-tuning using parameter-efficient PEFT and 4-bit quantization"
+    },
+    {
+      "id": "pair_104",
+      "category": "machine_learning_ai",
+      "persian": "پایپ‌لاین جستجوی معنایی و بازیابی متون مبتنی بر معماری رگ",
+      "english": "Retrieval-Augmented Generation pipeline for semantic search and document retrieval"
+    },
+    {
+      "id": "pair_105",
+      "category": "machine_learning_ai",
+      "persian": "تبدیل مدل‌های پای‌تورچ به فرمت استاندارد اونیکس برای استفاده در زبان‌های دیگر",
+      "english": "PyTorch model export to standard ONNX format for cross-language inference"
+    },
+    {
+      "id": "pair_106",
+      "category": "machine_learning_ai",
+      "persian": "کوآنتایز کردن وزنه‌های شبکه عصبی به فرمت اینت۸ برای کاهش مصرف حافظه رم",
+      "english": "INT8 post-training neural network quantization for reduced memory footprint"
+    },
+    {
+      "id": "pair_107",
+      "category": "machine_learning_ai",
+      "persian": "سیستم کلاسیفیکیشن خودکار تیکت‌های پشتیبانی با مدل‌های یادگیری عمیق",
+      "english": "Automated support ticket classification system using deep learning text models"
+    },
+    {
+      "id": "pair_108",
+      "category": "machine_learning_ai",
+      "persian": "مدل بازرتبه‌بندی کراس-انکودر برای افزایش دقت بازیابی اطلاعات در موتور جستجو",
+      "english": "Cross-encoder re-ranking model for boosted information retrieval precision"
+    },
+    {
+      "id": "pair_109",
+      "category": "machine_learning_ai",
+      "persian": "سیستم خلاصه‌سازی خودکار مقالات و اخبار با مدل‌های ترنسفورمر مولد",
+      "english": "Automated article and news summarization system with generative Transformer models"
+    },
+    {
+      "id": "pair_110",
+      "category": "machine_learning_ai",
+      "persian": "تشخیص نام موجودیت‌ها و استخراج اطلاعات کلیدی از متون اداری",
+      "english": "Named Entity Recognition and key information extraction from official documents"
+    },
+    {
+      "id": "pair_111",
+      "category": "machine_learning_ai",
+      "persian": "اندازه‌گیری شباهت معنایی میان جملات با استفاده از فاصله کسینوسی امبدینگ‌ها",
+      "english": "Semantic sentence similarity measurement using cosine distance of embeddings"
+    },
+    {
+      "id": "pair_112",
+      "category": "machine_learning_ai",
+      "persian": "خوشه‌بندی بدون نظارت داده‌های متنی با الگوریتم اچ‌دی‌بی‌اسکن و یوماپ",
+      "english": "Unsupervised text clustering with HDBSCAN algorithm and UMAP dimensionality reduction"
+    },
+    {
+      "id": "pair_113",
+      "category": "machine_learning_ai",
+      "persian": "سیستم ترجمه ماشینی عصبی برای متون تخصصی با مدل ماریان ان‌ام‌تی",
+      "english": "Neural machine translation system for technical texts using MarianNMT model"
+    },
+    {
+      "id": "pair_114",
+      "category": "machine_learning_ai",
+      "persian": "مدل بینایی ماشین برای تشخیص اشیا و بخش‌بندی تصویر با یولو نسخه ۸",
+      "english": "Computer vision model for object detection and image segmentation with YOLOv8"
+    },
+    {
+      "id": "pair_115",
+      "category": "machine_learning_ai",
+      "persian": "سرویس تبدیل گفتار به متن بلادرنگ با مدل استریمینگ کانفرمِر",
+      "english": "Real-time speech-to-text transcription service with streaming Conformer model"
+    },
+    {
+      "id": "pair_116",
+      "category": "machine_learning_ai",
+      "persian": "مدل تشخیص احساسات و تحلیل نظر کاربران درباره محصولات در شبکه‌های اجتماعی",
+      "english": "Sentiment analysis model evaluating user opinions on social media products"
+    },
+    {
+      "id": "pair_117",
+      "category": "machine_learning_ai",
+      "persian": "فیلتر کردن محتوای نامناسب و تشخیص خودکار اسپم با ترکیب سی‌ان‌ان و ال‌اس‌تی‌ام",
+      "english": "Toxic content moderation and spam filtering combining CNN and LSTM networks"
+    },
+    {
+      "id": "pair_118",
+      "category": "machine_learning_ai",
+      "persian": "تولید توصیه‌گر هوشمند بر اساس فیلترینگ مشارکتی و فاکتورگیری ماتریسی",
+      "english": "Smart recommender system based on collaborative filtering and matrix factorization"
+    },
+    {
+      "id": "pair_119",
+      "category": "machine_learning_ai",
+      "persian": "ارزیابی کیفیت امبدینگ‌ها در بنچمارک استاندارد امتِب برای زبان‌های مختلف",
+      "english": "Embedding quality evaluation on the standard MTEB benchmark for diverse languages"
+    },
+    {
+      "id": "pair_120",
+      "category": "machine_learning_ai",
+      "persian": "سرویس سرویس‌دهی مدل‌های هوش مصنوعی با قابلیت مقیاس‌پذیری و بچینگ پویا",
+      "english": "AI model serving infrastructure with horizontal scalability and dynamic batching"
+    },
+    {
+      "id": "pair_121",
+      "category": "cybersecurity_networking",
+      "persian": "احراز هویت دو مرحله‌ای با استاندارد تی‌او‌تی‌پی و اپلیکیشن گوگل اتنتیکیتور",
+      "english": "Two-factor authentication with TOTP standard and Google Authenticator app"
+    },
+    {
+      "id": "pair_122",
+      "category": "cybersecurity_networking",
+      "persian": "سیستم تشخیص نفوذ و بررسی بلادرنگ پکت‌های شبکه با اسنورت",
+      "english": "Intrusion detection system and real-time network packet inspection with Snort"
+    },
+    {
+      "id": "pair_123",
+      "category": "cybersecurity_networking",
+      "persian": "تست نفوذپذیری وب‌سایت‌ها و کشف آسیب‌پذیری‌های تزریق اس‌کیو‌ال و اکس‌اس‌اس",
+      "english": "Web application penetration testing discovering SQL injection and XSS flaws"
+    },
+    {
+      "id": "pair_124",
+      "category": "cybersecurity_networking",
+      "persian": "رمزنگاری سراسری پیام‌ها با الگوریتم سیگنال و تبادل کلید دیفی-هلمن",
+      "english": "End-to-end message encryption using Signal protocol and Diffie-Hellman key exchange"
+    },
+    {
+      "id": "pair_125",
+      "category": "cybersecurity_networking",
+      "persian": "اسکنر خودکار پورت‌های باز سرور و بررسی آسیب‌پذیری‌های امنیتی سرویس‌ها",
+      "english": "Automated open port scanner and service vulnerability assessment utility"
+    },
+    {
+      "id": "pair_126",
+      "category": "cybersecurity_networking",
+      "persian": "کنترل دسترسی مبتنی بر توکن‌های پی‌آستو با امضای دیجیتال اد۲۵۵۱۹",
+      "english": "Token-based access control with PASETO and Ed25519 digital signatures"
+    },
+    {
+      "id": "pair_127",
+      "category": "cybersecurity_networking",
+      "persian": "سیستم مدیریت نشست‌های کاربری با سشن کوکی‌های امن اچ‌تی‌تی‌پی اونلی",
+      "english": "User session management with secure HttpOnly and SameSite cookie policies"
+    },
+    {
+      "id": "pair_128",
+      "category": "cybersecurity_networking",
+      "persian": "پروکسی معکوس ضد دی‌داس برای محافظت از سرور در برابر حملات سیل‌آسا",
+      "english": "Anti-DDoS reverse proxy mitigating flood attacks on web infrastructure"
+    },
+    {
+      "id": "pair_129",
+      "category": "cybersecurity_networking",
+      "persian": "رمزنگاری نامتقارن آر‌اس‌ای ۴۰۹۶ برای محافظت از اطلاعات محرمانه کاربران",
+      "english": "RSA 4096 asymmetric cryptography for protecting sensitive user data"
+    },
+    {
+      "id": "pair_130",
+      "category": "cybersecurity_networking",
+      "persian": "اسکریپت پایش مداوم فایل‌های سیستمی و هشدار تغییرات غیرمجاز با ایدز",
+      "english": "File integrity monitoring script alerting on unauthorized changes with AIDE"
+    },
+    {
+      "id": "pair_131",
+      "category": "cybersecurity_networking",
+      "persian": "پروتکل تانلینگ امن برای دور زدن فیلترینگ با مبهم‌سازی ترافیک تی‌ال‌اس",
+      "english": "Secure tunneling protocol bypassing network filters with TLS traffic obfuscation"
+    },
+    {
+      "id": "pair_132",
+      "category": "cybersecurity_networking",
+      "persian": "اعتبارسنجی سخت‌گیرانه ورودی‌های کاربر برای جلوگیری از اجرای کد دلخواه",
+      "english": "Strict user input sanitization preventing Remote Code Execution exploits"
+    },
+    {
+      "id": "pair_133",
+      "category": "cybersecurity_networking",
+      "persian": "سیستم هشینگ امن کلمات عبور با الگوریتم آرگون۲ و سالت تصادفی",
+      "english": "Secure password hashing system using Argon2id algorithm and random salt"
+    },
+    {
+      "id": "pair_134",
+      "category": "cybersecurity_networking",
+      "persian": "اسکنر خودکار باگ‌های امنیتی در وابستگی‌های پکیج‌ها با تریوی",
+      "english": "Automated vulnerability scanner for software dependencies using Trivy"
+    },
+    {
+      "id": "pair_135",
+      "category": "cybersecurity_networking",
+      "persian": "گواهی‌های دیجیتال خودکار با روت سی‌ای خصوصی برای شبکه‌های داخلی",
+      "english": "Automated digital certificate authority with private Root CA for intranet"
+    },
+    {
+      "id": "pair_136",
+      "category": "cybersecurity_networking",
+      "persian": "مانیتورینگ رخدادهای امنیتی سرور و ارسال لاگ‌ها به سیستم سیم",
+      "english": "Server security event monitoring and log shipping to SIEM platform"
+    },
+    {
+      "id": "pair_137",
+      "category": "cybersecurity_networking",
+      "persian": "جداسازی محیط اجرای کد نامطمئن با ساندباکس وب‌اسمبلی و واسم‌تایم",
+      "english": "Untrusted code execution isolation using WebAssembly sandbox and Wasmtime"
+    },
+    {
+      "id": "pair_138",
+      "category": "cybersecurity_networking",
+      "persian": "حفاظت از متغیرهای محیطی حساس و عدم نشت اطلاعات در لاگ‌های سیستمی",
+      "english": "Protection of sensitive environment variables and preventing leak in system logs"
+    },
+    {
+      "id": "pair_139",
+      "category": "cybersecurity_networking",
+      "persian": "پیاده‌سازی امن ارتباطات وب‌سوکت با پروتکل دابلیو‌اس‌اس و کنترل منشا",
+      "english": "Secure WebSocket communication implementation with WSS protocol and Origin check"
+    },
+    {
+      "id": "pair_140",
+      "category": "cybersecurity_networking",
+      "persian": "سیاست‌های امنیتی محتوا در مرورگر برای مسدودسازی اسکریپت‌های مخرب",
+      "english": "Content Security Policy headers in browser blocking malicious cross-site scripts"
+    },
+    {
+      "id": "pair_141",
+      "category": "mobile_dev",
+      "persian": "اپلیکیشن فلاتر چندسکویی با رابط کاربری روان و پشتیبانی از دو زبان",
+      "english": "Cross-platform Flutter application with smooth UI and bilingual support"
+    },
+    {
+      "id": "pair_142",
+      "category": "mobile_dev",
+      "persian": "معماری بلوک در فلاتر برای مدیریت جریان داده‌ها و جداسازی منطق بیزینس",
+      "english": "BLoC architecture in Flutter for reactive data flow and business logic separation"
+    },
+    {
+      "id": "pair_143",
+      "category": "mobile_dev",
+      "persian": "برنامه ری‌اکت نیتیو با اتصال به ماژول‌های بومی اندروید و آی‌او‌اس",
+      "english": "React Native application bridging native Android and iOS platform modules"
+    },
+    {
+      "id": "pair_144",
+      "category": "mobile_dev",
+      "persian": "رابط کاربری مدرن اندروید با جت‌پک کامپوز و کاتلین کوروتینز",
+      "english": "Modern Android user interface built with Jetpack Compose and Kotlin Coroutines"
+    },
+    {
+      "id": "pair_145",
+      "category": "mobile_dev",
+      "persian": "اپلیکیشن بومی آی‌او‌اس با سوئیفت یو‌آی و ناوبری متحرک روان",
+      "english": "Native iOS application using SwiftUI with smooth animated transitions"
+    },
+    {
+      "id": "pair_146",
+      "category": "mobile_dev",
+      "persian": "سیستم کش محلی با هایو در فلاتر برای کارکرد کامل اپ در حالت آفلاین",
+      "english": "Local caching system using Hive in Flutter for complete offline functionality"
+    },
+    {
+      "id": "pair_147",
+      "category": "mobile_dev",
+      "persian": "دریافت نوتیفیکیشن‌های فشاری فایربیس و مدیریت پیام‌ها در پس‌زمینه موبایل",
+      "english": "Firebase Cloud Messaging push notifications and background message handling on mobile"
+    },
+    {
+      "id": "pair_148",
+      "category": "mobile_dev",
+      "persian": "اسکنر بارکد و کیو‌آرکد سریع با استفاده از دوربین گوشی در موبایل",
+      "english": "High-speed QR code and barcode scanner using smartphone camera hardware"
+    },
+    {
+      "id": "pair_149",
+      "category": "mobile_dev",
+      "persian": "یکپارچه‌سازی نقشه تعاملی و مسیریابی بلادرنگ بر پایه مکان‌یابی جی‌پی‌اس",
+      "english": "Interactive map integration and real-time GPS turn-by-turn navigation"
+    },
+    {
+      "id": "pair_150",
+      "category": "mobile_dev",
+      "persian": "پخش‌کننده پادکست و فایل صوتی در پس‌زمینه با کنترل‌های نوتیفیکیشن موبایل",
+      "english": "Background audio and podcast player with mobile system media controls"
+    },
+    {
+      "id": "pair_151",
+      "category": "mobile_dev",
+      "persian": "احراز هویت بیومتریک با اثر انگشت و تشخیص چهره در اپلیکیشن موبایل",
+      "english": "Biometric authentication using fingerprint and Face ID in mobile apps"
+    },
+    {
+      "id": "pair_152",
+      "category": "mobile_dev",
+      "persian": "همگام‌سازی بلادرنگ داده‌های کاربر بین چندین دستگاه با وب‌سوکت",
+      "english": "Real-time user state synchronization across multiple devices via WebSockets"
+    },
+    {
+      "id": "pair_153",
+      "category": "mobile_dev",
+      "persian": "ویرایشگر ساده تصویر با امکان برش و اعمال فیلترهای رنگی در موبایل",
+      "english": "Mobile photo editor featuring image cropping and color filter adjustments"
+    },
+    {
+      "id": "pair_154",
+      "category": "mobile_dev",
+      "persian": "انیمیشن‌های برداری روان در فلاتر با استفاده از فرمت ریوت و لوتی",
+      "english": "Smooth vector animations in Flutter using Rive and Lottie runtime formats"
+    },
+    {
+      "id": "pair_155",
+      "category": "mobile_dev",
+      "persian": "ماژول پرداخت درون‌برنامه‌ای برای ارتقای حساب به نسخه ویژه",
+      "english": "In-app purchase module for upgrading to premium membership tier"
+    },
+    {
+      "id": "pair_156",
+      "category": "mobile_dev",
+      "persian": "تست‌های ویجت و رابط کاربری خودکار در فلاتر برای جلوگیری از باگ‌ها",
+      "english": "Automated Flutter widget and integration testing ensuring UI stability"
+    },
+    {
+      "id": "pair_157",
+      "category": "mobile_dev",
+      "persian": "ذخیره‌سازی امن توکن‌های احراز هویت در کی‌چین آی‌او‌اس و انکریپتد شرد پرفرنسز",
+      "english": "Secure auth token storage in iOS Keychain and EncryptedSharedPreferences on Android"
+    },
+    {
+      "id": "pair_158",
+      "category": "mobile_dev",
+      "persian": "دیپ‌لینک اختصاصی برای باز کردن صفحات داخلی اپ از طریق لینک‌های وب",
+      "english": "Custom deep linking for opening in-app screens directly from web URLs"
+    },
+    {
+      "id": "pair_159",
+      "category": "mobile_dev",
+      "persian": "پشتیبانی خودکار از راست‌به‌چپ در زبان فارسی و چپ‌به‌راست در انگلیسی",
+      "english": "Automatic Right-to-Left layout support for Persian and Left-to-Right for English"
+    },
+    {
+      "id": "pair_160",
+      "category": "mobile_dev",
+      "persian": "پایش کرش‌ها و گزارش خطاهای ران‌تایم اپ با استفاده از فایربیس کرش‌لیتیکس",
+      "english": "App crash monitoring and runtime error reporting via Firebase Crashlytics"
+    },
+    {
+      "id": "pair_161",
+      "category": "fintech_crypto",
+      "persian": "صرافی غیرمتمرکز ارزهای دیجیتال بر پایه قراردادهای هوشمند سالیدیتی",
+      "english": "Decentralized cryptocurrency exchange powered by Solidity smart contracts"
+    },
+    {
+      "id": "pair_162",
+      "category": "fintech_crypto",
+      "persian": "موتور مچینگ سفارشات خرید و فروش با تاخیر بسیار کم در بازار مالی",
+      "english": "Ultra-low-latency order matching engine for financial trading markets"
+    },
+    {
+      "id": "pair_163",
+      "category": "fintech_crypto",
+      "persian": "بات آربیتراژ خودکار قیمت رمزارزها در صرافی‌های مختلف با وب‌سوکت",
+      "english": "Automated cryptocurrency arbitrage trading bot tracking exchange price spreads"
+    },
+    {
+      "id": "pair_164",
+      "category": "fintech_crypto",
+      "persian": "کیف پول رمزارز چندامضایی با پروتکل محاسبات چندطرفه امن",
+      "english": "Multi-signature cryptocurrency wallet with secure Multi-Party Computation protocol"
+    },
+    {
+      "id": "pair_165",
+      "category": "fintech_crypto",
+      "persian": "درگاه پرداخت ارز دیجیتال برای تسویه‌حساب خودکار سفارشات فروشگاه اینترنتی",
+      "english": "Crypto payment gateway for automated merchant e-commerce order settlements"
+    },
+    {
+      "id": "pair_166",
+      "category": "fintech_crypto",
+      "persian": "تحلیل تکنیکال بازارهای مالی و محاسبه شاخص‌های آر‌اس‌آی و مکدی",
+      "english": "Financial market technical analysis and RSI and MACD indicator calculations"
+    },
+    {
+      "id": "pair_167",
+      "category": "fintech_crypto",
+      "persian": "سرویس تجمیع و پایش قیمت لحظه‌ای تتر و بیت‌کوین از صرافی‌های معتبر",
+      "english": "Real-time Bitcoin and USDT price aggregator from major global exchanges"
+    },
+    {
+      "id": "pair_168",
+      "category": "fintech_crypto",
+      "persian": "قرارداد هوشمند استیکینگ و توزیع سود سالانه به هولدرهای توکن",
+      "english": "Staking smart contract and annual yield reward distribution for token holders"
+    },
+    {
+      "id": "pair_169",
+      "category": "fintech_crypto",
+      "persian": "سیستم تشخیص تراکنش‌های مشکوک و پولشویی با الگوریتم‌های یادگیری ماشین",
+      "english": "Anti-Money Laundering and suspicious transaction detection using ML algorithms"
+    },
+    {
+      "id": "pair_170",
+      "category": "fintech_crypto",
+      "persian": "اتصال به بلاکچین سولانا با کتابخانه‌های پرسرعت راست برای ارسال تراکنش",
+      "english": "Solana blockchain integration with high-speed Rust RPC libraries for transfers"
+    },
+    {
+      "id": "pair_171",
+      "category": "fintech_crypto",
+      "persian": "تولید آدرس‌های کیف پول بیت‌کوین مبتنی بر استاندارد بی‌دی‌کی و سگویت",
+      "english": "Bitcoin wallet address generation based on BDK library and Native SegWit"
+    },
+    {
+      "id": "pair_172",
+      "category": "fintech_crypto",
+      "persian": "سرویس احراز هویت مشتریان و استعلام کدملی در سیستم‌های مالی بانکی",
+      "english": "Customer KYC identity verification and national ID validation in banking services"
+    },
+    {
+      "id": "pair_173",
+      "category": "fintech_crypto",
+      "persian": "بات معاملاتی فیوچرز با قابلیت مدیریت ریسک و حد ضرر خودکار",
+      "english": "Futures trading bot featuring automated risk management and stop-loss execution"
+    },
+    {
+      "id": "pair_174",
+      "category": "fintech_crypto",
+      "persian": "تولید فاکتور الکترونیکی استاندارد و محاسبه مالیات بر ارزش افزوده",
+      "english": "Standard electronic invoicing and automated value-added tax computation"
+    },
+    {
+      "id": "pair_175",
+      "category": "fintech_crypto",
+      "persian": "پروتکل پل میان‌زنجیره‌ای برای انتقال توکن‌ها بین اتریوم و بی‌ان‌بی چین",
+      "english": "Cross-chain bridge protocol for token transfers between Ethereum and BNB Chain"
+    },
+    {
+      "id": "pair_176",
+      "category": "fintech_crypto",
+      "persian": "دفترکل توزیع‌شده با قابلیت تایید صحت تراکنش‌ها با درخت مرکل",
+      "english": "Distributed ledger verifying transaction integrity using Merkle tree proofs"
+    },
+    {
+      "id": "pair_177",
+      "category": "fintech_crypto",
+      "persian": "سرویس ارسال صورت‌حساب بانکی و گزارش سود و زیان دوره‌ای به مشتریان",
+      "english": "Automated bank statement generation and periodic profit-loss reports for clients"
+    },
+    {
+      "id": "pair_178",
+      "category": "fintech_crypto",
+      "persian": "سیستم اعتبارسنجی کارت‌های بانکی و اتصال به سوییچ شتاب در ایران",
+      "english": "Bank card validation system and connectivity to national payment switch in Iran"
+    },
+    {
+      "id": "pair_179",
+      "category": "fintech_crypto",
+      "persian": "اوراکل قیمت بلادرنگ برای قراردادهای دیفای با اعتبارسنجی چندمنبعی",
+      "english": "Real-time price oracle for DeFi contracts with multi-source cryptographic validation"
+    },
+    {
+      "id": "pair_180",
+      "category": "fintech_crypto",
+      "persian": "محاسبه کارمزد شبکه و بهینه‌سازی گس در تراکنش‌های بلاکچینی",
+      "english": "Blockchain gas fee estimation and transaction cost optimization algorithm"
+    },
+    {
+      "id": "pair_181",
+      "category": "ecommerce_payments",
+      "persian": "سبد خرید اینترنتی با قابلیت محاسبه خودکار تخفیف و هزینه ارسال",
+      "english": "E-commerce shopping cart with automated discount calculation and shipping cost"
+    },
+    {
+      "id": "pair_182",
+      "category": "ecommerce_payments",
+      "persian": "درگاه پرداخت اینترنتی شاپرک با تایید دو مرحله‌ای تراکنش‌ها",
+      "english": "Shaparak online payment gateway with two-phase transaction verification"
+    },
+    {
+      "id": "pair_183",
+      "category": "ecommerce_payments",
+      "persian": "مدیریت موجودی انبار کالاها با قفل خوش‌بینانه برای جلوگیری از فروش همزمان",
+      "english": "Inventory stock management with optimistic locking to prevent overselling"
+    },
+    {
+      "id": "pair_184",
+      "category": "ecommerce_payments",
+      "persian": "سیستم ثبت دیدگاه و امتیازدهی کاربران به محصولات با فیلتر هرزنامه",
+      "english": "Product review and star rating system with automated spam moderation"
+    },
+    {
+      "id": "pair_185",
+      "category": "ecommerce_payments",
+      "persian": "کوپن تخفیف با شرایط اختصاصی حداقل خرید و محدودیت تعداد استفاده",
+      "english": "Discount coupon system with minimum purchase rules and usage limits"
+    },
+    {
+      "id": "pair_186",
+      "category": "ecommerce_payments",
+      "persian": "سیستم پیگیری وضعیت سفارش و ارسال پیامک وضعیت مرسوله پستی",
+      "english": "Order tracking system sending automated SMS updates on postal parcel delivery"
+    },
+    {
+      "id": "pair_187",
+      "category": "ecommerce_payments",
+      "persian": "فیلتر پیشرفته محصولات بر اساس دسته‌بندی، برند، رنگ و محدوده قیمت",
+      "english": "Advanced product filtering based on category, brand, color, and price range"
+    },
+    {
+      "id": "pair_188",
+      "category": "ecommerce_payments",
+      "persian": "محاسبه خودکار هزینه ارسال پست پیشتاز و تیپاکس بر اساس وزن بسته",
+      "english": "Automated parcel shipping cost calculation based on weight and destination"
+    },
+    {
+      "id": "pair_189",
+      "category": "ecommerce_payments",
+      "persian": "سیستم بازگشت وجه به کیف پول کاربر در صورت لغو سفارش خرید",
+      "english": "Automated wallet refund mechanism upon customer order cancellation"
+    },
+    {
+      "id": "pair_190",
+      "category": "ecommerce_payments",
+      "persian": "گزارش‌گیری فروش روزانه و نمودار درآمدهای ماهانه فروشگاه اینترنتی",
+      "english": "Daily sales reporting and monthly revenue trend charts for online store"
+    },
+    {
+      "id": "pair_191",
+      "category": "ecommerce_payments",
+      "persian": "سیستم پیش‌خرید کالا و ثبت‌نام در لیست انتظار موجود شدن محصول",
+      "english": "Product pre-order system and waiting list registration for out-of-stock items"
+    },
+    {
+      "id": "pair_192",
+      "category": "ecommerce_payments",
+      "persian": "باشگاه مشتریان و سیستم امتیازدهی وفاداری به ازای هر خرید موفق",
+      "english": "Customer loyalty club rewarding bonus points for every completed purchase"
+    },
+    {
+      "id": "pair_193",
+      "category": "ecommerce_payments",
+      "persian": "فروشگاه ساز چندفروشندگی با پنل اختصاصی مدیریت سفارشات برای فروشندگان",
+      "english": "Multi-vendor marketplace platform with dedicated merchant order management panel"
+    },
+    {
+      "id": "pair_194",
+      "category": "ecommerce_payments",
+      "persian": "پیشنهاد کالاهای مرتبط و پرفروش بر اساس سابقه بازدید کاربران",
+      "english": "Related product recommendations and best-sellers based on customer browsing history"
+    },
+    {
+      "id": "pair_195",
+      "category": "ecommerce_payments",
+      "persian": "سیستم صدور فاکتور رسمی همراه با کد رهگیری مالیاتی",
+      "english": "Official invoice generation compliant with national tax tracking authority"
+    },
+    {
+      "id": "pair_196",
+      "category": "ecommerce_payments",
+      "persian": "جستجوی سریع محصولات با قابلیت غلط‌یابی املایی و تکمیل خودکار",
+      "english": "Fast product search with spell-checking and auto-complete suggestions"
+    },
+    {
+      "id": "pair_197",
+      "category": "ecommerce_payments",
+      "persian": "مدیریت تنوع کالا شامل سایزها و رنگ‌های مختلف برای هر محصول",
+      "english": "Product variant management handling multiple sizes and colors per item"
+    },
+    {
+      "id": "pair_198",
+      "category": "ecommerce_payments",
+      "persian": "سیستم نوبت‌دهی تحویل حضوری کالا برای خریدهای درون‌شهری",
+      "english": "In-store pickup scheduling system for local metropolitan deliveries"
+    },
+    {
+      "id": "pair_199",
+      "category": "ecommerce_payments",
+      "persian": "همگام‌سازی خودکار موجودی انبار فروشگاه با نرم‌افزارهای حسابداری",
+      "english": "Automated store inventory synchronization with enterprise ERP software"
+    },
+    {
+      "id": "pair_200",
+      "category": "ecommerce_payments",
+      "persian": "ماژول مقایسه مشخصات فنی چند کالا در یک جدول جامع",
+      "english": "Technical specifications comparison module evaluating multiple items side-by-side"
+    },
+    {
+      "id": "pair_201",
+      "category": "embedded_systems",
+      "persian": "درایور ارتباط سریال آی‌تو‌سی و اس‌پی‌آی در زبان برنامه‌نویسی راست",
+      "english": "I2C and SPI serial communication protocol drivers written in Rust"
+    },
+    {
+      "id": "pair_202",
+      "category": "embedded_systems",
+      "persian": "کنترلر موتور براشلس با مدولاسیون پهنای پالس روی میکروکنترلر اس‌تی‌ام۳۲",
+      "english": "Brushless DC motor controller using PWM modulation on STM32 microcontroller"
+    },
+    {
+      "id": "pair_203",
+      "category": "embedded_systems",
+      "persian": "سیستم‌عامل بلادرنگ سبک برای سیستم‌های نهفته با منابع محدود سخت‌افزاری",
+      "english": "Lightweight real-time operating system for resource-constrained embedded systems"
+    },
+    {
+      "id": "pair_204",
+      "category": "embedded_systems",
+      "persian": "خواندن مقادیر سنسور دما و رطوبت و ارسال از طریق پروتکل ام‌کیو‌تی‌تی",
+      "english": "Reading temperature and humidity sensor telemetry and transmitting via MQTT"
+    },
+    {
+      "id": "pair_205",
+      "category": "embedded_systems",
+      "persian": "فریم‌ورک اینترنت اشیا بر پایه برد ای‌اس‌پی۳۲ با اتصال پایدار وای‌فای",
+      "english": "Internet of Things firmware based on ESP32 microcontroller with Wi-Fi"
+    },
+    {
+      "id": "pair_206",
+      "category": "embedded_systems",
+      "persian": "پروتکل اختصاصی ارتباط رادیویی برد بلند برای سامانه‌های تله‌متری کشاورزی",
+      "english": "Long-range proprietary RF communication protocol for agricultural telemetry"
+    },
+    {
+      "id": "pair_207",
+      "category": "embedded_systems",
+      "persian": "بهینه‌سازی مصرف باتری و حالت خواب عمیق میکروکنترلر در سنسورهای بی‌سیم",
+      "english": "Low-power deep sleep optimization for wireless battery-powered IoT nodes"
+    },
+    {
+      "id": "pair_208",
+      "category": "embedded_systems",
+      "persian": "لودر بوت امن برای بروزرسانی نرم‌افزار سخت‌افزار از راه دور از طریق هوا",
+      "english": "Secure bootloader for Over-The-Air firmware updates on embedded devices"
+    },
+    {
+      "id": "pair_209",
+      "category": "embedded_systems",
+      "persian": "ماژول زمان‌سنج دقیق سخت‌افزاری با وقفه‌های وقفه مستقیم حافظه",
+      "english": "Hardware timer module utilizing Direct Memory Access interrupt routines"
+    },
+    {
+      "id": "pair_210",
+      "category": "embedded_systems",
+      "persian": "درایور نمایشگر اولد با کتابخانه امبدد گرافیکس در زبان راست",
+      "english": "OLED display driver leveraging embedded-graphics library in pure Rust"
+    },
+    {
+      "id": "pair_211",
+      "category": "embedded_systems",
+      "persian": "سیستم ردیابی مکانی خودرو با ماژول جی‌پی‌اس و ذخیره‌سازی روی مموری کارت",
+      "english": "Vehicle GPS tracking unit logging coordinates to local micro-SD storage"
+    },
+    {
+      "id": "pair_212",
+      "category": "embedded_systems",
+      "persian": "رمزنگاری داده‌های سنسوری با الگوریتم سبک چاچا۲۰ برای پردازنده‌های کم‌مصرف",
+      "english": "Sensor payload encryption using lightweight ChaCha20 cipher for low-power chips"
+    },
+    {
+      "id": "pair_213",
+      "category": "embedded_systems",
+      "persian": "کنترل خودکار پمپ آب هوشمند بر اساس میزان رطوبت خاک گلدان",
+      "english": "Smart automated irrigation pump control based on soil moisture thresholds"
+    },
+    {
+      "id": "pair_214",
+      "category": "embedded_systems",
+      "persian": "فیلتر کالمن برای ترکیب داده‌های ژیروسکوپ و شتاب‌سنج در پهپادها",
+      "english": "Kalman filter fusing gyroscope and accelerometer sensor data for drones"
+    },
+    {
+      "id": "pair_215",
+      "category": "embedded_systems",
+      "persian": "سیستم تشخیص قطع برق و ذخیره وضعیت آخرین متغیرها در حافظه ای‌پرام",
+      "english": "Power failure detection circuit saving critical system state to EEPROM"
+    },
+    {
+      "id": "pair_216",
+      "category": "embedded_systems",
+      "persian": "پروتکل ارتباطی کن‌باس برای انتقال داده‌ها در شبکه‌های خودرویی",
+      "english": "CAN bus communication interface for automotive electronic control units"
+    },
+    {
+      "id": "pair_217",
+      "category": "embedded_systems",
+      "persian": "درایور ال‌ای‌دی آدرس‌پذیر نئوپیکسل با زمان‌بندی دقیق در سطح اسمبلی",
+      "english": "Addressable NeoPixel LED driver with microsecond-precision assembly timing"
+    },
+    {
+      "id": "pair_218",
+      "category": "embedded_systems",
+      "persian": "ماژول بلوتوث کم‌مصرف برای ارتباط بی‌سیم با گوشی موبایل",
+      "english": "Bluetooth Low Energy peripheral module for wireless smartphone pairing"
+    },
+    {
+      "id": "pair_219",
+      "category": "embedded_systems",
+      "persian": "اسیلوسکوپ دیجیتال ساده با تبدیل سریع فوریه روی میکروکنترلر آرم",
+      "english": "Digital oscilloscope firmware with Fast Fourier Transform on ARM Cortex-M"
+    },
+    {
+      "id": "pair_220",
+      "category": "embedded_systems",
+      "persian": "سیستم بازدارنده ناظر بر عملکرد سیستم و ریست خودکار در صورت هنگ کردن",
+      "english": "Hardware Watchdog timer system preventing software lockups and auto-rebooting"
+    },
+    {
+      "id": "pair_221",
+      "category": "search_information_retrieval",
+      "persian": "موتور جستجوی برداری ترکیبی با تلفیق بیست‌وپنج و امبدینگ‌های عصبی",
+      "english": "Hybrid vector search engine combining BM25 keyword scoring and neural embeddings"
+    },
+    {
+      "id": "pair_222",
+      "category": "search_information_retrieval",
+      "persian": "سیستم بازرتبه‌بندی نتایج جستجو بر اساس زمینه معنایی کاربر",
+      "english": "Search result re-ranking system based on user contextual relevance"
+    },
+    {
+      "id": "pair_223",
+      "category": "search_information_retrieval",
+      "persian": "فهرست‌بندی اسناد با ایندکس معکوس و تحلیل زبان‌شناختی کلمات در زبان فارسی",
+      "english": "Document indexing with inverted indexes and Persian morphological token analysis"
+    },
+    {
+      "id": "pair_224",
+      "category": "search_information_retrieval",
+      "persian": "الگوریتم جستجوی فازی برای تصحیح خطاهای تایپی در کوئری‌های جستجو",
+      "english": "Fuzzy search algorithm correcting typographical mistakes in user search queries"
+    },
+    {
+      "id": "pair_225",
+      "category": "search_information_retrieval",
+      "persian": "استخراج کلمات کلیدی و عبارات مهم از متون طولانی با الگوریتم‌های گراف",
+      "english": "Keyphrase and topic extraction from lengthy documents using graph algorithms"
+    },
+    {
+      "id": "pair_226",
+      "category": "search_information_retrieval",
+      "persian": "جستجوی چندوجهی برای تطبیق متن با تصاویر با استفاده از امبدینگ‌های کلیپ",
+      "english": "Multimodal search matching natural language queries to images with CLIP embeddings"
+    },
+    {
+      "id": "pair_227",
+      "category": "search_information_retrieval",
+      "persian": "سیستم پیشنهادات هوشمند حین تایپ کوئری با ساختار داده ترای",
+      "english": "Autocomplete and query suggestion engine built upon Trie data structures"
+    },
+    {
+      "id": "pair_228",
+      "category": "search_information_retrieval",
+      "persian": "ارزیابی کیفیت نتایج موتور جستجو با شاخص ان‌دی‌سی‌جی و دقت رتبه‌بندی",
+      "english": "Search engine result quality evaluation using NDCG and Mean Average Precision"
+    },
+    {
+      "id": "pair_229",
+      "category": "search_information_retrieval",
+      "persian": "بخش‌بندی معنایی متن به تکه‌های مناسب برای پردازش در مدل‌های زبانی",
+      "english": "Semantic document chunking splitting texts into optimal context windows for LLMs"
+    },
+    {
+      "id": "pair_230",
+      "category": "search_information_retrieval",
+      "persian": "جستجوی اسناد بر اساس فیلترهای سلسله‌مراتبی و متادیتای برچسب‌گذاری‌شده",
+      "english": "Faceted document search filtering on hierarchical categories and tagged metadata"
+    },
+    {
+      "id": "pair_231",
+      "category": "search_information_retrieval",
+      "persian": "سیستم پرسش و پاسخ روی پایگاه دانش اسناد سازمانی با هوش مصنوعی",
+      "english": "Enterprise document Question & Answering system querying knowledge bases"
+    },
+    {
+      "id": "pair_232",
+      "category": "search_information_retrieval",
+      "persian": "فیلتر کردن اسناد تکراری بر پایه امبدینگ‌های هشینگ حساس به مکان",
+      "english": "Near-duplicate document detection using Locality Sensitive Hashing embeddings"
+    },
+    {
+      "id": "pair_233",
+      "category": "search_information_retrieval",
+      "persian": "اندازه‌گیری فاصله شباهت میان اسناد با استفاده از متریک وازرشتاین",
+      "english": "Document distance measurement using Word Mover's Distance semantic metric"
+    },
+    {
+      "id": "pair_234",
+      "category": "search_information_retrieval",
+      "persian": "سیستم جستجوی کدهای برنامه‌نویسی بر اساس توصیف عملکرد متدها",
+      "english": "Semantic code search finding implementation functions from natural descriptions"
+    },
+    {
+      "id": "pair_235",
+      "category": "search_information_retrieval",
+      "persian": "موتور جستجوی جغرافیایی برای یافتن نزدیک‌ترین اماکن اطراف کاربر",
+      "english": "Geospatial search engine discovering nearest points of interest around user"
+    },
+    {
+      "id": "pair_236",
+      "category": "search_information_retrieval",
+      "persian": "جستجوی معنایی مقالات علمی بر اساس چکیده و مراجع مقالات",
+      "english": "Academic paper semantic search matching abstracts and citation networks"
+    },
+    {
+      "id": "pair_237",
+      "category": "search_information_retrieval",
+      "persian": "فهرست‌بندی متون با استفاده از جدول کلمات کلیدی هم‌رویداد",
+      "english": "Text indexing utilizing co-occurrence term matrices and semantic graphs"
+    },
+    {
+      "id": "pair_238",
+      "category": "search_information_retrieval",
+      "persian": "سیستم فیلترینگ نتایج جستجو بر اساس سطح دسترسی و مجوزهای کاربر",
+      "english": "Search results security trimming enforcing user access control permissions"
+    },
+    {
+      "id": "pair_239",
+      "category": "search_information_retrieval",
+      "persian": "تحلیل رفتار کلیک کاربران برای بهبود الگوریتم‌های رتبه‌بندی سرچ",
+      "english": "User click-through rate analysis optimizing search ranking ranking algorithms"
+    },
+    {
+      "id": "pair_240",
+      "category": "search_information_retrieval",
+      "persian": "جستجوی موازی و سریع در میلیاردها وکتور با کتابخانه فایس",
+      "english": "Ultra-fast parallel billion-scale vector similarity search with FAISS"
+    },
+    {
+      "id": "pair_241",
+      "category": "data_engineering_streaming",
+      "persian": "پایپ‌لاین بلادرنگ پردازش جریان داده‌ها با آپاچی کافکا و فیلینک",
+      "english": "Real-time streaming data pipeline using Apache Kafka and Apache Flink"
+    },
+    {
+      "id": "pair_242",
+      "category": "data_engineering_streaming",
+      "persian": "فرایند استخراج، تبدیل و بارگذاری داده‌های حجیم در انبار داده کلیک‌هاوس",
+      "english": "ETL pipeline extracting, transforming, and loading big data into ClickHouse warehouse"
+    },
+    {
+      "id": "pair_243",
+      "category": "data_engineering_streaming",
+      "persian": "مدیریت ورک‌فلوهای پردازش داده‌های سازمانی با زمان‌بندی ایرفلو",
+      "english": "Enterprise data pipeline orchestration and scheduling with Apache Airflow"
+    },
+    {
+      "id": "pair_244",
+      "category": "data_engineering_streaming",
+      "persian": "ذخیره‌سازی بهینه داده‌های تحلیلی در فرمت ستونی پارکت با الگوریتم اسنپی",
+      "english": "Analytical data storage in Snappy-compressed Parquet columnar format"
+    },
+    {
+      "id": "pair_245",
+      "category": "data_engineering_streaming",
+      "persian": "سیستم تشخیص الگوهای غیرعادی در جریان داده‌های اینترنت اشیا",
+      "english": "Real-time anomaly detection system processing continuous IoT telemetry streams"
+    },
+    {
+      "id": "pair_246",
+      "category": "data_engineering_streaming",
+      "persian": "یکپارچه‌سازی منابع داده‌ای ناهمگن و ایجاد دید جامع مشتری در سازمان",
+      "english": "Heterogeneous data source integration creating unified customer 360 view"
+    },
+    {
+      "id": "pair_247",
+      "category": "data_engineering_streaming",
+      "persian": "تبدیل فرمت فایل‌های گزارش روزانه از سی‌اس‌وی به دیتابیس تحلیلی",
+      "english": "Daily report file format conversion from CSV to analytical columnar store"
+    },
+    {
+      "id": "pair_248",
+      "category": "data_engineering_streaming",
+      "persian": "سیستم اعتبارسنجی کیفیت داده‌ها و جلوگیری از ورود رکوردهای ناقص با گریت اکسپکتیشنز",
+      "english": "Data quality testing framework preventing malformed records using Great Expectations"
+    },
+    {
+      "id": "pair_249",
+      "category": "data_engineering_streaming",
+      "persian": "مدیریت خطاهای جریان داده و ارسال رکوردهای معیوب به صف پیام‌های مرده",
+      "english": "Streaming error handling routing corrupted records to dead-letter queue"
+    },
+    {
+      "id": "pair_250",
+      "category": "data_engineering_streaming",
+      "persian": "پارتیشن‌بندی هوشمند داده‌های تاریخی برای افزایش سرعت واکشی گزارش‌ها",
+      "english": "Smart historical data partitioning boosting analytical query performance"
+    },
+    {
+      "id": "pair_251",
+      "category": "data_engineering_streaming",
+      "persian": "مانیتورینگ تاخیر پردازش پیام‌ها و لاگ‌های مصرف‌کنندگان کافکا",
+      "english": "Kafka consumer lag and message throughput performance monitoring system"
+    },
+    {
+      "id": "pair_252",
+      "category": "data_engineering_streaming",
+      "persian": "سیستم نمایه سازی مداوم داده‌های تغییریافته با موتور هایودی",
+      "english": "Incremental data indexing and upsert processing with Apache Hudi"
+    },
+    {
+      "id": "pair_253",
+      "category": "data_engineering_streaming",
+      "persian": "پایپ‌لاین خلاصه‌سازی آماری رخدادها در پنجره‌های زمانی شناور",
+      "english": "Statistical event aggregation pipeline operating on sliding temporal windows"
+    },
+    {
+      "id": "pair_254",
+      "category": "data_engineering_streaming",
+      "persian": "سرویس پاکسازی و نرمال‌سازی اسامی و آدرس‌های ثبت‌شده در فرم‌های وب",
+      "english": "Data cleansing and address normalization service processing raw user inputs"
+    },
+    {
+      "id": "pair_255",
+      "category": "data_engineering_streaming",
+      "persian": "دریافت وب‌هوک‌های لحظه‌ای و انتشار مستقیم به تاپیک‌های مرتبط در کافکا",
+      "english": "Real-time webhook ingestion broadcasting directly to relevant Kafka topics"
+    },
+    {
+      "id": "pair_256",
+      "category": "data_engineering_streaming",
+      "persian": "معماری ذخیره‌سازی دولایه‌ای ترکیب‌کننده داده‌های سرد و گرم ابری",
+      "english": "Tiered storage architecture combining hot real-time and cold archival cloud tiers"
+    },
+    {
+      "id": "pair_257",
+      "category": "data_engineering_streaming",
+      "persian": "مدیریت کاتالوگ داده‌ها و ردیابی زنجیره تغییرات داده با اوپن‌لاینج",
+      "english": "Data governance catalog and lineage tracking using OpenLineage standard"
+    },
+    {
+      "id": "pair_258",
+      "category": "data_engineering_streaming",
+      "persian": "پردازش موازی دسته‌ای تراکنش‌های مالی پایان روز با توابع سرورلس",
+      "english": "Parallel batch processing of end-of-day financial records using serverless functions"
+    },
+    {
+      "id": "pair_259",
+      "category": "data_engineering_streaming",
+      "persian": "محاسبه ماتریس همبستگی متغیرهای آماری بر روی میلیاردها رکورد",
+      "english": "Statistical correlation matrix computation across billions of observation records"
+    },
+    {
+      "id": "pair_260",
+      "category": "data_engineering_streaming",
+      "persian": "سیستم تبدیل داده‌های بدون ساختار متنی به جداول رابطه‌ای تمیز",
+      "english": "Unstructured text data parsing converting raw strings into clean relational tables"
+    },
+    {
+      "id": "pair_261",
+      "category": "gaming_graphics",
+      "persian": "موتور بازی سه‌بعدی سبک با زبان راست و کتابخانه گرافیکی وِبو‌جی‌پی‌یو",
+      "english": "Lightweight 3D game engine built with Rust and WebGPU graphics API"
+    },
+    {
+      "id": "pair_262",
+      "category": "gaming_graphics",
+      "persian": "شیدرهای اختصاصی نورپردازی واقع‌گرایانه و سایه‌زنی پرسرعت در آنریل انجین",
+      "english": "Custom physically-based lighting and real-time shadow shaders in Unreal Engine"
+    },
+    {
+      "id": "pair_263",
+      "category": "gaming_graphics",
+      "persian": "سیستم هوش مصنوعی رفتار دشمنان در بازی با درخت رفتار و مسیریابی ناومش",
+      "english": "Enemy behavior AI system using Behavior Trees and NavMesh pathfinding"
+    },
+    {
+      "id": "pair_264",
+      "category": "gaming_graphics",
+      "persian": "شبیه‌سازی فیزیک برخورد اجسام صلب و پارچه با موتور فیزیکی در یونیتی",
+      "english": "Rigid body collision and cloth dynamics simulation with physics engine in Unity"
+    },
+    {
+      "id": "pair_265",
+      "category": "gaming_graphics",
+      "persian": "سیستم ذرات بلادرنگ برای شبیه‌سازی آتش، دود و انفجار در بازی‌ها",
+      "english": "Real-time particle system simulating fire, smoke, and explosion visual effects"
+    },
+    {
+      "id": "pair_266",
+      "category": "gaming_graphics",
+      "persian": "بارگذاری پویای بافت‌ها و مدل‌های سه‌بعدی برای کاهش مصرف حافظه کارت گرافیک",
+      "english": "Dynamic texture and 3D mesh streaming to minimize VRAM footprint"
+    },
+    {
+      "id": "pair_267",
+      "category": "gaming_graphics",
+      "persian": "سیستم چندنفره آنلاین با پیش‌بینی وضعیت کلاینت و جبران تاخیر شبکه",
+      "english": "Online multiplayer game networking with client-side prediction and lag compensation"
+    },
+    {
+      "id": "pair_268",
+      "category": "gaming_graphics",
+      "persian": "الگوریتم تولید رویه‌ای محیط و دانجن‌های تصادفی در بازی‌های روگ‌لایک",
+      "english": "Procedural environment and random dungeon generation algorithm for roguelikes"
+    },
+    {
+      "id": "pair_269",
+      "category": "gaming_graphics",
+      "persian": "موتور رندرینگ فونت با محاسبه فیلد فاصله امضا شده برای کیفیت بالا در هر رزولوشن",
+      "english": "Signed Distance Field font rendering engine for crisp text at arbitrary zoom levels"
+    },
+    {
+      "id": "pair_270",
+      "category": "gaming_graphics",
+      "persian": "سیستم کنترل کاراکتر با انیمیشن‌های روان و تلفیق حالت‌های حرکتی",
+      "english": "Character locomotion controller with smooth blend trees and root motion"
+    },
+    {
+      "id": "pair_271",
+      "category": "gaming_graphics",
+      "persian": "پست‌پروسس بلوم و تصحیح رنگ سینمایی در صحنه‌های سه‌بعدی",
+      "english": "Cinematic bloom and color grading post-processing pipeline in 3D scenes"
+    },
+    {
+      "id": "pair_272",
+      "category": "gaming_graphics",
+      "persian": "مدیریت منابع صوتی سه‌بعدی و صدای فراگیر فضایی متناسب با موقعیت بازیکن",
+      "english": "3D spatial audio and reverberation system reflecting player environmental position"
+    },
+    {
+      "id": "pair_273",
+      "category": "gaming_graphics",
+      "persian": "سیستم ذخیره و بازیابی وضعیت بازی با سریالایزیشن فشرده باینری",
+      "english": "Game state save and load system using compact binary serialization"
+    },
+    {
+      "id": "pair_274",
+      "category": "gaming_graphics",
+      "persian": "رابط کاربری درون بازی تعاملی با قابلیت مقیاس‌پذیری در مانیتورهای مختلف",
+      "english": "Interactive in-game HUD interface scaling seamlessly across display aspect ratios"
+    },
+    {
+      "id": "pair_275",
+      "category": "gaming_graphics",
+      "persian": "سیستم کولینگ و حذف اشیای خارج از دید دوربین برای افزایش فریم‌ریت",
+      "english": "Frustum and occlusion culling system eliminating off-screen objects for high FPS"
+    },
+    {
+      "id": "pair_276",
+      "category": "gaming_graphics",
+      "persian": "اسکریپت کنترل چرخه شب و روز و تغییرات پویای آب و هوا در بازی",
+      "english": "Dynamic day-night cycle and weather simulation system for open-world games"
+    },
+    {
+      "id": "pair_277",
+      "category": "gaming_graphics",
+      "persian": "موتور انیمیشن اسکلتی دوبعدی با اسپیان برای شخصیت‌های متحرک",
+      "english": "2D skeletal animation runtime using Spine for articulated animated characters"
+    },
+    {
+      "id": "pair_278",
+      "category": "gaming_graphics",
+      "persian": "ابزار ادیتور درون بازی برای طراحی مراحل و چیدمان موانع توسط طراحان",
+      "english": "In-game level editor tool for stage designers placing interactive obstacles"
+    },
+    {
+      "id": "pair_279",
+      "category": "gaming_graphics",
+      "persian": "سیستم دیالوگ شاخه‌ای با امکان انتخاب گزینه‌های مختلف توسط بازیکن",
+      "english": "Branching dialogue system with player conversational choices impacting story flow"
+    },
+    {
+      "id": "pair_280",
+      "category": "gaming_graphics",
+      "persian": "مدیریت بهینه حافظه برای جلوگیری از وقفه جمع‌آوری زباله در موتور بازی",
+      "english": "Garbage collection stutter prevention through custom zero-allocation memory pools"
+    },
+    {
+      "id": "pair_281",
+      "category": "developer_tools_cli",
+      "persian": "ابزار خط فرمان فوق‌العاده سریع به زبان راست برای جستجوی الگوها در فایل‌ها",
+      "english": "Ultra-fast command-line tool written in Rust for pattern searching across files"
+    },
+    {
+      "id": "pair_282",
+      "category": "developer_tools_cli",
+      "persian": "مدیر پکیج اختصاصی با قابلیت دانلود موازی و بررسی چک‌سام‌های امنیتی",
+      "english": "Custom package manager with parallel downloading and cryptographic checksum checks"
+    },
+    {
+      "id": "pair_283",
+      "category": "developer_tools_cli",
+      "persian": "ویرایشگر متن ترمینال مبتنی بر ساختار داده طناب برای فایل‌های بسیار حجیم",
+      "english": "Terminal text editor based on Rope data structure handling massive text files"
+    },
+    {
+      "id": "pair_284",
+      "category": "developer_tools_cli",
+      "persian": "ابزار پروفایلینگ کدهای برنامه و اندازه‌گیری مصرف سی‌پی‌یو و مموری",
+      "english": "Code profiling utility measuring precise CPU execution cycles and memory allocations"
+    },
+    {
+      "id": "pair_285",
+      "category": "developer_tools_cli",
+      "persian": "فرمتر خودکار کدهای سورس با قابلیت اعمال قوانین استایل‌گاید سازمانی",
+      "english": "Automated source code formatter enforcing organizational style guide rules"
+    },
+    {
+      "id": "pair_286",
+      "category": "developer_tools_cli",
+      "persian": "ابزار دیباگ تعاملی با قابلیت ثبت لاگ‌های گام‌به‌گام در محیط کنسول",
+      "english": "Interactive console debugging utility with step-by-step state logging"
+    },
+    {
+      "id": "pair_287",
+      "category": "developer_tools_cli",
+      "persian": "برنامه تولید خودکار مستندات پروژه بر پایه کامنت‌های درون سورس کد",
+      "english": "Automated project documentation generator parsing in-code documentation comments"
+    },
+    {
+      "id": "pair_288",
+      "category": "developer_tools_cli",
+      "persian": "موتور تست عملکرد و بنچمارکینگ با محاسبه فواصل اطمینان آماری در راست",
+      "english": "Performance benchmarking harness calculating statistical confidence intervals in Rust"
+    },
+    {
+      "id": "pair_289",
+      "category": "developer_tools_cli",
+      "persian": "کلاینت خط فرمان گیت با رابط کاربری مبتنی بر ترمینال برای مشاهده کامیت‌ها",
+      "english": "Git command-line terminal UI client visualizing commit histories and diffs"
+    },
+    {
+      "id": "pair_290",
+      "category": "developer_tools_cli",
+      "persian": "اسکریپت تحلیل استاتیک کد و یافتن متغیرهای بدون استفاده و حافظه آزادنشده",
+      "english": "Static code analysis tool detecting unused variables and memory leaks"
+    },
+    {
+      "id": "pair_291",
+      "category": "developer_tools_cli",
+      "persian": "ابزار مقایسه دیداری دو فایل با برجسته‌سازی تغییرات کاراکتر به کاراکتر",
+      "english": "Visual side-by-side diff tool highlighting character-level modifications"
+    },
+    {
+      "id": "pair_292",
+      "category": "developer_tools_cli",
+      "persian": "شبیه‌ساز ترافیک شبکه برای تست فشار سرور با ارسال هزاران درخواست همزمان",
+      "english": "Network traffic simulator for load-testing servers with thousands of concurrent hits"
+    },
+    {
+      "id": "pair_293",
+      "category": "developer_tools_cli",
+      "persian": "مدیریت متغیرهای محیطی پروژه‌ها با فایل‌های دات‌انو و سوییچ سریع میان آنها",
+      "english": "Environment variable manager handling .env profiles with quick switching"
+    },
+    {
+      "id": "pair_294",
+      "category": "developer_tools_cli",
+      "persian": "ابزار تبدیل فرمت‌های داده‌ای جیسون، یمل و تامل به یکدیگر در ترمینال",
+      "english": "Terminal converter utility transforming data between JSON, YAML, and TOML formats"
+    },
+    {
+      "id": "pair_295",
+      "category": "developer_tools_cli",
+      "persian": "سیستم کش‌گذاری بیلد برای افزایش سرعت کامپایل در زبان‌های مختلف",
+      "english": "Build artifact caching daemon accelerating incremental compilation times"
+    },
+    {
+      "id": "pair_296",
+      "category": "developer_tools_cli",
+      "persian": "پروکسی مانیتورینگ درخواست‌های اچ‌تی‌تی‌پی خط فرمان برای دیباگ ای‌پی‌آی",
+      "english": "CLI HTTP traffic inspection proxy debugging REST API request-response pairs"
+    },
+    {
+      "id": "pair_297",
+      "category": "developer_tools_cli",
+      "persian": "ابزار تولید فایل لایسنس و افزودن خودکار هدر کپی‌رایت به تمامی فایل‌ها",
+      "english": "License file generator and automated copyright header injector for code repos"
+    },
+    {
+      "id": "pair_298",
+      "category": "developer_tools_cli",
+      "persian": "کلاینت سبک برای اتصال به سرورهای اس‌اس‌اچ و مدیریت شل از راه دور",
+      "english": "Lightweight client for connecting to SSH remote servers and shell management"
+    },
+    {
+      "id": "pair_299",
+      "category": "developer_tools_cli",
+      "persian": "ابزار محاسبه خطوط کد پروژه و دسته‌بندی بر اساس پسوند فایل‌ها و زبان‌ها",
+      "english": "Source lines of code counter categorizing files by language extension and volume"
+    },
+    {
+      "id": "pair_300",
+      "category": "developer_tools_cli",
+      "persian": "ابزار پایش زنده مصرف منابع سیستم شامل سی‌پی‌یو، رم و دمای سخت‌افزار",
+      "english": "Real-time system resource monitor tracking CPU, RAM, and hardware temperatures"
+    },
+    {
+      "id": "pair_301",
+      "category": "real_world_queries",
+      "persian": "چگونه یک سرور وب پرسرعت با زبان برنامه‌نویسی راست بسازیم؟",
+      "english": "How to build a high-performance web server using Rust programming language?"
+    },
+    {
+      "id": "pair_302",
+      "category": "real_world_queries",
+      "persian": "بهترین روش برای مدیریت سشن‌ها و احراز هویت در میکروسرویس‌ها چیست؟",
+      "english": "What is the best practice for session management and authentication in microservices?"
+    },
+    {
+      "id": "pair_303",
+      "category": "real_world_queries",
+      "persian": "راهنمای گام به گام استقرار کانتینرهای داکر روی کلاستر کوبرنتیز",
+      "english": "Step-by-step guide for deploying Docker containers on a Kubernetes cluster"
+    },
+    {
+      "id": "pair_304",
+      "category": "real_world_queries",
+      "persian": "چطور خطای تمام شدن حافظه رم در پردازش فایل‌های بزرگ پایتون را رفع کنیم؟",
+      "english": "How to fix Out Of Memory errors when processing large files in Python?"
+    },
+    {
+      "id": "pair_305",
+      "category": "real_world_queries",
+      "persian": "روش پیاده‌سازی جستجوی معنایی متون با مدل‌های امبدینگ و پایگاه داده کیودرانت",
+      "english": "How to implement semantic search using embedding models and Qdrant vector database"
+    },
+    {
+      "id": "pair_306",
+      "category": "real_world_queries",
+      "persian": "آموزش ساخت ربات پیام‌رسان تلگرام با قابلیت پاسخگویی خودکار و هوشمند",
+      "english": "Tutorial on creating an automated and intelligent responsive Telegram bot"
+    },
+    {
+      "id": "pair_307",
+      "category": "real_world_queries",
+      "persian": "تفاوت میان پایگاه داده‌های رابطه‌ای پستگرس و پایگاه داده‌های ستونی کلیک‌هاوس",
+      "english": "Difference between PostgreSQL relational database and ClickHouse columnar database"
+    },
+    {
+      "id": "pair_308",
+      "category": "real_world_queries",
+      "persian": "چگونه سرعت لود صفحات فرانت‌اند را با کش‌گذاری و بهینه‌سازی تصاویر افزایش دهیم؟",
+      "english": "How to improve frontend page load speed through caching and image optimization?"
+    },
+    {
+      "id": "pair_309",
+      "category": "real_world_queries",
+      "persian": "راهنمای امن‌سازی سرور لینوکس در برابر حملات بروت‌فورس و اسکن پورت‌ها",
+      "english": "Guide to securing a Linux server against brute-force attacks and port scanning"
+    },
+    {
+      "id": "pair_310",
+      "category": "real_world_queries",
+      "persian": "چطور یک شبکه خصوصی مجازی اختصاصی با پروتکل پرسرعت وایرگارد بسازیم؟",
+      "english": "How to set up a private virtual network using high-speed WireGuard protocol?"
+    },
+    {
+      "id": "pair_311",
+      "category": "real_world_queries",
+      "persian": "نحوه استفاده از مدل‌های زبانی بزرگ برای تولید خودکار کد و خلاصه‌سازی متون",
+      "english": "How to use Large Language Models for automated code generation and text summarization"
+    },
+    {
+      "id": "pair_312",
+      "category": "real_world_queries",
+      "persian": "چگونه یک سیستم پرداخت آنلاین امن با قابلیت بازگشت وجه پیاده‌سازی کنیم؟",
+      "english": "How to implement a secure online payment system with automated refund support"
+    },
+    {
+      "id": "pair_313",
+      "category": "real_world_queries",
+      "persian": "روش مانیتورینگ مصرف منابع و سلامت سرویس‌ها با استفاده از پرومتئوس و گرافانا",
+      "english": "How to monitor service health and resource usage using Prometheus and Grafana"
+    },
+    {
+      "id": "pair_314",
+      "category": "real_world_queries",
+      "persian": "آموزش نوشتن تست‌های خودکار یونیت و یکپارچه‌سازی در پروژه‌های نرم‌افزاری",
+      "english": "Tutorial on writing automated unit and integration tests for software projects"
+    },
+    {
+      "id": "pair_315",
+      "category": "real_world_queries",
+      "persian": "چگونه جلوی حملات تزریق اس‌کیو‌ال و کدهای مخرب را در وب‌سایت بگیریم؟",
+      "english": "How to prevent SQL injection and cross-site scripting vulnerabilities in websites"
+    },
+    {
+      "id": "pair_316",
+      "category": "real_world_queries",
+      "persian": "راهنمای انتخاب میان معماری مونولیتیک و معماری میکروسرویس برای استارتاپ‌ها",
+      "english": "Guide on choosing between Monolithic and Microservices architecture for startups"
+    },
+    {
+      "id": "pair_317",
+      "category": "real_world_queries",
+      "persian": "چطور مصرف باتری و رم اپلیکیشن موبایل را در پس‌زمینه بهینه‌سازی کنیم؟",
+      "english": "How to optimize mobile app RAM and battery consumption during background execution"
+    },
+    {
+      "id": "pair_318",
+      "category": "real_world_queries",
+      "persian": "نحوه راه‌اندازی پایپ‌لاین یکپارچه‌سازی مداوم برای تست و استقرار خودکار کدها",
+      "english": "How to set up a continuous integration pipeline for automated testing and deployment"
+    },
+    {
+      "id": "pair_319",
+      "category": "real_world_queries",
+      "persian": "چگونه یک موتور بازی‌سازی ساده برای اجرای گرافیک‌های سه‌بعدی بنویسیم؟",
+      "english": "How to create a simple game engine to render real-time 3D graphics?"
+    },
+    {
+      "id": "pair_320",
+      "category": "real_world_queries",
+      "persian": "بهترین روش‌ها برای پشتیبان‌گیری خودکار و رمزنگاری‌شده از اطلاعات حساس",
+      "english": "Best practices for automated and encrypted backups of sensitive corporate data"
+    }
+  ]
+}
