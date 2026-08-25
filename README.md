@@ -4,6 +4,9 @@
 [![Model License: CC BY-NC 4.0](https://img.shields.io/badge/Model%20License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model%20Mirror-blue)](https://huggingface.co/mmahdi-sz/jina-embeddings-v3-ort)
 [![Rust](https://img.shields.io/badge/rust-1.88%2B-orange.svg)](https://www.rust-lang.org)
+[![Language: FA](https://img.shields.io/badge/Language-%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-green.svg)](./README.fa.md)
+
+[English](./README.md) • [فارسی](./README.fa.md)
 
 **jina-embeddings-v3-ort** is a standalone, high-performance Rust inference crate for [**`jinaai/jina-embeddings-v3`**](https://huggingface.co/jinaai/jina-embeddings-v3) (570M parameter multilingual XLM-RoBERTa + 5 task-specific LoRA adapters) powered by [`ort`](https://github.com/pykeio/ort) (ONNX Runtime Rust bindings) and Hugging Face [`tokenizers`](https://github.com/huggingface/tokenizers).
 
