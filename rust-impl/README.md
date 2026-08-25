@@ -1,5 +1,11 @@
 # jina-embeddings-v3-ort
 
+[![Crates.io](https://img.shields.io/crates/v/jina-embeddings-v3-ort.svg)](https://crates.io/crates/jina-embeddings-v3-ort)
+[![Docs.rs](https://docs.rs/jina-embeddings-v3-ort/badge.svg)](https://docs.rs/jina-embeddings-v3-ort)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Model License: CC BY-NC 4.0](https://img.shields.io/badge/Model%20License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model%20Mirror-blue)](https://huggingface.co/mmahdi-sz/jina-embeddings-v3-ort)
+
 Standalone, high-performance Rust inference crate for **`jinaai/jina-embeddings-v3`** (570M parameters, multilingual XLM-RoBERTa + 5 task-specific LoRA adapters) powered by [`ort`](https://github.com/pykeio/ort) (ONNX Runtime Rust bindings) and Hugging Face [`tokenizers`](https://github.com/huggingface/tokenizers).
 
 > **Why this crate exists**: `fastembed-rs` only supports older Jina v2 variants. This crate fills that gap by providing full, native, verified-correct inference for **Jina Embeddings v3**, with dynamic task-specific LoRA adapter selection, per-token mean pooling, and L2 normalization implemented in pure Rust.
@@ -58,7 +64,7 @@ Set `JINA_MODEL_DIR=/path/to/directory` containing `onnx/model.onnx` and `tokeni
 Add to your `Cargo.toml`:
 ```toml
 [dependencies]
-jina-embeddings-v3-ort = { path = "../rust-impl" }
+jina-embeddings-v3-ort = "0.1.0"
 ```
 
 ### Single Text Embedding
@@ -108,7 +114,7 @@ fn main() -> anyhow::Result<()> {
 
 ## 5. Parity Verification Suite
 
-To verify numerical parity against the Python reference ground truth (`python-ref/reference_embeddings.json`):
+The repository contains an automated parity verification suite comparing Rust output directly against the Python ground truth (`500` vector comparisons: 100 samples $\times$ 5 LoRA tasks):
 
 ```bash
 cargo run --release --bin parity_test
@@ -118,31 +124,7 @@ cargo run --release --bin parity_test
 
 ```text
 ================================================================================
- JINA-EMBEDDINGS-V3 RUST ORT PARITY VERIFICATION SUITE
-================================================================================
-Found Model ONNX:    ~/.cache/huggingface/.../onnx/model.onnx
-Found Tokenizer:     ~/.cache/huggingface/.../tokenizer.json
-Found Test Data:     ../python-ref/test_data.json
-Found Ground Truth:  ../python-ref/reference_embeddings.json
-
-[1/4] Loading ground truth reference data...
-  Loaded 100 reference samples across 5 tasks from Python reference
-
-[2/4] Initializing JinaEmbedder in Rust (ORT ONNX Runtime)...
-  Embedder initialized successfully in 2.59s
-
-[3/4] Running inference and verifying all 100 samples across 5 LoRA tasks...
-  - Evaluating task: retrieval.query      (task_id: 0)... [PASS: 100/100]
-  - Evaluating task: retrieval.passage    (task_id: 1)... [PASS: 100/100]
-  - Evaluating task: separation           (task_id: 2)... [PASS: 100/100]
-  - Evaluating task: classification       (task_id: 3)... [PASS: 100/100]
-  - Evaluating task: text-matching        (task_id: 4)... [PASS: 100/100]
-
-[4/4] Verifying single embed() vs batch embed_batch() consistency...
-  Single vs Batch Cosine: 1.00000012 | Max Diff: 0.00e0 | Pass: true
-
-================================================================================
- NUMERICAL PARITY VERIFICATION REPORT
+ NUMERICAL PARITY VERIFICATION REPORT (500 / 500 PASSED)
 ================================================================================
   Task Name            | Min Cosine   | Mean Cosine  | Max Diff     | Status  
   --------------------------------------------------------------------------
@@ -153,14 +135,21 @@ Found Ground Truth:  ../python-ref/reference_embeddings.json
   text-matching        | 0.99999976   | 1.00000005   | 2.01e-7      | PASS    
   --------------------------------------------------------------------------
   TOTAL COMPARISONS:      500 / 500 (100 samples × 5 tasks)
-  GLOBAL MIN COSINE:      0.99999893
+  GLOBAL MIN COSINE:      0.99999893 (Threshold: > 0.9999)
   GLOBAL MEAN COSINE:     1.00000005
-  GLOBAL MAX ABS DIFF:    4.32e-6
+  GLOBAL MAX ABS DIFF:    4.32e-6    (Threshold: < 1e-4)
   GLOBAL MEAN ABS DIFF:   9.79e-8
   WORST-CASE SAMPLE:      'cli_tools_09' on task 'classification' (cos=0.99999893)
   THROUGHPUT:             10.8 vector inferences / second (CPU)
-  SINGLE VS BATCH PARITY: PERFECT MATCH
+  SINGLE VS BATCH PARITY: PERFECT MATCH (Cosine: 1.00000012, Max Diff: 0.00e0)
 ================================================================================
   OVERALL STATUS: [PASS] - Rust implementation matches Python reference bit-for-bit!
 ================================================================================
 ```
+
+---
+
+## 6. Dependencies & Notes
+
+- **ONNX Runtime Backend**: This crate depends on `ort = "2.0.0-rc.13"`. It automatically downloads the precompiled ONNX Runtime 1.28+ C binaries for Linux, macOS, and Windows upon first build, with no manual C++ dependencies needed.
+- **Model Licensing**: The crate codebase is licensed under the MIT License. The model weights remain licensed under the [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/) license by Jina AI.

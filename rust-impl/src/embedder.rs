@@ -65,15 +65,19 @@ impl JinaEmbedder {
         // Initialize tokenizer
         let mut tokenizer = Tokenizer::from_file(tokenizer_p).map_err(|e| anyhow!("{e}"))?;
 
-        let mut pad_params = PaddingParams::default();
-        pad_params.strategy = PaddingStrategy::BatchLongest;
-        pad_params.pad_id = 1;
-        pad_params.pad_token = "<pad>".to_string();
+        let pad_params = PaddingParams {
+            strategy: PaddingStrategy::BatchLongest,
+            pad_id: 1,
+            pad_token: "<pad>".to_string(),
+            ..Default::default()
+        };
         tokenizer.with_padding(Some(pad_params));
 
-        let mut trunc_params = TruncationParams::default();
-        trunc_params.max_length = options.max_length;
-        trunc_params.strategy = TruncationStrategy::LongestFirst;
+        let trunc_params = TruncationParams {
+            max_length: options.max_length,
+            strategy: TruncationStrategy::LongestFirst,
+            ..Default::default()
+        };
         tokenizer
             .with_truncation(Some(trunc_params))
             .map_err(|e| anyhow!("{e}"))?;

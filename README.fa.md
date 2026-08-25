@@ -1,5 +1,8 @@
 # jina-embeddings-v3-ort (راهنمای فارسی)
 
+[![Crates.io](https://img.shields.io/crates/v/jina-embeddings-v3-ort.svg)](https://crates.io/crates/jina-embeddings-v3-ort)
+[![Docs.rs](https://docs.rs/jina-embeddings-v3-ort/badge.svg)](https://docs.rs/jina-embeddings-v3-ort)
+[![CI](https://github.com/mmahdi-sz/jina-embeddings-v3-ort/actions/workflows/ci.yml/badge.svg)](https://github.com/mmahdi-sz/jina-embeddings-v3-ort/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Model License: CC BY-NC 4.0](https://img.shields.io/badge/Model%20License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model%20Mirror-blue)](https://huggingface.co/mmahdi-sz/jina-embeddings-v3-ort)

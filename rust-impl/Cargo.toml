@@ -2,8 +2,22 @@
 name = "jina-embeddings-v3-ort"
 version = "0.1.0"
 edition = "2021"
-description = "High-performance standalone Rust inference engine for jinaai/jina-embeddings-v3 using ORT (ONNX Runtime)"
-license = "MIT OR Apache-2.0"
+rust-version = "1.80"
+authors = ["Mahdi <mmahdi.sz@gmail.com>"]
+description = "Rust ONNX Runtime inference for jina-embeddings-v3 with task-LoRA routing and verified numerical parity"
+license = "MIT"
+repository = "https://github.com/mmahdi-sz/jina-embeddings-v3-ort"
+homepage = "https://github.com/mmahdi-sz/jina-embeddings-v3-ort"
+documentation = "https://docs.rs/jina-embeddings-v3-ort"
+readme = "README.md"
+keywords = ["embeddings", "onnx", "nlp", "jina", "multilingual"]
+categories = ["science::ml", "text-processing"]
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE"
+]
 
 [dependencies]
 ort = { version = "2.0.0-rc.13", default-features = false, features = ["std", "ndarray", "download-binaries", "tls-rustls", "copy-dylibs"] }
@@ -17,3 +31,7 @@ thiserror = "2.0"
 [[bin]]
 name = "parity_test"
 path = "src/bin/parity_test.rs"
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
