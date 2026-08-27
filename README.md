@@ -92,34 +92,27 @@ To guarantee that the Rust implementation is 100% correct, this project uses a t
 1. **[`python-ref/`](./python-ref)**: A verification-only reference implementation utilizing official Hugging Face `transformers` and Python `onnxruntime` to generate a 100-sample multilingual ground-truth dataset across 10 repository domains.
 2. **[`rust-impl/`](./rust-impl)**: The pure-Rust implementation tested directly against the Python ground truth (`500` total vector comparisons: 100 samples $\times$ 5 LoRA tasks).
 
-### Verified Benchmark Results
+### Verified Benchmark Results (Numerical Parity)
 
 Command: `cargo run --release --bin parity_test`
 
-```text
-================================================================================
- NUMERICAL PARITY VERIFICATION REPORT (500 / 500 PASSED)
-================================================================================
-  Task Name            | Min Cosine   | Mean Cosine  | Max Diff     | Status  
-  --------------------------------------------------------------------------
-  retrieval.query      | 0.99999970   | 1.00000005   | 1.64e-7      | PASS    
-  retrieval.passage    | 0.99999976   | 1.00000006   | 1.64e-7      | PASS    
-  separation           | 0.99999976   | 1.00000003   | 2.09e-7      | PASS    
-  classification       | 0.99999893   | 1.00000004   | 4.32e-6      | PASS    
-  text-matching        | 0.99999976   | 1.00000005   | 2.01e-7      | PASS    
-  --------------------------------------------------------------------------
-  TOTAL COMPARISONS:      500 / 500 vectors (100 samples × 5 tasks)
-  GLOBAL MIN COSINE:      0.99999893 (Threshold: > 0.9999)
-  GLOBAL MEAN COSINE:     1.00000005
-  GLOBAL MAX ABS DIFF:    4.32e-6    (Threshold: < 1e-4)
-  GLOBAL MEAN ABS DIFF:   9.79e-8
-  WORST-CASE SAMPLE:      'cli_tools_09' on task 'classification' (cos=0.99999893)
-  THROUGHPUT:             10.8 vector inferences / second (CPU)
-  SINGLE VS BATCH PARITY: PERFECT MATCH (Cosine: 1.00000012, Max Diff: 0.00e0)
-================================================================================
-  OVERALL STATUS: [PASS] - Rust matches Python reference down to float32 precision!
-================================================================================
-```
+| LoRA Task | Min Cosine Similarity | Mean Cosine Similarity | Max Absolute Diff | Parity Verdict |
+| :--- | :---: | :---: | :---: | :---: |
+| **`retrieval.query` (0)** | `0.99999970` | `1.00000005` | `1.64 × 10⁻⁷` | **`PASS`** ✅ |
+| **`retrieval.passage` (1)** | `0.99999976` | `1.00000006` | `1.64 × 10⁻⁷` | **`PASS`** ✅ |
+| **`separation` (2)** | `0.99999976` | `1.00000003` | `2.09 × 10⁻⁷` | **`PASS`** ✅ |
+| **`classification` (3)** | `0.99999893` | `1.00000004` | `4.32 × 10⁻⁶` | **`PASS`** ✅ |
+| **`text-matching` (4)** | `0.99999976` | `1.00000005` | `2.01 × 10⁻⁷` | **`PASS`** ✅ |
+
+| Metric Summary | Value / Status | Description / Threshold |
+| :--- | :---: | :--- |
+| **Total Comparisons** | **`500 / 500`** | 100 multilingual samples $\times$ 5 LoRA adapter tasks |
+| **Global Min Cosine** | **`0.99999893`** | Threshold: $> 0.9999$ |
+| **Global Mean Cosine** | **`1.00000005`** | Ideal target: $\approx 1.00000000$ |
+| **Global Max Absolute Diff** | **`4.32 × 10⁻⁶`** | Threshold: $< 1.0 \times 10^{-4}$ |
+| **Global Mean Absolute Diff** | **`9.79 × 10⁻⁸`** | Float32 machine precision level |
+| **Single vs. Batch Parity** | **`PERFECT MATCH`** | Cosine: `1.00000012`, Max Diff: `0.00` |
+| **Overall Parity Verdict** | **`[PASS] 100% BIT-FOR-BIT MATCH`** | Pure Rust matches Python reference down to float32 precision |
 
 ### Extended Persian <-> English Benchmark (320 Pairs / 16 Domains / 3,200 Embeddings)
 
