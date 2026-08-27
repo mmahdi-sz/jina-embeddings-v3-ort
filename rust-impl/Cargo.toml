@@ -11,7 +11,7 @@ homepage = "https://github.com/mmahdi-sz/jina-embeddings-v3-ort"
 documentation = "https://docs.rs/jina-embeddings-v3-ort"
 readme = "README.md"
 keywords = ["embeddings", "onnx", "nlp", "jina", "multilingual"]
-categories = ["science::ml", "text-processing"]
+categories = ["science", "text-processing"]
 include = [
     "src/**/*",
     "Cargo.toml",
