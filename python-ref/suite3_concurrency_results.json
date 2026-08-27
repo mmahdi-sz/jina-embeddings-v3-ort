@@ -1,0 +1,56 @@
+{
+  "thread_pool_benchmarks": [
+    {
+      "thread_count": 4,
+      "total_requests": 256,
+      "total_duration_sec": 94.42744,
+      "throughput_rps": 2.7110765,
+      "p50_latency_ms": 1454.9528,
+      "p90_latency_ms": 1597.0951,
+      "p95_latency_ms": 1658.2291,
+      "p99_latency_ms": 2615.3545,
+      "max_latency_ms": 2672.1262,
+      "min_latency_ms": 352.58154,
+      "zero_error_check": true
+    },
+    {
+      "thread_count": 8,
+      "total_requests": 256,
+      "total_duration_sec": 92.33641,
+      "throughput_rps": 2.7724707,
+      "p50_latency_ms": 2831.2466,
+      "p90_latency_ms": 3142.6313,
+      "p95_latency_ms": 3339.9014,
+      "p99_latency_ms": 5472.269,
+      "max_latency_ms": 5837.3887,
+      "min_latency_ms": 338.16644,
+      "zero_error_check": true
+    },
+    {
+      "thread_count": 16,
+      "total_requests": 256,
+      "total_duration_sec": 91.91657,
+      "throughput_rps": 2.7851343,
+      "p50_latency_ms": 5646.03,
+      "p90_latency_ms": 6101.9316,
+      "p95_latency_ms": 6204.5938,
+      "p99_latency_ms": 10945.406,
+      "max_latency_ms": 11667.327,
+      "min_latency_ms": 329.05307,
+      "zero_error_check": true
+    },
+    {
+      "thread_count": 32,
+      "total_requests": 256,
+      "total_duration_sec": 93.61239,
+      "throughput_rps": 2.734681,
+      "p50_latency_ms": 11617.424,
+      "p90_latency_ms": 12663.8545,
+      "p95_latency_ms": 12718.43,
+      "p99_latency_ms": 23369.58,
+      "max_latency_ms": 23662.723,
+      "min_latency_ms": 306.0647,
+      "zero_error_check": true
+    }
+  ]
+}

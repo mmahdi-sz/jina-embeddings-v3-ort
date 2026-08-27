@@ -1,0 +1,247 @@
+{
+  "zwnj_tests": [
+    {
+      "concept": "فعل حال (می‌روم)",
+      "standard_zwnj": "من به دانشگاه می‌روم",
+      "space_variant": "من به دانشگاه می روم",
+      "merged_variant": "من به دانشگاه میروم",
+      "zwnj_vs_space_cos": 1.0,
+      "zwnj_vs_merged_cos": 0.8396993,
+      "semantic_consistency_pass": false
+    },
+    {
+      "concept": "جمع نام‌ها (کتاب‌ها)",
+      "standard_zwnj": "تمام کتاب‌ها را خواندم",
+      "space_variant": "تمام کتاب ها را خواندم",
+      "merged_variant": "تمام کتابها را خواندم",
+      "zwnj_vs_space_cos": 1.0,
+      "zwnj_vs_merged_cos": 0.9888473,
+      "semantic_consistency_pass": true
+    },
+    {
+      "concept": "ترکیب اسمی (دانش‌آموزان)",
+      "standard_zwnj": "دانش‌آموزان در کلاس درس حاضر شدند",
+      "space_variant": "دانش آموزان در کلاس درس حاضر شدند",
+      "merged_variant": "دانشاموزان در کلاس درس حاضر شدند",
+      "zwnj_vs_space_cos": 1.0000001,
+      "zwnj_vs_merged_cos": 0.9901678,
+      "semantic_consistency_pass": true
+    },
+    {
+      "concept": "شناسه ملکی (خانه‌ام)",
+      "standard_zwnj": "این کلید خانه‌ام است",
+      "space_variant": "این کلید خانه ام است",
+      "merged_variant": "این کلید خانهام است",
+      "zwnj_vs_space_cos": 1.0000001,
+      "zwnj_vs_merged_cos": 0.9892656,
+      "semantic_consistency_pass": true
+    },
+    {
+      "concept": "قید مرکب (دست‌کم)",
+      "standard_zwnj": "دست‌کم ده نفر در جلسه شرکت کردند",
+      "space_variant": "دست کم ده نفر در جلسه شرکت کردند",
+      "merged_variant": "دستکم ده نفر در جلسه شرکت کردند",
+      "zwnj_vs_space_cos": 1.0000001,
+      "zwnj_vs_merged_cos": 0.9964899,
+      "semantic_consistency_pass": true
+    },
+    {
+      "concept": "صفت منفی (بی‌نقص)",
+      "standard_zwnj": "طراحی این سیستم کاملاً بی‌نقص و زیباست",
+      "space_variant": "طراحی این سیستم کاملاً بی نقص و زیباست",
+      "merged_variant": "طراحی این سیستم کاملاً بینقص و زیباست",
+      "zwnj_vs_space_cos": 1.0000001,
+      "zwnj_vs_merged_cos": 0.9556992,
+      "semantic_consistency_pass": true
+    },
+    {
+      "concept": "اسم جمع محاوره‌ای (بچه‌ها)",
+      "standard_zwnj": "بچه‌ها در حیاط بازی می‌کنند",
+      "space_variant": "بچه ها در حیاط بازی می‌کنند",
+      "merged_variant": "بچهها در حیاط بازی می‌کنند",
+      "zwnj_vs_space_cos": 1.0,
+      "zwnj_vs_merged_cos": 0.99742764,
+      "semantic_consistency_pass": true
+    },
+    {
+      "concept": "صفت برتر (فوق‌العاده)",
+      "standard_zwnj": "این یک نتیجه فوق‌العاده در بنچمارک است",
+      "space_variant": "این یک نتیجه فوق العاده در بنچمارک است",
+      "merged_variant": "این یک نتیجه فوقالعاده در بنچمارک است",
+      "zwnj_vs_space_cos": 1.0,
+      "zwnj_vs_merged_cos": 0.92971045,
+      "semantic_consistency_pass": true
+    },
+    {
+      "concept": "ترکیب فعلی (پیش‌بینی)",
+      "standard_zwnj": "پیش‌بینی وضعیت آب و هوا در روزهای آینده",
+      "space_variant": "پیش بینی وضعیت آب و هوا در روزهای آینده",
+      "merged_variant": "پیشبینی وضعیت آب و هوا در روزهای آینده",
+      "zwnj_vs_space_cos": 1.0000001,
+      "zwnj_vs_merged_cos": 0.9890811,
+      "semantic_consistency_pass": true
+    },
+    {
+      "concept": "قید زمانی (هم‌اکنون)",
+      "standard_zwnj": "برنامه هم‌اکنون به صورت زنده در حال پخش است",
+      "space_variant": "برنامه هم اکنون به صورت زنده در حال پخش است",
+      "merged_variant": "برنامه هماکنون به صورت زنده در حال پخش است",
+      "zwnj_vs_space_cos": 1.0,
+      "zwnj_vs_merged_cos": 0.9721175,
+      "semantic_consistency_pass": true
+    }
+  ],
+  "arabic_persian_tests": [
+    {
+      "description": "یای فارسی vs يای عربی (ی vs ي)",
+      "persian_text": "پایگاه داده توزیع‌شده با کارایی بالا",
+      "variant_text": "پايگاه داده توزيع‌شده با کارايي بالا",
+      "cosine_similarity": 0.92852163,
+      "is_robust": false
+    },
+    {
+      "description": "کاف فارسی vs كاف عربی (ک vs ك)",
+      "persian_text": "کمک به کودکان در مناطق محروم کشور",
+      "variant_text": "كمك به كودكان در مناطق محروم كشور",
+      "cosine_similarity": 0.9351422,
+      "is_robust": false
+    },
+    {
+      "description": "تای تانیث vs های فارسی (ة vs ه)",
+      "persian_text": "توسعه اقتصادی و پیشرفت پایدار جامعه",
+      "variant_text": "توسعة اقتصادی و پیشرفت پایدار جامعة",
+      "cosine_similarity": 0.7664385,
+      "is_robust": false
+    },
+    {
+      "description": "اعداد فارسی vs اعداد انگلیسی",
+      "persian_text": "فروش ۳۲۵۰۰ عدد کالا در سال ۱۴۰۳",
+      "variant_text": "فروش 32500 عدد کالا در سال 1403",
+      "cosine_similarity": 0.8142388,
+      "is_robust": false
+    },
+    {
+      "description": "علامت سوال فارسی vs انگلیسی (؟ vs ?)",
+      "persian_text": "چگونه یک وب‌سرور پرسرعت بسازیم؟",
+      "variant_text": "چگونه یک وب‌سرور پرسرعت بسازیم?",
+      "cosine_similarity": 0.9997492,
+      "is_robust": true
+    },
+    {
+      "description": "گیومه فارسی vs انگلیسی («» vs \"\")",
+      "persian_text": "کتاب «هنر شفاف اندیشیدن» را مطالعه کنید",
+      "variant_text": "کتاب \"هنر شفاف اندیشیدن\" را مطالعه کنید",
+      "cosine_similarity": 0.9990596,
+      "is_robust": true
+    }
+  ],
+  "extreme_input_tests": [
+    {
+      "test_name": "Empty String",
+      "input_sample": "",
+      "output_dim": 1024,
+      "l2_norm": 1.0,
+      "execution_success": true
+    },
+    {
+      "test_name": "Single Space",
+      "input_sample": " ",
+      "output_dim": 1024,
+      "l2_norm": 1.0,
+      "execution_success": true
+    },
+    {
+      "test_name": "Multi-Whitespace & Newlines",
+      "input_sample": "   \n\n\t\t\r   ",
+      "output_dim": 1024,
+      "l2_norm": 1.0,
+      "execution_success": true
+    },
+    {
+      "test_name": "Pure Emojis",
+      "input_sample": "🔥🚀🎉⚡🤖",
+      "output_dim": 1024,
+      "l2_norm": 0.9999995,
+      "execution_success": true
+    },
+    {
+      "test_name": "Mixed Persian + Emojis",
+      "input_sample": "سیستم امنیتی فوق‌العاده سریع 🔥🚀 نسخه جدید ⚡",
+      "output_dim": 1024,
+      "l2_norm": 1.0,
+      "execution_success": true
+    },
+    {
+      "test_name": "SQL Query Code Block",
+      "input_sample": "SELECT u.id, u.username, COUNT(o.id) FROM users u JOIN orders o ON u.id = o.user_id WHERE o.created_at > '2026-01-01' GROUP BY u.id;",
+      "output_dim": 1024,
+      "l2_norm": 1.0,
+      "execution_success": true
+    },
+    {
+      "test_name": "JSON Data Payload",
+      "input_sample": "{\"service\": \"auth-gateway\", \"status\": 200, \"tokens\": [\"eyJhbGciOi...\"], \"active\": true}",
+      "output_dim": 1024,
+      "l2_norm": 1.0000007,
+      "execution_success": true
+    },
+    {
+      "test_name": "Rust Code Snippet",
+      "input_sample": "pub async fn handle_stream(mut stream: TcpStream) -> Result<(), Box<dyn std::error::Error>> { tokio::spawn(async move { ... }); Ok(()) }",
+      "output_dim": 1024,
+      "l2_norm": 1.0000004,
+      "execution_success": true
+    },
+    {
+      "test_name": "Pure Punctuation String",
+      "input_sample": "!@#$%^&*()_+-=[]{}|;':\",./<>?~`",
+      "output_dim": 1024,
+      "l2_norm": 0.9999997,
+      "execution_success": true
+    }
+  ],
+  "truncation_tests": [
+    {
+      "token_length_estimate": 78,
+      "character_count": 312,
+      "output_dim": 1024,
+      "l2_norm": 1.0,
+      "inference_time_ms": 436
+    },
+    {
+      "token_length_estimate": 390,
+      "character_count": 1560,
+      "output_dim": 1024,
+      "l2_norm": 1.0000001,
+      "inference_time_ms": 912
+    },
+    {
+      "token_length_estimate": 780,
+      "character_count": 3120,
+      "output_dim": 1024,
+      "l2_norm": 1.0000002,
+      "inference_time_ms": 1635
+    },
+    {
+      "token_length_estimate": 1560,
+      "character_count": 6240,
+      "output_dim": 1024,
+      "l2_norm": 1.0000004,
+      "inference_time_ms": 1829
+    },
+    {
+      "token_length_estimate": 3900,
+      "character_count": 15600,
+      "output_dim": 1024,
+      "l2_norm": 1.0000004,
+      "inference_time_ms": 1724
+    },
+    {
+      "token_length_estimate": 7800,
+      "character_count": 31200,
+      "output_dim": 1024,
+      "l2_norm": 1.0000004,
+      "inference_time_ms": 1723
+    }
+  ]
+}

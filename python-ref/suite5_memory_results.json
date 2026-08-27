@@ -1,0 +1,45 @@
+{
+  "total_iterations": 2500,
+  "initial_rss_mb": 6525.8203,
+  "final_rss_mb": 6547.6094,
+  "net_rss_growth_mb": 21.789062,
+  "growth_rate_kb_per_1k_iters": 8924.8,
+  "memory_leak_free_verdict": false,
+  "checkpoints": [
+    {
+      "iteration": 500,
+      "rss_mb": 6547.1055,
+      "virt_mb": 8878.227,
+      "elapsed_sec": 30.226578,
+      "throughput_ips": 16.541733
+    },
+    {
+      "iteration": 1000,
+      "rss_mb": 6547.3438,
+      "virt_mb": 8878.227,
+      "elapsed_sec": 60.23428,
+      "throughput_ips": 16.601843
+    },
+    {
+      "iteration": 1500,
+      "rss_mb": 6547.4727,
+      "virt_mb": 8878.227,
+      "elapsed_sec": 89.4055,
+      "throughput_ips": 16.77749
+    },
+    {
+      "iteration": 2000,
+      "rss_mb": 6547.5273,
+      "virt_mb": 8878.227,
+      "elapsed_sec": 117.89815,
+      "throughput_ips": 16.963795
+    },
+    {
+      "iteration": 2500,
+      "rss_mb": 6547.6094,
+      "virt_mb": 8878.227,
+      "elapsed_sec": 146.6977,
+      "throughput_ips": 17.04185
+    }
+  ]
+}

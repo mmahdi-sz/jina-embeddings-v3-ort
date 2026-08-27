@@ -36,6 +36,26 @@ path = "src/bin/parity_test.rs"
 name = "benchmark_300"
 path = "src/bin/benchmark_300.rs"
 
+[[bin]]
+name = "suite1_rag_benchmark"
+path = "src/bin/suite1_rag_benchmark.rs"
+
+[[bin]]
+name = "suite2_edge_cases"
+path = "src/bin/suite2_edge_cases.rs"
+
+[[bin]]
+name = "suite3_concurrency"
+path = "src/bin/suite3_concurrency.rs"
+
+[[bin]]
+name = "suite4_matryoshka"
+path = "src/bin/suite4_matryoshka.rs"
+
+[[bin]]
+name = "suite5_memory_longevity"
+path = "src/bin/suite5_memory_longevity.rs"
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]

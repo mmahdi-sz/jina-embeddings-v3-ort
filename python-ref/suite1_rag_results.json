@@ -1,0 +1,1026 @@
+{
+  "metadata": {
+    "description": "100 Persian User Queries searching across 1,000 English Technical Corpus Documents (100 Targets + 900 Distractors)",
+    "distractor_docs_count": 900,
+    "target_docs_count": 100,
+    "total_corpus_docs": 1000,
+    "total_queries": 100
+  },
+  "metrics": {
+    "total_queries": 100,
+    "total_corpus_docs": 1000,
+    "recall_at_1": 94.0,
+    "recall_at_3": 98.0,
+    "recall_at_5": 98.0,
+    "recall_at_10": 98.0,
+    "recall_at_20": 98.0,
+    "mrr": 0.96036804,
+    "ndcg_at_10": 0.9652372,
+    "query_embed_time_ms": 21433,
+    "corpus_embed_time_ms": 113439,
+    "search_time_ms": 109,
+    "total_time_sec": 134.98195
+  },
+  "query_breakdown": [
+    {
+      "query_id": "query_001",
+      "category": "web_frontend",
+      "target_doc_id": "target_doc_001",
+      "target_rank": 1,
+      "target_score": 0.5702696,
+      "top_hit_doc_id": "target_doc_001",
+      "top_hit_score": 0.5702696,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_002",
+      "category": "web_frontend",
+      "target_doc_id": "target_doc_002",
+      "target_rank": 1,
+      "target_score": 0.39221096,
+      "top_hit_doc_id": "target_doc_002",
+      "top_hit_score": 0.39221096,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_003",
+      "category": "web_frontend",
+      "target_doc_id": "target_doc_003",
+      "target_rank": 1,
+      "target_score": 0.60080594,
+      "top_hit_doc_id": "target_doc_003",
+      "top_hit_score": 0.60080594,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_004",
+      "category": "web_frontend",
+      "target_doc_id": "target_doc_004",
+      "target_rank": 1,
+      "target_score": 0.44804922,
+      "top_hit_doc_id": "target_doc_004",
+      "top_hit_score": 0.44804922,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_005",
+      "category": "web_frontend",
+      "target_doc_id": "target_doc_005",
+      "target_rank": 1,
+      "target_score": 0.3798634,
+      "top_hit_doc_id": "target_doc_005",
+      "top_hit_score": 0.3798634,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_006",
+      "category": "backend",
+      "target_doc_id": "target_doc_006",
+      "target_rank": 1,
+      "target_score": 0.42308867,
+      "top_hit_doc_id": "target_doc_006",
+      "top_hit_score": 0.42308867,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_007",
+      "category": "backend",
+      "target_doc_id": "target_doc_007",
+      "target_rank": 2,
+      "target_score": 0.47420853,
+      "top_hit_doc_id": "target_doc_076",
+      "top_hit_score": 0.49955058,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query_id": "query_008",
+      "category": "backend",
+      "target_doc_id": "target_doc_008",
+      "target_rank": 1,
+      "target_score": 0.5053897,
+      "top_hit_doc_id": "target_doc_008",
+      "top_hit_score": 0.5053897,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_009",
+      "category": "backend",
+      "target_doc_id": "target_doc_009",
+      "target_rank": 220,
+      "target_score": 0.28570923,
+      "top_hit_doc_id": "distractor_0010",
+      "top_hit_score": 0.38085607,
+      "reciprocal_rank": 0.0045454544
+    },
+    {
+      "query_id": "query_010",
+      "category": "backend",
+      "target_doc_id": "target_doc_010",
+      "target_rank": 1,
+      "target_score": 0.49126232,
+      "top_hit_doc_id": "target_doc_010",
+      "top_hit_score": 0.49126232,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_011",
+      "category": "telegram",
+      "target_doc_id": "target_doc_011",
+      "target_rank": 1,
+      "target_score": 0.56071025,
+      "top_hit_doc_id": "target_doc_011",
+      "top_hit_score": 0.56071025,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_012",
+      "category": "telegram",
+      "target_doc_id": "target_doc_012",
+      "target_rank": 1,
+      "target_score": 0.6207491,
+      "top_hit_doc_id": "target_doc_012",
+      "top_hit_score": 0.6207491,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_013",
+      "category": "telegram",
+      "target_doc_id": "target_doc_013",
+      "target_rank": 1,
+      "target_score": 0.6524911,
+      "top_hit_doc_id": "target_doc_013",
+      "top_hit_score": 0.6524911,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_014",
+      "category": "telegram",
+      "target_doc_id": "target_doc_014",
+      "target_rank": 1,
+      "target_score": 0.5747633,
+      "top_hit_doc_id": "target_doc_014",
+      "top_hit_score": 0.5747633,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_015",
+      "category": "telegram",
+      "target_doc_id": "target_doc_015",
+      "target_rank": 1,
+      "target_score": 0.62216526,
+      "top_hit_doc_id": "target_doc_015",
+      "top_hit_score": 0.62216526,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_016",
+      "category": "devops",
+      "target_doc_id": "target_doc_016",
+      "target_rank": 1,
+      "target_score": 0.42423624,
+      "top_hit_doc_id": "target_doc_016",
+      "top_hit_score": 0.42423624,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_017",
+      "category": "devops",
+      "target_doc_id": "target_doc_017",
+      "target_rank": 1,
+      "target_score": 0.4165646,
+      "top_hit_doc_id": "target_doc_017",
+      "top_hit_score": 0.4165646,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_018",
+      "category": "devops",
+      "target_doc_id": "target_doc_018",
+      "target_rank": 1,
+      "target_score": 0.4396498,
+      "top_hit_doc_id": "target_doc_018",
+      "top_hit_score": 0.4396498,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_019",
+      "category": "devops",
+      "target_doc_id": "target_doc_019",
+      "target_rank": 1,
+      "target_score": 0.47355798,
+      "top_hit_doc_id": "target_doc_019",
+      "top_hit_score": 0.47355798,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_020",
+      "category": "devops",
+      "target_doc_id": "target_doc_020",
+      "target_rank": 1,
+      "target_score": 0.6055978,
+      "top_hit_doc_id": "target_doc_020",
+      "top_hit_score": 0.6055978,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_021",
+      "category": "databases",
+      "target_doc_id": "target_doc_021",
+      "target_rank": 1,
+      "target_score": 0.554807,
+      "top_hit_doc_id": "target_doc_021",
+      "top_hit_score": 0.554807,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_022",
+      "category": "databases",
+      "target_doc_id": "target_doc_022",
+      "target_rank": 1,
+      "target_score": 0.56926095,
+      "top_hit_doc_id": "target_doc_022",
+      "top_hit_score": 0.56926095,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_023",
+      "category": "databases",
+      "target_doc_id": "target_doc_023",
+      "target_rank": 1,
+      "target_score": 0.63359684,
+      "top_hit_doc_id": "target_doc_023",
+      "top_hit_score": 0.63359684,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_024",
+      "category": "databases",
+      "target_doc_id": "target_doc_024",
+      "target_rank": 2,
+      "target_score": 0.39230263,
+      "top_hit_doc_id": "target_doc_020",
+      "top_hit_score": 0.4516717,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query_id": "query_025",
+      "category": "databases",
+      "target_doc_id": "target_doc_025",
+      "target_rank": 1,
+      "target_score": 0.53653705,
+      "top_hit_doc_id": "target_doc_025",
+      "top_hit_score": 0.53653705,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_026",
+      "category": "ai_ml",
+      "target_doc_id": "target_doc_026",
+      "target_rank": 1,
+      "target_score": 0.57884324,
+      "top_hit_doc_id": "target_doc_026",
+      "top_hit_score": 0.57884324,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_027",
+      "category": "ai_ml",
+      "target_doc_id": "target_doc_027",
+      "target_rank": 1,
+      "target_score": 0.4543559,
+      "top_hit_doc_id": "target_doc_027",
+      "top_hit_score": 0.4543559,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_028",
+      "category": "ai_ml",
+      "target_doc_id": "target_doc_028",
+      "target_rank": 1,
+      "target_score": 0.40882248,
+      "top_hit_doc_id": "target_doc_028",
+      "top_hit_score": 0.40882248,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_029",
+      "category": "ai_ml",
+      "target_doc_id": "target_doc_029",
+      "target_rank": 1,
+      "target_score": 0.67975074,
+      "top_hit_doc_id": "target_doc_029",
+      "top_hit_score": 0.67975074,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_030",
+      "category": "ai_ml",
+      "target_doc_id": "target_doc_030",
+      "target_rank": 1,
+      "target_score": 0.5747494,
+      "top_hit_doc_id": "target_doc_030",
+      "top_hit_score": 0.5747494,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_031",
+      "category": "security",
+      "target_doc_id": "target_doc_031",
+      "target_rank": 1,
+      "target_score": 0.57280636,
+      "top_hit_doc_id": "target_doc_031",
+      "top_hit_score": 0.57280636,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_032",
+      "category": "security",
+      "target_doc_id": "target_doc_032",
+      "target_rank": 1,
+      "target_score": 0.61222166,
+      "top_hit_doc_id": "target_doc_032",
+      "top_hit_score": 0.61222166,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_033",
+      "category": "security",
+      "target_doc_id": "target_doc_033",
+      "target_rank": 1,
+      "target_score": 0.52348626,
+      "top_hit_doc_id": "target_doc_033",
+      "top_hit_score": 0.52348626,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_034",
+      "category": "security",
+      "target_doc_id": "target_doc_034",
+      "target_rank": 1,
+      "target_score": 0.5968923,
+      "top_hit_doc_id": "target_doc_034",
+      "top_hit_score": 0.5968923,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_035",
+      "category": "security",
+      "target_doc_id": "target_doc_035",
+      "target_rank": 1,
+      "target_score": 0.5263287,
+      "top_hit_doc_id": "target_doc_035",
+      "top_hit_score": 0.5263287,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_036",
+      "category": "mobile",
+      "target_doc_id": "target_doc_036",
+      "target_rank": 1,
+      "target_score": 0.542599,
+      "top_hit_doc_id": "target_doc_036",
+      "top_hit_score": 0.542599,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_037",
+      "category": "mobile",
+      "target_doc_id": "target_doc_037",
+      "target_rank": 1,
+      "target_score": 0.52371854,
+      "top_hit_doc_id": "target_doc_037",
+      "top_hit_score": 0.52371854,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_038",
+      "category": "mobile",
+      "target_doc_id": "target_doc_038",
+      "target_rank": 1,
+      "target_score": 0.5937523,
+      "top_hit_doc_id": "target_doc_038",
+      "top_hit_score": 0.5937523,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_039",
+      "category": "mobile",
+      "target_doc_id": "target_doc_039",
+      "target_rank": 1,
+      "target_score": 0.5741759,
+      "top_hit_doc_id": "target_doc_039",
+      "top_hit_score": 0.5741759,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_040",
+      "category": "mobile",
+      "target_doc_id": "target_doc_040",
+      "target_rank": 1,
+      "target_score": 0.65654683,
+      "top_hit_doc_id": "target_doc_040",
+      "top_hit_score": 0.65654683,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_041",
+      "category": "fintech",
+      "target_doc_id": "target_doc_041",
+      "target_rank": 1,
+      "target_score": 0.54677045,
+      "top_hit_doc_id": "target_doc_041",
+      "top_hit_score": 0.54677045,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_042",
+      "category": "fintech",
+      "target_doc_id": "target_doc_042",
+      "target_rank": 1,
+      "target_score": 0.5162677,
+      "top_hit_doc_id": "target_doc_042",
+      "top_hit_score": 0.5162677,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_043",
+      "category": "fintech",
+      "target_doc_id": "target_doc_043",
+      "target_rank": 1,
+      "target_score": 0.58757514,
+      "top_hit_doc_id": "target_doc_043",
+      "top_hit_score": 0.58757514,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_044",
+      "category": "fintech",
+      "target_doc_id": "target_doc_044",
+      "target_rank": 1,
+      "target_score": 0.5141705,
+      "top_hit_doc_id": "target_doc_044",
+      "top_hit_score": 0.5141705,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_045",
+      "category": "fintech",
+      "target_doc_id": "target_doc_045",
+      "target_rank": 1,
+      "target_score": 0.6192883,
+      "top_hit_doc_id": "target_doc_045",
+      "top_hit_score": 0.6192883,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_046",
+      "category": "ecommerce",
+      "target_doc_id": "target_doc_046",
+      "target_rank": 1,
+      "target_score": 0.5435028,
+      "top_hit_doc_id": "target_doc_046",
+      "top_hit_score": 0.5435028,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_047",
+      "category": "ecommerce",
+      "target_doc_id": "target_doc_047",
+      "target_rank": 1,
+      "target_score": 0.46934378,
+      "top_hit_doc_id": "target_doc_047",
+      "top_hit_score": 0.46934378,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_048",
+      "category": "ecommerce",
+      "target_doc_id": "target_doc_048",
+      "target_rank": 1,
+      "target_score": 0.7267964,
+      "top_hit_doc_id": "target_doc_048",
+      "top_hit_score": 0.7267964,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_049",
+      "category": "ecommerce",
+      "target_doc_id": "target_doc_049",
+      "target_rank": 1,
+      "target_score": 0.67376655,
+      "top_hit_doc_id": "target_doc_049",
+      "top_hit_score": 0.67376655,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_050",
+      "category": "ecommerce",
+      "target_doc_id": "target_doc_050",
+      "target_rank": 1,
+      "target_score": 0.47729504,
+      "top_hit_doc_id": "target_doc_050",
+      "top_hit_score": 0.47729504,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_051",
+      "category": "embedded",
+      "target_doc_id": "target_doc_051",
+      "target_rank": 1,
+      "target_score": 0.38714352,
+      "top_hit_doc_id": "target_doc_051",
+      "top_hit_score": 0.38714352,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_052",
+      "category": "embedded",
+      "target_doc_id": "target_doc_052",
+      "target_rank": 1,
+      "target_score": 0.6481396,
+      "top_hit_doc_id": "target_doc_052",
+      "top_hit_score": 0.6481396,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_053",
+      "category": "embedded",
+      "target_doc_id": "target_doc_053",
+      "target_rank": 1,
+      "target_score": 0.4831853,
+      "top_hit_doc_id": "target_doc_053",
+      "top_hit_score": 0.4831853,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_054",
+      "category": "embedded",
+      "target_doc_id": "target_doc_054",
+      "target_rank": 1,
+      "target_score": 0.40269488,
+      "top_hit_doc_id": "target_doc_054",
+      "top_hit_score": 0.40269488,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_055",
+      "category": "embedded",
+      "target_doc_id": "target_doc_055",
+      "target_rank": 1,
+      "target_score": 0.56712323,
+      "top_hit_doc_id": "target_doc_055",
+      "top_hit_score": 0.56712323,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_056",
+      "category": "search",
+      "target_doc_id": "target_doc_056",
+      "target_rank": 1,
+      "target_score": 0.41867822,
+      "top_hit_doc_id": "target_doc_056",
+      "top_hit_score": 0.41867822,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_057",
+      "category": "search",
+      "target_doc_id": "target_doc_057",
+      "target_rank": 1,
+      "target_score": 0.60731465,
+      "top_hit_doc_id": "target_doc_057",
+      "top_hit_score": 0.60731465,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_058",
+      "category": "search",
+      "target_doc_id": "target_doc_058",
+      "target_rank": 1,
+      "target_score": 0.5063429,
+      "top_hit_doc_id": "target_doc_058",
+      "top_hit_score": 0.5063429,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_059",
+      "category": "search",
+      "target_doc_id": "target_doc_059",
+      "target_rank": 1,
+      "target_score": 0.50083286,
+      "top_hit_doc_id": "target_doc_059",
+      "top_hit_score": 0.50083286,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_060",
+      "category": "search",
+      "target_doc_id": "target_doc_060",
+      "target_rank": 1,
+      "target_score": 0.40011385,
+      "top_hit_doc_id": "target_doc_060",
+      "top_hit_score": 0.40011385,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_061",
+      "category": "data_eng",
+      "target_doc_id": "target_doc_061",
+      "target_rank": 1,
+      "target_score": 0.45561406,
+      "top_hit_doc_id": "target_doc_061",
+      "top_hit_score": 0.45561406,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_062",
+      "category": "data_eng",
+      "target_doc_id": "target_doc_062",
+      "target_rank": 1,
+      "target_score": 0.4578883,
+      "top_hit_doc_id": "target_doc_062",
+      "top_hit_score": 0.4578883,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_063",
+      "category": "data_eng",
+      "target_doc_id": "target_doc_063",
+      "target_rank": 31,
+      "target_score": 0.44341382,
+      "top_hit_doc_id": "distractor_0004",
+      "top_hit_score": 0.45937145,
+      "reciprocal_rank": 0.032258064
+    },
+    {
+      "query_id": "query_064",
+      "category": "data_eng",
+      "target_doc_id": "target_doc_064",
+      "target_rank": 1,
+      "target_score": 0.4487776,
+      "top_hit_doc_id": "target_doc_064",
+      "top_hit_score": 0.4487776,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_065",
+      "category": "data_eng",
+      "target_doc_id": "target_doc_065",
+      "target_rank": 1,
+      "target_score": 0.540213,
+      "top_hit_doc_id": "target_doc_065",
+      "top_hit_score": 0.540213,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_066",
+      "category": "gaming",
+      "target_doc_id": "target_doc_066",
+      "target_rank": 1,
+      "target_score": 0.59616435,
+      "top_hit_doc_id": "target_doc_066",
+      "top_hit_score": 0.59616435,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_067",
+      "category": "gaming",
+      "target_doc_id": "target_doc_067",
+      "target_rank": 1,
+      "target_score": 0.6221791,
+      "top_hit_doc_id": "target_doc_067",
+      "top_hit_score": 0.6221791,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_068",
+      "category": "gaming",
+      "target_doc_id": "target_doc_068",
+      "target_rank": 1,
+      "target_score": 0.71110964,
+      "top_hit_doc_id": "target_doc_068",
+      "top_hit_score": 0.71110964,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_069",
+      "category": "gaming",
+      "target_doc_id": "target_doc_069",
+      "target_rank": 1,
+      "target_score": 0.64784205,
+      "top_hit_doc_id": "target_doc_069",
+      "top_hit_score": 0.64784205,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_070",
+      "category": "gaming",
+      "target_doc_id": "target_doc_070",
+      "target_rank": 1,
+      "target_score": 0.6236025,
+      "top_hit_doc_id": "target_doc_070",
+      "top_hit_score": 0.6236025,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_071",
+      "category": "devtools",
+      "target_doc_id": "target_doc_071",
+      "target_rank": 1,
+      "target_score": 0.50448495,
+      "top_hit_doc_id": "target_doc_071",
+      "top_hit_score": 0.50448495,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_072",
+      "category": "devtools",
+      "target_doc_id": "target_doc_072",
+      "target_rank": 1,
+      "target_score": 0.70044446,
+      "top_hit_doc_id": "target_doc_072",
+      "top_hit_score": 0.70044446,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_073",
+      "category": "devtools",
+      "target_doc_id": "target_doc_073",
+      "target_rank": 1,
+      "target_score": 0.59861636,
+      "top_hit_doc_id": "target_doc_073",
+      "top_hit_score": 0.59861636,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_074",
+      "category": "devtools",
+      "target_doc_id": "target_doc_074",
+      "target_rank": 1,
+      "target_score": 0.4595832,
+      "top_hit_doc_id": "target_doc_074",
+      "top_hit_score": 0.4595832,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_075",
+      "category": "devtools",
+      "target_doc_id": "target_doc_075",
+      "target_rank": 2,
+      "target_score": 0.3349382,
+      "top_hit_doc_id": "target_doc_096",
+      "top_hit_score": 0.3429937,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query_id": "query_076",
+      "category": "queries",
+      "target_doc_id": "target_doc_076",
+      "target_rank": 1,
+      "target_score": 0.6308142,
+      "top_hit_doc_id": "target_doc_076",
+      "top_hit_score": 0.6308142,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_077",
+      "category": "queries",
+      "target_doc_id": "target_doc_077",
+      "target_rank": 1,
+      "target_score": 0.65829164,
+      "top_hit_doc_id": "target_doc_077",
+      "top_hit_score": 0.65829164,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_078",
+      "category": "queries",
+      "target_doc_id": "target_doc_078",
+      "target_rank": 1,
+      "target_score": 0.63748693,
+      "top_hit_doc_id": "target_doc_078",
+      "top_hit_score": 0.63748693,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_079",
+      "category": "queries",
+      "target_doc_id": "target_doc_079",
+      "target_rank": 1,
+      "target_score": 0.73767346,
+      "top_hit_doc_id": "target_doc_079",
+      "top_hit_score": 0.73767346,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_080",
+      "category": "queries",
+      "target_doc_id": "target_doc_080",
+      "target_rank": 1,
+      "target_score": 0.6058846,
+      "top_hit_doc_id": "target_doc_080",
+      "top_hit_score": 0.6058846,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_081",
+      "category": "web_frontend",
+      "target_doc_id": "target_doc_081",
+      "target_rank": 1,
+      "target_score": 0.72011906,
+      "top_hit_doc_id": "target_doc_081",
+      "top_hit_score": 0.72011906,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_082",
+      "category": "backend",
+      "target_doc_id": "target_doc_082",
+      "target_rank": 1,
+      "target_score": 0.46723136,
+      "top_hit_doc_id": "target_doc_082",
+      "top_hit_score": 0.46723136,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_083",
+      "category": "ai_ml",
+      "target_doc_id": "target_doc_083",
+      "target_rank": 1,
+      "target_score": 0.51275414,
+      "top_hit_doc_id": "target_doc_083",
+      "top_hit_score": 0.51275414,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_084",
+      "category": "gaming",
+      "target_doc_id": "target_doc_084",
+      "target_rank": 1,
+      "target_score": 0.5446922,
+      "top_hit_doc_id": "target_doc_084",
+      "top_hit_score": 0.5446922,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_085",
+      "category": "devops",
+      "target_doc_id": "target_doc_085",
+      "target_rank": 1,
+      "target_score": 0.5957841,
+      "top_hit_doc_id": "target_doc_085",
+      "top_hit_score": 0.5957841,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_086",
+      "category": "security",
+      "target_doc_id": "target_doc_086",
+      "target_rank": 2,
+      "target_score": 0.47231603,
+      "top_hit_doc_id": "target_doc_031",
+      "top_hit_score": 0.5016274,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "query_id": "query_087",
+      "category": "devtools",
+      "target_doc_id": "target_doc_087",
+      "target_rank": 1,
+      "target_score": 0.5107361,
+      "top_hit_doc_id": "target_doc_087",
+      "top_hit_score": 0.5107361,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_088",
+      "category": "mobile",
+      "target_doc_id": "target_doc_088",
+      "target_rank": 1,
+      "target_score": 0.5349177,
+      "top_hit_doc_id": "target_doc_088",
+      "top_hit_score": 0.5349177,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_089",
+      "category": "fintech",
+      "target_doc_id": "target_doc_089",
+      "target_rank": 1,
+      "target_score": 0.58293283,
+      "top_hit_doc_id": "target_doc_089",
+      "top_hit_score": 0.58293283,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_090",
+      "category": "search",
+      "target_doc_id": "target_doc_090",
+      "target_rank": 1,
+      "target_score": 0.69343054,
+      "top_hit_doc_id": "target_doc_090",
+      "top_hit_score": 0.69343054,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_091",
+      "category": "data_eng",
+      "target_doc_id": "target_doc_091",
+      "target_rank": 1,
+      "target_score": 0.5333832,
+      "top_hit_doc_id": "target_doc_091",
+      "top_hit_score": 0.5333832,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_092",
+      "category": "telegram",
+      "target_doc_id": "target_doc_092",
+      "target_rank": 1,
+      "target_score": 0.69078463,
+      "top_hit_doc_id": "target_doc_092",
+      "top_hit_score": 0.69078463,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_093",
+      "category": "databases",
+      "target_doc_id": "target_doc_093",
+      "target_rank": 1,
+      "target_score": 0.5193951,
+      "top_hit_doc_id": "target_doc_093",
+      "top_hit_score": 0.5193951,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_094",
+      "category": "web_frontend",
+      "target_doc_id": "target_doc_094",
+      "target_rank": 1,
+      "target_score": 0.6617859,
+      "top_hit_doc_id": "target_doc_094",
+      "top_hit_score": 0.6617859,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_095",
+      "category": "security",
+      "target_doc_id": "target_doc_095",
+      "target_rank": 1,
+      "target_score": 0.5071809,
+      "top_hit_doc_id": "target_doc_095",
+      "top_hit_score": 0.5071809,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_096",
+      "category": "devtools",
+      "target_doc_id": "target_doc_096",
+      "target_rank": 1,
+      "target_score": 0.5848673,
+      "top_hit_doc_id": "target_doc_096",
+      "top_hit_score": 0.5848673,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_097",
+      "category": "backend",
+      "target_doc_id": "target_doc_097",
+      "target_rank": 1,
+      "target_score": 0.5068282,
+      "top_hit_doc_id": "target_doc_097",
+      "top_hit_score": 0.5068282,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_098",
+      "category": "ecommerce",
+      "target_doc_id": "target_doc_098",
+      "target_rank": 1,
+      "target_score": 0.5678681,
+      "top_hit_doc_id": "target_doc_098",
+      "top_hit_score": 0.5678681,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_099",
+      "category": "devtools",
+      "target_doc_id": "target_doc_099",
+      "target_rank": 1,
+      "target_score": 0.40401387,
+      "top_hit_doc_id": "target_doc_099",
+      "top_hit_score": 0.40401387,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "query_id": "query_100",
+      "category": "databases",
+      "target_doc_id": "target_doc_100",
+      "target_rank": 1,
+      "target_score": 0.5713637,
+      "top_hit_doc_id": "target_doc_100",
+      "top_hit_score": 0.5713637,
+      "reciprocal_rank": 1.0
+    }
+  ]
+}

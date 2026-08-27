@@ -1,0 +1,94 @@
+{
+  "dimensions": [
+    {
+      "dimension": 1024,
+      "ram_reduction_pct": 0.0,
+      "pairwise_mean_cosine": 0.74119085,
+      "correlation_with_full_1024": 0.9999998,
+      "negative_baseline_mean": 0.24244322,
+      "contrastive_margin": 0.49874765,
+      "search_speedup": 1.0
+    },
+    {
+      "dimension": 512,
+      "ram_reduction_pct": 50.0,
+      "pairwise_mean_cosine": 0.7474236,
+      "correlation_with_full_1024": 0.99852824,
+      "negative_baseline_mean": 0.24729486,
+      "contrastive_margin": 0.50012875,
+      "search_speedup": 1.9903456
+    },
+    {
+      "dimension": 256,
+      "ram_reduction_pct": 75.0,
+      "pairwise_mean_cosine": 0.7538698,
+      "correlation_with_full_1024": 0.99542856,
+      "negative_baseline_mean": 0.25163645,
+      "contrastive_margin": 0.5022333,
+      "search_speedup": 3.9436245
+    },
+    {
+      "dimension": 128,
+      "ram_reduction_pct": 87.5,
+      "pairwise_mean_cosine": 0.7727804,
+      "correlation_with_full_1024": 0.9829152,
+      "negative_baseline_mean": 0.2726111,
+      "contrastive_margin": 0.5001693,
+      "search_speedup": 7.601887
+    },
+    {
+      "dimension": 96,
+      "ram_reduction_pct": 90.625,
+      "pairwise_mean_cosine": 0.7845674,
+      "correlation_with_full_1024": 0.9719255,
+      "negative_baseline_mean": 0.29074973,
+      "contrastive_margin": 0.4938177,
+      "search_speedup": 9.910774
+    },
+    {
+      "dimension": 64,
+      "ram_reduction_pct": 93.75,
+      "pairwise_mean_cosine": 0.80171263,
+      "correlation_with_full_1024": 0.9456285,
+      "negative_baseline_mean": 0.30756053,
+      "contrastive_margin": 0.4941521,
+      "search_speedup": 16.253584
+    },
+    {
+      "dimension": 48,
+      "ram_reduction_pct": 95.3125,
+      "pairwise_mean_cosine": 0.8173941,
+      "correlation_with_full_1024": 0.92495,
+      "negative_baseline_mean": 0.33667544,
+      "contrastive_margin": 0.48071864,
+      "search_speedup": 22.235369
+    },
+    {
+      "dimension": 32,
+      "ram_reduction_pct": 96.875,
+      "pairwise_mean_cosine": 0.8384708,
+      "correlation_with_full_1024": 0.88389736,
+      "negative_baseline_mean": 0.37267587,
+      "contrastive_margin": 0.46579495,
+      "search_speedup": 32.44715
+    },
+    {
+      "dimension": 24,
+      "ram_reduction_pct": 97.65625,
+      "pairwise_mean_cosine": 0.83363265,
+      "correlation_with_full_1024": 0.82881385,
+      "negative_baseline_mean": 0.37415156,
+      "contrastive_margin": 0.4594811,
+      "search_speedup": 39.70238
+    },
+    {
+      "dimension": 16,
+      "ram_reduction_pct": 98.4375,
+      "pairwise_mean_cosine": 0.8319162,
+      "correlation_with_full_1024": 0.795542,
+      "negative_baseline_mean": 0.39726627,
+      "contrastive_margin": 0.43464994,
+      "search_speedup": 53.73373
+    }
+  ]
+}
