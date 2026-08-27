@@ -1,10 +1,10 @@
+use anyhow::{anyhow, Result};
+use serde::Serialize;
 use std::fs::File;
 use std::path::PathBuf;
 use std::sync::{Arc, Mutex};
 use std::thread;
 use std::time::Instant;
-use anyhow::{anyhow, Result};
-use serde::Serialize;
 
 use jina_embeddings_v3_ort::{JinaEmbedder, JinaTask};
 
@@ -93,7 +93,10 @@ fn main() -> Result<()> {
 
     let mut report_results = Vec::new();
 
-    println!("  {:<14} | {:<10} | {:<12} | {:<9} | {:<9} | {:<9} | {:<9}", "Threads", "Total Req", "Throughput", "p50 (ms)", "p90 (ms)", "p99 (ms)", "Max (ms)");
+    println!(
+        "  {:<14} | {:<10} | {:<12} | {:<9} | {:<9} | {:<9} | {:<9}",
+        "Threads", "Total Req", "Throughput", "p50 (ms)", "p90 (ms)", "p99 (ms)", "Max (ms)"
+    );
     println!("  {}", "-".repeat(85));
 
     for &num_threads in &thread_counts {
@@ -150,8 +153,16 @@ fn main() -> Result<()> {
         let min_lat = all_latencies.iter().copied().fold(f32::INFINITY, f32::min);
         let max_lat = all_latencies.iter().copied().fold(0.0f32, f32::max);
 
-        println!("  {:<14} | {:>8}   | {:>8.1} req/s | {:>7.1}   | {:>7.1}   | {:>7.1}   | {:>7.1}",
-            format!("{} workers", num_threads), actual_reqs, throughput, p50, p90, p99, max_lat);
+        println!(
+            "  {:<14} | {:>8}   | {:>8.1} req/s | {:>7.1}   | {:>7.1}   | {:>7.1}   | {:>7.1}",
+            format!("{} workers", num_threads),
+            actual_reqs,
+            throughput,
+            p50,
+            p90,
+            p99,
+            max_lat
+        );
 
         report_results.push(ThreadPoolResult {
             thread_count: num_threads,
@@ -175,10 +186,14 @@ fn main() -> Result<()> {
         thread_pool_benchmarks: report_results,
     };
 
-    let out_path = PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/suite3_concurrency_results.json");
+    let out_path =
+        PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/suite3_concurrency_results.json");
     let out_file = File::create(&out_path)?;
     serde_json::to_writer_pretty(out_file, &report)?;
-    println!("Suite 3 concurrency results saved to: {}\n", out_path.display());
+    println!(
+        "Suite 3 concurrency results saved to: {}\n",
+        out_path.display()
+    );
 
     Ok(())
 }

@@ -1,10 +1,10 @@
+use anyhow::{anyhow, Result};
+use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::fs::File;
 use std::io::BufReader;
 use std::path::PathBuf;
 use std::time::Instant;
-use anyhow::{anyhow, Result};
-use serde::{Deserialize, Serialize};
 
 use jina_embeddings_v3_ort::{cosine_similarity, JinaEmbedder, JinaTask};
 
@@ -138,7 +138,9 @@ fn main() -> Result<()> {
     let reader = BufReader::new(file);
     let dataset: RagDataset = serde_json::from_reader(reader)?;
 
-    println!("Dataset: 100 Persian Queries, 1,000 English Documents (100 Targets + 900 Distractors)");
+    println!(
+        "Dataset: 100 Persian Queries, 1,000 English Documents (100 Targets + 900 Distractors)"
+    );
 
     let t_init = Instant::now();
     let embedder = JinaEmbedder::new(&model_path, &tokenizer_path)?;
@@ -150,15 +152,24 @@ fn main() -> Result<()> {
     let t_q = Instant::now();
     let query_embeddings = embedder.embed_batch(&q_texts, JinaTask::RetrievalQuery)?;
     let q_duration = t_q.elapsed();
-    println!("  -> Completed 100 query embeddings in {:.2?} ({:.1} vec/s)\n", q_duration, 100.0 / q_duration.as_secs_f32());
+    println!(
+        "  -> Completed 100 query embeddings in {:.2?} ({:.1} vec/s)\n",
+        q_duration,
+        100.0 / q_duration.as_secs_f32()
+    );
 
     // 2. Embed all 1,000 English Corpus Documents using `JinaTask::RetrievalPassage`
     println!("[2/3] Embedding 1,000 English Corpus Documents with task: retrieval.passage (task_id: 1)...");
     let doc_texts: Vec<&str> = dataset.corpus.iter().map(|d| d.text.as_str()).collect();
     let t_doc = Instant::now();
-    let corpus_embeddings = embedder.embed_batch_chunked(&doc_texts, JinaTask::RetrievalPassage, 64)?;
+    let corpus_embeddings =
+        embedder.embed_batch_chunked(&doc_texts, JinaTask::RetrievalPassage, 64)?;
     let doc_duration = t_doc.elapsed();
-    println!("  -> Completed 1,000 corpus embeddings in {:.2?} ({:.1} vec/s)\n", doc_duration, 1000.0 / doc_duration.as_secs_f32());
+    println!(
+        "  -> Completed 1,000 corpus embeddings in {:.2?} ({:.1} vec/s)\n",
+        doc_duration,
+        1000.0 / doc_duration.as_secs_f32()
+    );
 
     // Map doc_id to corpus index
     let mut doc_id_to_idx = HashMap::new();
@@ -227,7 +238,11 @@ fn main() -> Result<()> {
             recall_20_hits += 1;
         }
 
-        let rr = if target_rank > 0 { 1.0 / (target_rank as f32) } else { 0.0 };
+        let rr = if target_rank > 0 {
+            1.0 / (target_rank as f32)
+        } else {
+            0.0
+        };
         sum_reciprocal_rank += rr as f64;
 
         let ndcg = calculate_ndcg_at_k(target_rank, 10);
@@ -260,16 +275,40 @@ fn main() -> Result<()> {
     println!("================================================================================");
     println!("  Metric                | Score        | Description");
     println!("  ------------------------------------------------------------------------------");
-    println!("  Recall@1 (Top-1 Hit)  | {:>6.2}%     | Exact match as #1 result", recall_1);
-    println!("  Recall@3 (Top-3 Hit)  | {:>6.2}%     | Ground truth target within top 3 results", recall_3);
-    println!("  Recall@5 (Top-5 Hit)  | {:>6.2}%     | Ground truth target within top 5 results", recall_5);
-    println!("  Recall@10 (Top-10)    | {:>6.2}%     | Ground truth target within top 10 results", recall_10);
-    println!("  Recall@20 (Top-20)    | {:>6.2}%     | Ground truth target within top 20 results", recall_20);
+    println!(
+        "  Recall@1 (Top-1 Hit)  | {:>6.2}%     | Exact match as #1 result",
+        recall_1
+    );
+    println!(
+        "  Recall@3 (Top-3 Hit)  | {:>6.2}%     | Ground truth target within top 3 results",
+        recall_3
+    );
+    println!(
+        "  Recall@5 (Top-5 Hit)  | {:>6.2}%     | Ground truth target within top 5 results",
+        recall_5
+    );
+    println!(
+        "  Recall@10 (Top-10)    | {:>6.2}%     | Ground truth target within top 10 results",
+        recall_10
+    );
+    println!(
+        "  Recall@20 (Top-20)    | {:>6.2}%     | Ground truth target within top 20 results",
+        recall_20
+    );
     println!("  ------------------------------------------------------------------------------");
-    println!("  MRR (Mean Reciprocal) | {:>8.4}     | Average reciprocal rank (1.0 = perfect)", mrr);
-    println!("  NDCG@10               | {:>8.4}     | Normalized Discounted Cumulative Gain", ndcg_10);
+    println!(
+        "  MRR (Mean Reciprocal) | {:>8.4}     | Average reciprocal rank (1.0 = perfect)",
+        mrr
+    );
+    println!(
+        "  NDCG@10               | {:>8.4}     | Normalized Discounted Cumulative Gain",
+        ndcg_10
+    );
     println!("  ------------------------------------------------------------------------------");
-    println!("  Matrix Search Latency | {:>6.2?}     | 100 queries × 1,000 corpus distance search", search_duration);
+    println!(
+        "  Matrix Search Latency | {:>6.2?}     | 100 queries × 1,000 corpus distance search",
+        search_duration
+    );
     println!("================================================================================\n");
 
     let report = RagBenchmarkReport {

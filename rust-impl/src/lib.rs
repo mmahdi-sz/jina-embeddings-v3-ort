@@ -42,5 +42,7 @@ pub mod pooling;
 pub mod task;
 
 pub use embedder::{JinaEmbedder, JinaEmbedderOptions};
-pub use pooling::{cosine_similarity, l2_normalize_in_place, max_absolute_difference, mean_pooling};
+pub use pooling::{
+    cosine_similarity, l2_normalize_in_place, max_absolute_difference, mean_pooling,
+};
 pub use task::JinaTask;

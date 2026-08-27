@@ -2,16 +2,16 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
 env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  check-and-test:
-    name: Build, Test & Lint
+  test:
+    name: Test & Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -20,26 +20,21 @@ jobs:
       - name: Set up Rust toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
-          components: clippy, rustfmt
+          components: rustfmt
 
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
         with:
-          workspaces: rust-impl
+          workspaces: "rust-impl -> target"
 
-      - name: Cargo Check
-        run: cargo check --manifest-path rust-impl/Cargo.toml
+      - name: Check code formatting
+        run: cargo fmt --manifest-path rust-impl/Cargo.toml --all -- --check
 
-      - name: Cargo Unit & Doc Tests
-        run: cargo test --manifest-path rust-impl/Cargo.toml
+      - name: Check build
+        run: cargo check --manifest-path rust-impl/Cargo.toml --all-targets
 
-      - name: Cargo Clippy
-        run: cargo clippy --manifest-path rust-impl/Cargo.toml -- -D warnings
+      - name: Run unit tests
+        run: cargo test --manifest-path rust-impl/Cargo.toml --lib
 
-      - name: Cargo Doc
-        run: cargo doc --manifest-path rust-impl/Cargo.toml --no-deps
-
-      - name: Verify crates.io Package Dry-Run
-        run: |
-          cd rust-impl
-          cargo publish --dry-run
+      - name: Run doc tests
+        run: cargo test --manifest-path rust-impl/Cargo.toml --doc

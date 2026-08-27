@@ -1,9 +1,9 @@
+use anyhow::{anyhow, Result};
+use serde::{Deserialize, Serialize};
 use std::fs::File;
 use std::io::BufReader;
 use std::path::PathBuf;
 use std::time::Instant;
-use anyhow::{anyhow, Result};
-use serde::{Deserialize, Serialize};
 
 use jina_embeddings_v3_ort::{cosine_similarity, JinaEmbedder, JinaTask};
 
@@ -125,8 +125,10 @@ fn main() -> Result<()> {
     let target_dims = [1024, 512, 256, 128, 96, 64, 48, 32, 24, 16];
     let mut mrl_results = Vec::new();
 
-    println!("\n  {:<10} | {:<12} | {:<12} | {:<14} | {:<12} | {:<10}",
-        "Dimension", "RAM Savings", "Mean Cosine", "Corr with 1024", "Contrastive", "Search Speed");
+    println!(
+        "\n  {:<10} | {:<12} | {:<12} | {:<14} | {:<12} | {:<10}",
+        "Dimension", "RAM Savings", "Mean Cosine", "Corr with 1024", "Contrastive", "Search Speed"
+    );
     println!("  {}", "-".repeat(85));
 
     let mut baseline_search_time = 0.0f32;
@@ -134,8 +136,14 @@ fn main() -> Result<()> {
     for (d_idx, &dim) in target_dims.iter().enumerate() {
         let ram_reduction = (1.0 - (dim as f32 / 1024.0)) * 100.0;
 
-        let fa_truncated: Vec<Vec<f32>> = fa_embs_1024.iter().map(|v| truncate_and_normalize(v, dim)).collect();
-        let en_truncated: Vec<Vec<f32>> = en_embs_1024.iter().map(|v| truncate_and_normalize(v, dim)).collect();
+        let fa_truncated: Vec<Vec<f32>> = fa_embs_1024
+            .iter()
+            .map(|v| truncate_and_normalize(v, dim))
+            .collect();
+        let en_truncated: Vec<Vec<f32>> = en_embs_1024
+            .iter()
+            .map(|v| truncate_and_normalize(v, dim))
+            .collect();
 
         // 1. True Pairwise Similarity
         let mut truncated_sims = Vec::with_capacity(num_pairs);
@@ -154,7 +162,7 @@ fn main() -> Result<()> {
         let mut sum_neg = 0.0f64;
         let mut neg_count = 0usize;
         for i in 0..num_pairs {
-            for j in (i+1)..num_pairs {
+            for j in (i + 1)..num_pairs {
                 let neg_cos = cosine_similarity(&fa_truncated[i], &en_truncated[j]);
                 sum_neg += neg_cos as f64;
                 neg_count += 1;
@@ -178,8 +186,15 @@ fn main() -> Result<()> {
         }
         let speedup = baseline_search_time / sim_bench_dur;
 
-        println!("  {:<10} | {:>10.1}% | {:>10.4}   | {:>12.4}   | {:>+10.4}   | {:>8.2}x",
-            format!("{} dims", dim), ram_reduction, mean_pair_cos, correlation, margin, speedup);
+        println!(
+            "  {:<10} | {:>10.1}% | {:>10.4}   | {:>12.4}   | {:>+10.4}   | {:>8.2}x",
+            format!("{} dims", dim),
+            ram_reduction,
+            mean_pair_cos,
+            correlation,
+            margin,
+            speedup
+        );
 
         mrl_results.push(MatryoshkaDimResult {
             dimension: dim,
@@ -199,10 +214,14 @@ fn main() -> Result<()> {
         dimensions: mrl_results,
     };
 
-    let out_path = PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/suite4_matryoshka_results.json");
+    let out_path =
+        PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/suite4_matryoshka_results.json");
     let out_file = File::create(&out_path)?;
     serde_json::to_writer_pretty(out_file, &report)?;
-    println!("Suite 4 Matryoshka results saved to: {}\n", out_path.display());
+    println!(
+        "Suite 4 Matryoshka results saved to: {}\n",
+        out_path.display()
+    );
 
     Ok(())
 }

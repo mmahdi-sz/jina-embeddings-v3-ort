@@ -1,10 +1,10 @@
+use anyhow::{anyhow, Context, Result};
+use serde::Deserialize;
 use std::collections::HashMap;
 use std::fs::File;
 use std::io::BufReader;
 use std::path::PathBuf;
 use std::time::Instant;
-use anyhow::{anyhow, Context, Result};
-use serde::Deserialize;
 
 use jina_embeddings_v3_ort::{cosine_similarity, max_absolute_difference, JinaEmbedder, JinaTask};
 
@@ -76,7 +76,9 @@ fn find_reference_files() -> Result<(PathBuf, PathBuf)> {
         }
     }
 
-    Err(anyhow!("Could not locate test_data.json and reference_embeddings.json in python-ref/"))
+    Err(anyhow!(
+        "Could not locate test_data.json and reference_embeddings.json in python-ref/"
+    ))
 }
 
 fn main() -> Result<()> {
@@ -84,8 +86,8 @@ fn main() -> Result<()> {
     println!(" JINA-EMBEDDINGS-V3 RUST ORT PARITY VERIFICATION SUITE");
     println!("================================================================================");
 
-    let (model_path, tokenizer_path) = find_model_dir()
-        .context("Locating jina-embeddings-v3 ONNX and Tokenizer files")?;
+    let (model_path, tokenizer_path) =
+        find_model_dir().context("Locating jina-embeddings-v3 ONNX and Tokenizer files")?;
     println!("Found Model ONNX:    {}", model_path.display());
     println!("Found Tokenizer:     {}", tokenizer_path.display());
 
@@ -110,14 +112,21 @@ fn main() -> Result<()> {
     let t0 = Instant::now();
     let embedder = JinaEmbedder::new(&model_path, &tokenizer_path)?;
     let init_duration = t0.elapsed();
-    println!("  Embedder initialized successfully in {:.2?}\n", init_duration);
+    println!(
+        "  Embedder initialized successfully in {:.2?}\n",
+        init_duration
+    );
 
     // 3. Run Inference and Verify Against Ground Truth
     println!("[3/4] Running inference and verifying all 100 samples across 5 LoRA tasks...");
     let tasks = JinaTask::ALL;
 
     // Collect all texts for batch verification
-    let texts: Vec<&str> = ground_truth.samples.iter().map(|s| s.text.as_str()).collect();
+    let texts: Vec<&str> = ground_truth
+        .samples
+        .iter()
+        .map(|s| s.text.as_str())
+        .collect();
 
     struct TaskMetrics {
         min_cosine: f32,
@@ -141,7 +150,11 @@ fn main() -> Result<()> {
 
     for task in &tasks {
         let task_str = task.as_str();
-        println!("  - Evaluating task: {:<20} (task_id: {})...", task_str, task.task_id());
+        println!(
+            "  - Evaluating task: {:<20} (task_id: {})...",
+            task_str,
+            task.task_id()
+        );
 
         let t_task = Instant::now();
         let rust_embeddings = embedder.embed_batch(&texts, *task)?;
@@ -158,10 +171,13 @@ fn main() -> Result<()> {
 
         for (i, sample) in ground_truth.samples.iter().enumerate() {
             let rust_vec = &rust_embeddings[i];
-            let py_vec = sample
-                .embeddings
-                .get(task_str)
-                .ok_or_else(|| anyhow!("Missing task {} in reference sample {}", task_str, sample.id))?;
+            let py_vec = sample.embeddings.get(task_str).ok_or_else(|| {
+                anyhow!(
+                    "Missing task {} in reference sample {}",
+                    task_str,
+                    sample.id
+                )
+            })?;
 
             assert_eq!(rust_vec.len(), 1024);
             assert_eq!(py_vec.len(), 1024);
@@ -255,7 +271,11 @@ fn main() -> Result<()> {
 
     for task in &tasks {
         let m = &task_metrics_map[task];
-        let status = if m.passed_count == m.total_count { "PASS" } else { "FAIL" };
+        let status = if m.passed_count == m.total_count {
+            "PASS"
+        } else {
+            "FAIL"
+        };
         println!(
             "  {:<20} | {:<12.8} | {:<12.8} | {:<12.2e} | {:<8}",
             task.as_str(),
@@ -267,7 +287,10 @@ fn main() -> Result<()> {
     }
 
     println!("  {}", "-".repeat(74));
-    println!("  TOTAL COMPARISONS:      {} / {} (100 samples × 5 tasks)", total_passed, total_comparisons);
+    println!(
+        "  TOTAL COMPARISONS:      {} / {} (100 samples × 5 tasks)",
+        total_passed, total_comparisons
+    );
     println!("  GLOBAL MIN COSINE:      {:.8}", global_min_cos);
     println!("  GLOBAL MEAN COSINE:     {:.8}", global_mean_cos);
     println!("  GLOBAL MAX ABS DIFF:    {:.2e}", global_max_diff);
@@ -276,12 +299,24 @@ fn main() -> Result<()> {
         "  WORST-CASE SAMPLE:      '{}' on task '{}' (cos={:.8})",
         global_worst_sample, global_worst_task, global_min_cos
     );
-    println!("  THROUGHPUT:             {:.1} vector inferences / second", samples_per_sec);
-    println!("  SINGLE VS BATCH PARITY: {}", if single_batch_pass { "PERFECT MATCH" } else { "MISMATCH" });
+    println!(
+        "  THROUGHPUT:             {:.1} vector inferences / second",
+        samples_per_sec
+    );
+    println!(
+        "  SINGLE VS BATCH PARITY: {}",
+        if single_batch_pass {
+            "PERFECT MATCH"
+        } else {
+            "MISMATCH"
+        }
+    );
     println!("================================================================================");
 
     if all_passed {
-        println!("  OVERALL STATUS: [PASS] - Rust implementation matches Python reference bit-for-bit!");
+        println!(
+            "  OVERALL STATUS: [PASS] - Rust implementation matches Python reference bit-for-bit!"
+        );
     } else {
         println!("  OVERALL STATUS: [FAIL] - Discrepancy detected above threshold.");
         return Err(anyhow!("Parity verification failed"));

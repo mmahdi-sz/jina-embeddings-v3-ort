@@ -1,10 +1,10 @@
+use anyhow::{anyhow, Result};
+use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
 use std::fs::File;
 use std::io::BufReader;
 use std::path::PathBuf;
 use std::time::Instant;
-use anyhow::{anyhow, Result};
-use serde::{Deserialize, Serialize};
 
 use jina_embeddings_v3_ort::{cosine_similarity, JinaEmbedder, JinaTask};
 
@@ -122,7 +122,11 @@ fn main() -> Result<()> {
     let dataset: BenchmarkDataset = serde_json::from_reader(reader)?;
 
     let num_pairs = dataset.pairs.len();
-    println!("Loaded {} Persian-English pairs from {}\n", num_pairs, benchmark_file.display());
+    println!(
+        "Loaded {} Persian-English pairs from {}\n",
+        num_pairs,
+        benchmark_file.display()
+    );
 
     let t0 = Instant::now();
     let embedder = JinaEmbedder::new(&model_path, &tokenizer_path)?;
@@ -146,9 +150,17 @@ fn main() -> Result<()> {
 
     for task in &tasks {
         let task_str = task.as_str();
-        println!("--------------------------------------------------------------------------------");
-        println!("Evaluating LoRA Task: {:<20} (task_id: {})", task_str, task.task_id());
-        println!("--------------------------------------------------------------------------------");
+        println!(
+            "--------------------------------------------------------------------------------"
+        );
+        println!(
+            "Evaluating LoRA Task: {:<20} (task_id: {})",
+            task_str,
+            task.task_id()
+        );
+        println!(
+            "--------------------------------------------------------------------------------"
+        );
 
         let t_task = Instant::now();
         // Compute all 320 Persian and 320 English embeddings
@@ -221,14 +233,33 @@ fn main() -> Result<()> {
         for d in &domains {
             let list = &domain_pair_sims[d];
             let dom_mean = list.iter().copied().sum::<f32>() / list.len() as f32;
-            domain_task_scores.get_mut(d).unwrap().insert(task_str.to_string(), dom_mean);
+            domain_task_scores
+                .get_mut(d)
+                .unwrap()
+                .insert(task_str.to_string(), dom_mean);
         }
 
-        println!("  - True Pairwise Mean Cosine:      {:.4} (Median: {:.4}, P25: {:.4}, P75: {:.4})", mean_pair_cos, median, p25, p75);
-        println!("  - Pairwise Range (Min / Max):     {:.4} .. {:.4} (StdDev: ±{:.4})", min_pair_cos, max_pair_cos, std_dev);
-        println!("  - Negative Baseline Mean Cosine:  {:.4} (over {} cross-pairs)", mean_neg_cos, neg_count);
-        println!("  - Contrastive Alignment Margin:   +{:.4} (+{:.1}%)", contrastive_margin, (contrastive_margin / mean_neg_cos) * 100.0);
-        println!("  - Inference Time & Speed:         {:.2?} ({:.1} vectors/sec)\n", duration, throughput);
+        println!(
+            "  - True Pairwise Mean Cosine:      {:.4} (Median: {:.4}, P25: {:.4}, P75: {:.4})",
+            mean_pair_cos, median, p25, p75
+        );
+        println!(
+            "  - Pairwise Range (Min / Max):     {:.4} .. {:.4} (StdDev: ±{:.4})",
+            min_pair_cos, max_pair_cos, std_dev
+        );
+        println!(
+            "  - Negative Baseline Mean Cosine:  {:.4} (over {} cross-pairs)",
+            mean_neg_cos, neg_count
+        );
+        println!(
+            "  - Contrastive Alignment Margin:   +{:.4} (+{:.1}%)",
+            contrastive_margin,
+            (contrastive_margin / mean_neg_cos) * 100.0
+        );
+        println!(
+            "  - Inference Time & Speed:         {:.2?} ({:.1} vectors/sec)\n",
+            duration, throughput
+        );
 
         println!("  ★ Top Highest Aligned Pair (cos = {:.4}):", max_pair_cos);
         println!("    FA: \"{}\"", dataset.pairs[best_pair_idx].persian);
@@ -264,7 +295,10 @@ fn main() -> Result<()> {
     println!("================================================================================");
     print!("  {:<28} |", "Domain Name");
     for t in &tasks {
-        print!(" {:<11} |", t.as_str().split('.').next().unwrap_or(t.as_str()));
+        print!(
+            " {:<11} |",
+            t.as_str().split('.').next().unwrap_or(t.as_str())
+        );
     }
     println!(" Average");
     println!("  {}", "-".repeat(95));
@@ -289,10 +323,14 @@ fn main() -> Result<()> {
         domain_breakdown: domain_task_scores,
     };
 
-    let out_json_path = PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/benchmark_300_results.json");
+    let out_json_path =
+        PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/benchmark_300_results.json");
     let out_file = File::create(&out_json_path)?;
     serde_json::to_writer_pretty(out_file, &report)?;
-    println!("\nBenchmark results successfully exported to: {}\n", out_json_path.display());
+    println!(
+        "\nBenchmark results successfully exported to: {}\n",
+        out_json_path.display()
+    );
 
     Ok(())
 }

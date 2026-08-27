@@ -1,10 +1,10 @@
-use std::path::Path;
-use std::sync::Mutex;
 use anyhow::{anyhow, Result};
 use ndarray::{Array1, Array2};
 use ort::session::builder::GraphOptimizationLevel;
 use ort::session::Session;
 use ort::value::Tensor;
+use std::path::Path;
+use std::sync::Mutex;
 use tokenizers::{PaddingParams, PaddingStrategy, Tokenizer, TruncationParams, TruncationStrategy};
 
 use crate::pooling::{l2_normalize_in_place, mean_pooling};
@@ -59,7 +59,10 @@ impl JinaEmbedder {
             return Err(anyhow!("Model file not found at: {}", model_p.display()));
         }
         if !tokenizer_p.exists() {
-            return Err(anyhow!("Tokenizer file not found at: {}", tokenizer_p.display()));
+            return Err(anyhow!(
+                "Tokenizer file not found at: {}",
+                tokenizer_p.display()
+            ));
         }
 
         // Initialize tokenizer
@@ -112,7 +115,9 @@ impl JinaEmbedder {
     /// Computes a 1024-dimensional normalized embedding vector for a single text.
     pub fn embed(&self, text: &str, task: JinaTask) -> Result<Vec<f32>> {
         let mut results = self.embed_batch(&[text], task)?;
-        results.pop().ok_or_else(|| anyhow!("Empty embedding output"))
+        results
+            .pop()
+            .ok_or_else(|| anyhow!("Empty embedding output"))
     }
 
     /// Computes normalized embedding vectors for a batch of texts in a single ONNX forward pass.

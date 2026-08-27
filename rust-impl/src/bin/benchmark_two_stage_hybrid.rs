@@ -1,9 +1,9 @@
+use anyhow::{anyhow, Result};
+use serde::{Deserialize, Serialize};
 use std::fs::File;
 use std::io::BufReader;
 use std::path::PathBuf;
 use std::time::Instant;
-use anyhow::{anyhow, Result};
-use serde::{Deserialize, Serialize};
 
 use jina_embeddings_v3_ort::{cosine_similarity, JinaEmbedder, JinaTask};
 
@@ -106,8 +106,14 @@ fn evaluate_search_strategy(
     let num_docs = dataset.corpus.len();
 
     // Prepare truncated vectors
-    let queries_s1: Vec<Vec<f32>> = queries_full.iter().map(|v| truncate_and_normalize(v, stage1_dim)).collect();
-    let corpus_s1: Vec<Vec<f32>> = corpus_full.iter().map(|v| truncate_and_normalize(v, stage1_dim)).collect();
+    let queries_s1: Vec<Vec<f32>> = queries_full
+        .iter()
+        .map(|v| truncate_and_normalize(v, stage1_dim))
+        .collect();
+    let corpus_s1: Vec<Vec<f32>> = corpus_full
+        .iter()
+        .map(|v| truncate_and_normalize(v, stage1_dim))
+        .collect();
 
     let mut recall_1_hits = 0usize;
     let mut recall_5_hits = 0usize;
@@ -120,19 +126,33 @@ fn evaluate_search_strategy(
 
         // Stage 1: Coarse search over all corpus
         let mut s1_scores: Vec<(usize, f32)> = (0..num_docs)
-            .map(|d_idx| (d_idx, cosine_similarity(&queries_s1[q_idx], &corpus_s1[d_idx])))
+            .map(|d_idx| {
+                (
+                    d_idx,
+                    cosine_similarity(&queries_s1[q_idx], &corpus_s1[d_idx]),
+                )
+            })
             .collect();
 
         s1_scores.sort_by(|a, b| b.1.partial_cmp(&a.1).unwrap_or(std::cmp::Ordering::Equal));
 
         let final_ranking: Vec<usize> = if use_stage2_rerank && candidate_k > 0 {
             // Take top candidates from stage 1
-            let top_candidates: Vec<usize> = s1_scores.iter().take(candidate_k).map(|&(d_idx, _)| d_idx).collect();
+            let top_candidates: Vec<usize> = s1_scores
+                .iter()
+                .take(candidate_k)
+                .map(|&(d_idx, _)| d_idx)
+                .collect();
 
             // Stage 2: Fine 1024-dim re-ranking only on those candidates
             let mut s2_scores: Vec<(usize, f32)> = top_candidates
                 .into_iter()
-                .map(|d_idx| (d_idx, cosine_similarity(&queries_full[q_idx], &corpus_full[d_idx])))
+                .map(|d_idx| {
+                    (
+                        d_idx,
+                        cosine_similarity(&queries_full[q_idx], &corpus_full[d_idx]),
+                    )
+                })
                 .collect();
 
             s2_scores.sort_by(|a, b| b.1.partial_cmp(&a.1).unwrap_or(std::cmp::Ordering::Equal));
@@ -160,7 +180,11 @@ fn evaluate_search_strategy(
             recall_10_hits += 1;
         }
 
-        let rr = if target_rank > 0 { 1.0 / (target_rank as f32) } else { 0.0 };
+        let rr = if target_rank > 0 {
+            1.0 / (target_rank as f32)
+        } else {
+            0.0
+        };
         sum_reciprocal_rank += rr as f64;
 
         let ndcg = calculate_ndcg_at_k(target_rank, 10);
@@ -172,15 +196,29 @@ fn evaluate_search_strategy(
     for _ in 0..bench_repetitions {
         for q_idx in 0..num_queries {
             let mut s1: Vec<(usize, f32)> = (0..num_docs)
-                .map(|d_idx| (d_idx, cosine_similarity(&queries_s1[q_idx], &corpus_s1[d_idx])))
+                .map(|d_idx| {
+                    (
+                        d_idx,
+                        cosine_similarity(&queries_s1[q_idx], &corpus_s1[d_idx]),
+                    )
+                })
                 .collect();
             s1.sort_by(|a, b| b.1.partial_cmp(&a.1).unwrap_or(std::cmp::Ordering::Equal));
 
             if use_stage2_rerank && candidate_k > 0 {
-                let candidates: Vec<usize> = s1.iter().take(candidate_k).map(|&(d_idx, _)| d_idx).collect();
+                let candidates: Vec<usize> = s1
+                    .iter()
+                    .take(candidate_k)
+                    .map(|&(d_idx, _)| d_idx)
+                    .collect();
                 let mut s2: Vec<(usize, f32)> = candidates
                     .into_iter()
-                    .map(|d_idx| (d_idx, cosine_similarity(&queries_full[q_idx], &corpus_full[d_idx])))
+                    .map(|d_idx| {
+                        (
+                            d_idx,
+                            cosine_similarity(&queries_full[q_idx], &corpus_full[d_idx]),
+                        )
+                    })
                     .collect();
                 s2.sort_by(|a, b| b.1.partial_cmp(&a.1).unwrap_or(std::cmp::Ordering::Equal));
                 std::hint::black_box(&s2);
@@ -189,7 +227,8 @@ fn evaluate_search_strategy(
             }
         }
     }
-    let total_bench_time_ms = (t_bench.elapsed().as_secs_f32() * 1000.0) / (bench_repetitions as f32);
+    let total_bench_time_ms =
+        (t_bench.elapsed().as_secs_f32() * 1000.0) / (bench_repetitions as f32);
 
     let recall_1 = (recall_1_hits as f32 / num_queries as f32) * 100.0;
     let recall_5 = (recall_5_hits as f32 / num_queries as f32) * 100.0;
@@ -197,7 +236,14 @@ fn evaluate_search_strategy(
     let mrr = (sum_reciprocal_rank / num_queries as f64) as f32;
     let ndcg_10 = (sum_ndcg_10 / num_queries as f64) as f32;
 
-    (recall_1, recall_5, recall_10, mrr, ndcg_10, total_bench_time_ms)
+    (
+        recall_1,
+        recall_5,
+        recall_10,
+        mrr,
+        ndcg_10,
+        total_bench_time_ms,
+    )
 }
 
 fn main() -> Result<()> {
@@ -209,7 +255,8 @@ fn main() -> Result<()> {
     let (model_path, tokenizer_path) = find_model_dir()?;
     let embedder = JinaEmbedder::new(&model_path, &tokenizer_path)?;
 
-    let dataset_path = PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/rag_benchmark_corpus.json");
+    let dataset_path =
+        PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/rag_benchmark_corpus.json");
     let file = File::open(&dataset_path)?;
     let reader = BufReader::new(file);
     let dataset: RagDataset = serde_json::from_reader(reader)?;
@@ -226,11 +273,35 @@ fn main() -> Result<()> {
     let configs = [
         ("Pure Heavy (1024d only)", 1024, 0, false, Some(1024)),
         ("Pure Light (48d only)", 48, 0, false, None),
-        ("Hybrid (48d Top-20  -> 1024d Rerank)", 48, 20, true, Some(1024)),
-        ("Hybrid (48d Top-50  -> 1024d Rerank)", 48, 50, true, Some(1024)),
-        ("Hybrid (48d Top-100 -> 1024d Rerank)", 48, 100, true, Some(1024)),
+        (
+            "Hybrid (48d Top-20  -> 1024d Rerank)",
+            48,
+            20,
+            true,
+            Some(1024),
+        ),
+        (
+            "Hybrid (48d Top-50  -> 1024d Rerank)",
+            48,
+            50,
+            true,
+            Some(1024),
+        ),
+        (
+            "Hybrid (48d Top-100 -> 1024d Rerank)",
+            48,
+            100,
+            true,
+            Some(1024),
+        ),
         ("Pure Ultra-Light (16d only)", 16, 0, false, None),
-        ("Hybrid (16d Top-50  -> 1024d Rerank)", 16, 50, true, Some(1024)),
+        (
+            "Hybrid (16d Top-50  -> 1024d Rerank)",
+            16,
+            50,
+            true,
+            Some(1024),
+        ),
     ];
 
     println!("\n=========================================================================================================");
@@ -287,10 +358,14 @@ fn main() -> Result<()> {
     println!("=========================================================================================================\n");
 
     let report = HybridBenchmarkReport { modes: results };
-    let out_path = PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/benchmark_hybrid_results.json");
+    let out_path =
+        PathBuf::from("/mnt/data/mahdidev/onnx/python-ref/benchmark_hybrid_results.json");
     let out_file = File::create(&out_path)?;
     serde_json::to_writer_pretty(out_file, &report)?;
-    println!("Hybrid benchmark results saved to: {}\n", out_path.display());
+    println!(
+        "Hybrid benchmark results saved to: {}\n",
+        out_path.display()
+    );
 
     Ok(())
 }

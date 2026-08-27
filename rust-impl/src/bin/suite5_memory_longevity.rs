@@ -1,9 +1,9 @@
+use anyhow::{anyhow, Result};
+use serde::Serialize;
 use std::fs::File;
 use std::io::Read;
 use std::path::PathBuf;
 use std::time::Instant;
-use anyhow::{anyhow, Result};
-use serde::Serialize;
 
 use jina_embeddings_v3_ort::{JinaEmbedder, JinaTask};
 
@@ -65,7 +65,9 @@ fn get_linux_memory_mb() -> (f32, f32) {
             let parts: Vec<&str> = contents.split_whitespace().collect();
             if parts.len() >= 2 {
                 let page_size_kb = 4.0; // 4KB page size
-                if let (Ok(virt_pages), Ok(rss_pages)) = (parts[0].parse::<f32>(), parts[1].parse::<f32>()) {
+                if let (Ok(virt_pages), Ok(rss_pages)) =
+                    (parts[0].parse::<f32>(), parts[1].parse::<f32>())
+                {
                     let virt_mb = (virt_pages * page_size_kb) / 1024.0;
                     let rss_mb = (rss_pages * page_size_kb) / 1024.0;
                     return (virt_mb, rss_mb);
@@ -98,7 +100,14 @@ fn main() -> Result<()> {
 
     // Warmup 50 iterations
     for (i, text) in test_corpus.iter().cycle().take(50).enumerate() {
-        let _ = embedder.embed(text, if i % 2 == 0 { JinaTask::RetrievalQuery } else { JinaTask::TextMatching })?;
+        let _ = embedder.embed(
+            text,
+            if i % 2 == 0 {
+                JinaTask::RetrievalQuery
+            } else {
+                JinaTask::TextMatching
+            },
+        )?;
     }
 
     let total_vectors = 2_500;
@@ -107,18 +116,26 @@ fn main() -> Result<()> {
     let checkpoint_interval_batches = 20;
 
     let (init_virt, init_rss) = get_linux_memory_mb();
-    println!("Initial Process Memory after Warmup: RSS = {:.2} MB | VIRT = {:.2} MB\n", init_rss, init_virt);
+    println!(
+        "Initial Process Memory after Warmup: RSS = {:.2} MB | VIRT = {:.2} MB\n",
+        init_rss, init_virt
+    );
 
     let mut checkpoints = Vec::new();
     let t_start = Instant::now();
 
-    println!("  {:<14} | {:<12} | {:<12} | {:<12} | {:<14}", "Vectors Processed", "RSS (MB)", "VIRT (MB)", "Elapsed (s)", "Throughput");
+    println!(
+        "  {:<14} | {:<12} | {:<12} | {:<12} | {:<14}",
+        "Vectors Processed", "RSS (MB)", "VIRT (MB)", "Elapsed (s)", "Throughput"
+    );
     println!("  {}", "-".repeat(76));
     use std::io::Write;
     std::io::stdout().flush().ok();
 
     for b in 1..=total_batches {
-        let batch_texts: Vec<&str> = (0..batch_size).map(|j| test_corpus[(b * batch_size + j) % test_corpus.len()]).collect();
+        let batch_texts: Vec<&str> = (0..batch_size)
+            .map(|j| test_corpus[(b * batch_size + j) % test_corpus.len()])
+            .collect();
         let task = match b % 5 {
             0 => JinaTask::RetrievalQuery,
             1 => JinaTask::RetrievalPassage,
@@ -136,8 +153,14 @@ fn main() -> Result<()> {
             let elapsed = t_start.elapsed().as_secs_f32();
             let throughput = (processed_count as f32) / elapsed;
 
-            println!("  {:<14} | {:>9.2} MB | {:>9.2} MB | {:>9.2} s | {:>8.1} vec/s",
-                format!("{} vectors", processed_count), rss, virt, elapsed, throughput);
+            println!(
+                "  {:<14} | {:>9.2} MB | {:>9.2} MB | {:>9.2} s | {:>8.1} vec/s",
+                format!("{} vectors", processed_count),
+                rss,
+                virt,
+                elapsed,
+                throughput
+            );
             std::io::stdout().flush().ok();
 
             checkpoints.push(MemoryCheckpoint {
@@ -163,9 +186,23 @@ fn main() -> Result<()> {
     println!("================================================================================");
     println!("  Initial Baseline RSS:   {:.2} MB", init_rss);
     println!("  Final RSS (2.5k vecs):  {:.2} MB", final_rss);
-    println!("  Net Memory Delta:       {:.2} MB ({:+.2}%)", net_growth, (net_growth / init_rss) * 100.0);
-    println!("  Memory Growth Rate:     {:.2} KB / 1,000 iterations", growth_rate_kb);
-    println!("  STATUS:                 {}", if is_leak_free { "PASS (Zero Memory Leaks / Perfect Plateau)" } else { "FAIL (Memory Growth Detected)" });
+    println!(
+        "  Net Memory Delta:       {:.2} MB ({:+.2}%)",
+        net_growth,
+        (net_growth / init_rss) * 100.0
+    );
+    println!(
+        "  Memory Growth Rate:     {:.2} KB / 1,000 iterations",
+        growth_rate_kb
+    );
+    println!(
+        "  STATUS:                 {}",
+        if is_leak_free {
+            "PASS (Zero Memory Leaks / Perfect Plateau)"
+        } else {
+            "FAIL (Memory Growth Detected)"
+        }
+    );
     println!("================================================================================\n");
 
     let report = MemoryLongevityReport {
