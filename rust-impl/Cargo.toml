@@ -56,6 +56,10 @@ path = "src/bin/suite4_matryoshka.rs"
 name = "suite5_memory_longevity"
 path = "src/bin/suite5_memory_longevity.rs"
 
+[[bin]]
+name = "benchmark_two_stage_hybrid"
+path = "src/bin/benchmark_two_stage_hybrid.rs"
+
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]

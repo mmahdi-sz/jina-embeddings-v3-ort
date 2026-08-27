@@ -1,0 +1,102 @@
+{
+  "modes": [
+    {
+      "mode_name": "Pure Heavy (1024d only)",
+      "stage1_dim": 1024,
+      "stage1_candidates": 0,
+      "stage2_dim": 1024,
+      "recall_at_1": 94.0,
+      "recall_at_5": 98.0,
+      "recall_at_10": 98.0,
+      "mrr": 0.96036804,
+      "ndcg_at_10": 0.9652372,
+      "search_latency_100q_ms": 108.32109,
+      "search_speedup": 1.0,
+      "ram_per_100k_docs_mb": 390.625
+    },
+    {
+      "mode_name": "Pure Light (48d only)",
+      "stage1_dim": 48,
+      "stage1_candidates": 0,
+      "stage2_dim": null,
+      "recall_at_1": 79.0,
+      "recall_at_5": 87.0,
+      "recall_at_10": 88.0,
+      "mrr": 0.8290005,
+      "ndcg_at_10": 0.8401086,
+      "search_latency_100q_ms": 6.2923474,
+      "search_speedup": 17.214735,
+      "ram_per_100k_docs_mb": 18.310547
+    },
+    {
+      "mode_name": "Hybrid (48d Top-20  -> 1024d Rerank)",
+      "stage1_dim": 48,
+      "stage1_candidates": 20,
+      "stage2_dim": 1024,
+      "recall_at_1": 86.0,
+      "recall_at_5": 87.0,
+      "recall_at_10": 87.0,
+      "mrr": 0.8655556,
+      "ndcg_at_10": 0.8663093,
+      "search_latency_100q_ms": 8.912601,
+      "search_speedup": 12.153701,
+      "ram_per_100k_docs_mb": 18.310547
+    },
+    {
+      "mode_name": "Hybrid (48d Top-50  -> 1024d Rerank)",
+      "stage1_dim": 48,
+      "stage1_candidates": 50,
+      "stage2_dim": 1024,
+      "recall_at_1": 91.0,
+      "recall_at_5": 92.0,
+      "recall_at_10": 92.0,
+      "mrr": 0.9153226,
+      "ndcg_at_10": 0.9163093,
+      "search_latency_100q_ms": 12.852118,
+      "search_speedup": 8.428268,
+      "ram_per_100k_docs_mb": 18.310547
+    },
+    {
+      "mode_name": "Hybrid (48d Top-100 -> 1024d Rerank)",
+      "stage1_dim": 48,
+      "stage1_candidates": 100,
+      "stage2_dim": 1024,
+      "recall_at_1": 92.0,
+      "recall_at_5": 95.0,
+      "recall_at_10": 95.0,
+      "mrr": 0.9354675,
+      "ndcg_at_10": 0.9389279,
+      "search_latency_100q_ms": 18.576494,
+      "search_speedup": 5.831084,
+      "ram_per_100k_docs_mb": 18.310547
+    },
+    {
+      "mode_name": "Pure Ultra-Light (16d only)",
+      "stage1_dim": 16,
+      "stage1_candidates": 0,
+      "stage2_dim": null,
+      "recall_at_1": 38.0,
+      "recall_at_5": 52.0,
+      "recall_at_10": 58.0,
+      "mrr": 0.4551414,
+      "ndcg_at_10": 0.4787788,
+      "search_latency_100q_ms": 3.2957723,
+      "search_speedup": 32.86668,
+      "ram_per_100k_docs_mb": 6.1035156
+    },
+    {
+      "mode_name": "Hybrid (16d Top-50  -> 1024d Rerank)",
+      "stage1_dim": 16,
+      "stage1_candidates": 50,
+      "stage2_dim": 1024,
+      "recall_at_1": 75.0,
+      "recall_at_5": 76.0,
+      "recall_at_10": 76.0,
+      "mrr": 0.755,
+      "ndcg_at_10": 0.7563093,
+      "search_latency_100q_ms": 9.788551,
+      "search_speedup": 11.0661,
+      "ram_per_100k_docs_mb": 6.1035156
+    }
+  ]
+}

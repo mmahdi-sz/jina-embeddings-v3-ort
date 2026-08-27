@@ -179,6 +179,21 @@ To guarantee industry-grade reliability under extreme production conditions, `ji
 - Continuous inference profiling `/proc/self/statm` over 2,500 vectors.
 - **Delta over last 2,000 vectors:** **`+0.50 MB` ($0.007\%$ drift)** $\implies$ **Zero memory leaks detected**.
 
+#### 6. Two-Stage Hybrid Search Benchmark (Lightweight 48d vs Heavy 1024d vs Hybrid)
+`cargo run --release --bin benchmark_two_stage_hybrid`
+
+| Search Strategy Mode | Recall@1 | Recall@5 | MRR | NDCG@10 | Latency (100q) | Speedup | RAM / 100k Docs |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Pure Heavy (1024d only)** | **`94.00%`** | **`98.00%`** | **`0.9604`** | **`0.9652`** | 108.32 ms | **1.00x** | 390.62 MB |
+| **Pure Light (48d only)** | 79.00% | 87.00% | 0.8290 | 0.8401 | **6.29 ms** | **17.21x** | **18.31 MB** |
+| **Hybrid (48d Top-20 $\to$ 1024d Rerank)** | 86.00% | 87.00% | 0.8656 | 0.8663 | **8.91 ms** | **12.15x** | **18.31 MB** |
+| **Hybrid (48d Top-50 $\to$ 1024d Rerank)** | **`91.00%`** | **`92.00%`** | **`0.9153`** | **`0.9163`** | **12.85 ms** | **8.43x** | **18.31 MB** |
+| **Hybrid (48d Top-100 $\to$ 1024d Rerank)** | **`92.00%`** | **`95.00%`** | **`0.9355`** | **`0.9389`** | **18.58 ms** | **5.83x** | **18.31 MB** |
+| **Pure Ultra-Light (16d only)** | 38.00% | 52.00% | 0.4551 | 0.4788 | **3.30 ms** | **32.87x** | **6.10 MB** |
+| **Hybrid (16d Top-50 $\to$ 1024d Rerank)** | 75.00% | 76.00% | 0.7550 | 0.7563 | **9.79 ms** | **11.07x** | **6.10 MB** |
+
+> 🚀 **Hybrid Architecture Takeaway**: The **Hybrid (48d Top-50 $\to$ 1024d)** mode delivers **91.0% Recall@1 (nearly matching pure 1024d's 94.0%)** while being **8.43x faster** and reducing hot RAM usage by **95.3% (from 390 MB to 18 MB per 100k docs)**!
+
 ---
 
 ## Repository Structure
