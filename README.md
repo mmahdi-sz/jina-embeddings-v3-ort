@@ -194,6 +194,29 @@ To guarantee industry-grade reliability under extreme production conditions, `ji
 
 > 🚀 **Hybrid Architecture Takeaway**: The **Hybrid (48d Top-50 $\to$ 1024d)** mode delivers **91.0% Recall@1 (nearly matching pure 1024d's 94.0%)** while being **8.43x faster** and reducing hot RAM usage by **95.3% (from 390 MB to 18 MB per 100k docs)**!
 
+##### Memory Footprint Scaling (Pure 1024d vs Two-Stage Hybrid):
+
+| Corpus Scale | Pure Heavy (1024d Hot RAM) | Two-Stage Hybrid (48d Hot RAM + Top-50 Rerank) | Net RAM Saved |
+| :---: | :---: | :---: | :---: |
+| **1,000 docs** | 4.10 MB | **192 KB** | **95.3% reduction** |
+| **100,000 docs** | 390.62 MB | **18.31 MB** | **95.3% reduction** |
+| **1,000,000 docs (1M)** | **3.91 GB** | **183.10 MB** | **3.73 GB saved** |
+| **10,000,000 docs (10M)** | **39.06 GB** | **1.83 GB** | **37.23 GB saved** |
+
+```text
+                               TWO-STAGE HYBRID PIPELINE
+  [ Persian User Query ] ──► [ JinaEmbedder 48d Truncation ]
+                                      │
+                                      ▼
+             [ Fast In-Memory 48d Vector Scan (18.3 MB / 100k docs) ]
+                                      │
+                                      ▼ (Top-50 Candidates in ~6ms)
+             [ Disk / MMAP 1024d Exact Re-ranking (Only 50 Vectors) ]
+                                      │
+                                      ▼
+                  [ Final Ranked Results (Recall@1 = 91.0%) ]
+```
+
 ---
 
 ## Repository Structure
